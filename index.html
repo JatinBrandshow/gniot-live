@@ -10,25 +10,30 @@
         <section class="relative h-screen bg-cover bg-center bg-[url('/img/gniot-banner.webp')]">
             <div class="absolute inset-0 bg-black/50"></div>
             <div class="relative max-w-7xl mx-auto px-6 py-24 flex justify-between items-center h-full">
-                
                 <div class="max-w-lg text-white">
-                    <h3 class="text-3xl font-semibold -ml-48">Experience the Future of</h3>
-                    <h1 class="text-[100px] leading-none font-bold text-red-600 -ml-48">Education <br> <span class="text-white">with AI</span></h1>
-                    <p class="mt-4 text-lg">In an era propelled by the advent of artificial intelligence, Chandigarh University, Uttar Pradesh, has embraced a multidisciplinary education model enriched by AI integration, prioritising customised learning pathways, data-driven insights, virtual reality experiences, and real-world simulations to prepare global visionaries.</p>
+                    <h3 id="heading" class="text-3xl font-semibold -ml-48">COLLABORATE FOR</h3>
+                    <h1 id="subheading" class="text-[100px] leading-none font-bold text-red-600 -ml-48">EFFICIENCY</h1>
+                    <p id="paragraph" class="mt-4 text-lg">
+                        Collaboration fosters efficiency by integrating diverse expertise, streamlining workflows, and driving innovation through teamwork. It strengthens communication, enhances creativity, and accelerates decision-making,
+                        ensuring sustainable growth and success in every field.
+                    </p>
                     <a href="#" class="inline-block mt-6 bg-white text-black px-6 py-3 rounded-lg shadow-md hover:bg-gray-200 transition">KNOW MORE →</a>
                 </div>
-                
+
                 <div class="w-full max-w-md bg-white/80 p-6 rounded-lg shadow-lg">
-                    <h2 class="text-2xl font-bold text-center text-gray-700 mb-4">Apply Today For <br> <span class="text-black">Chandigarh University Programs</span></h2>
+                    <h2 class="text-2xl font-bold text-center text-gray-700 mb-4">
+                        Apply Today For <br />
+                        <span class="text-black">GNIOT Group Programs</span>
+                    </h2>
                     <form action="#" method="POST" class="space-y-4">
                         <div class="grid grid-cols-2 gap-2">
-                            <input type="text" name="name" placeholder="Student Name" class="w-full p-3 border rounded" required>
-                            <input type="email" name="email" placeholder="Student Email ID" class="w-full p-3 border rounded" required>
+                            <input type="text" name="name" placeholder="Student Name" class="w-full p-3 border rounded" required />
+                            <input type="email" name="email" placeholder="Student Email ID" class="w-full p-3 border rounded" required />
                         </div>
-                        <input type="tel" name="mobile" placeholder="Student Mobile No" class="w-full p-3 border rounded" required>
+                        <input type="tel" name="mobile" placeholder="Student Mobile No" class="w-full p-3 border rounded" required />
                         <div class="grid grid-cols-2 gap-2">
-                            <input type="date" name="dob" class="w-full p-3 border rounded" required>
-                            <input type="text" name="city" placeholder="Student City" class="w-full p-3 border rounded" required>
+                            <input type="date" name="dob" class="w-full p-3 border rounded" required />
+                            <input type="text" name="city" placeholder="Student City" class="w-full p-3 border rounded" required />
                         </div>
                         <div class="grid grid-cols-2 gap-2">
                             <select name="discipline" class="w-full p-3 border rounded" required>
@@ -50,5 +55,148 @@
                 </div>
             </div>
         </section>
+
+        <section class="py-10 overflow-hidden">
+            <div class="bg-white py-10 px-16 max-lg:py-7 max-lg:px-8 max-md:py-5 max-md:px-6 max-sm:px-3 max-sm:py-3">
+                <h1 class="text-4xl flex items-center justify-center gap-2 max-lg:text-3xl max-md:text-2xl max-sm:text-xl font-bold">
+                    Placements – Our Key Recruiters​
+                </h1>
+
+                <div class="relative w-full overflow-hidden my-8 space-y-6 py-7">
+                    <div class="flex space-x-6 animate-[scroll-right_120s_linear_infinite] w-max" id="logoRow1"></div>
+                    <div class="flex space-x-6 animate-[scroll-left_120s_linear_infinite] w-max" id="logoRow2"></div>
+                    <div class="flex space-x-6 animate-[scroll-right_120s_linear_infinite] w-max" id="logoRow3"></div>
+                </div>
+            </div>
+        </section>
+
+        <style>
+            @keyframes scroll-right {
+                from {
+                    transform: translateX(0);
+                }
+                to {
+                    transform: translateX(-50%);
+                }
+            }
+
+            @keyframes scroll-left {
+                from {
+                    transform: translateX(-50%);
+                }
+                to {
+                    transform: translateX(0);
+                }
+            }
+
+            .animate-[scroll-right_90s_linear_infinite] {
+    animation: scroll-right 90s linear infinite;
+}
+
+.animate-[scroll-left_90s_linear_infinite] {
+    animation: scroll-left 90s linear infinite;
+}
+        </style>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const collaborationsLogo = [
+                    { alt: "COURSERA", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/idfc-first-bank.webp" },
+                    { alt: "Archer", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo22.webp" },
+                    { alt: "EY", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo23.webp" },
+                    { alt: "CNH", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo24.webp" },
+                    { alt: "INFOSYS", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo25.webp" },
+                    { alt: "ASHOK", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo26.webp" },
+                    { alt: "ANAND", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo27.webp" },
+                    { alt: "YESBANK", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo28.webp" },
+                    { alt: "PhonePe", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo29.webp" },
+                    { alt: "Deloitte", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo30.webp" },
+                    { alt: "ACCENTURE", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo31.webp" },
+                    { alt: "BOB", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo32.webp" },
+                    { alt: "UPGRAD", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo33.webp" },
+                    { alt: "DECATHLON", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo34.webp" },
+                    { alt: "HDB", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo35.webp" },
+                    { alt: "HCL", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo36.webp" },
+                    { alt: "KPMG", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo37.webp" },
+                    { alt: "IBM", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo38.webp" },
+                    { alt: "ITC", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo39.webp" },
+                    { alt: "DS GROUP", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo40.webp" },
+                    { alt: "HITACHI", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo41.webp" },
+                    { alt: "SPARK", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo42.webp" },
+                    { alt: "AU", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo43.webp" },
+                    { alt: "DELL", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo44.webp" },
+                    { alt: "INFOEDGE", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo45.webp" },
+                    { alt: "PRISM", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo46.webp" },
+                    { alt: "SBI", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo47.webp" },
+                    { alt: "SBIOS", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo48.webp" },
+                    { alt: "KANSAI", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo49.webp" },
+                    { alt: "NAUKRI", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo50.webp" },
+                    { alt: "HDFC", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo52.webp" },
+                    { alt: "OLN", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo53.webp" },
+                    { alt: "PROPERTY", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo54.webp" },
+                    { alt: "AMAZON", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo71.webp" },
+                    { alt: "WIPRO", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo72.webp" },
+                    { alt: "CROMA", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo73.webp" },
+                    { alt: "BLINKIT", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo74.webp" },
+                    { alt: "CAFE", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo75.webp" },
+                    { alt: "DABUR", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo77.webp" },
+                    { alt: "ICICI", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo79.webp" },
+                ];
+
+                function populateContainer(containerId) {
+                    const container = document.getElementById(containerId);
+                    const duplicateContainer = document.createElement("div");
+                    duplicateContainer.classList.add("flex", "space-x-6");
+
+                    collaborationsLogo.forEach((logo) => {
+                        let div = document.createElement("div");
+                        div.classList.add("flex", "justify-center", "items-center", "border", "rounded-full", "shadow-lg", "h-20", "w-40", "max-sm:h-12", "px-4");
+                        div.innerHTML = `<img alt="${logo.alt}" src="${logo.src}" class="h-full w-full object-contain" loading="eager"/>`;
+                        container.appendChild(div.cloneNode(true));
+                        duplicateContainer.appendChild(div.cloneNode(true));
+                    });
+
+                    container.appendChild(duplicateContainer);
+                }
+
+                populateContainer("logoRow1");
+                populateContainer("logoRow2");
+                populateContainer("logoRow3");
+            });
+        </script>
+
+        <script>
+            const contents = [
+                {
+                    heading: "COLLABORATE FOR",
+                    subheading: "EFFICIENCY",
+                    paragraph:
+                        "Collaboration fosters efficiency by integrating diverse expertise, streamlining workflows, and driving innovation through teamwork. It strengthens communication, enhances creativity, and accelerates decision-making, ensuring sustainable growth and success in every field.",
+                },
+                {
+                    heading: "Bridge to Your",
+                    subheading: "Career",
+                    paragraph:
+                        "Education serves as the bridge to a successful career, providing knowledge, skills, and opportunities for growth and advancement. It empowers individuals with confidence, fosters adaptability, and unlocks new possibilities for long-term professional success.",
+                },
+                {
+                    heading: "TURN OBSTACLES INTO ",
+                    subheading: "OPPORTUNITIES",
+                    paragraph:
+                        "Challenges pave the way for success, transforming obstacles into opportunities through resilience, learning, and adaptation. Each challenge builds character, refines skills, and fosters an innovative mindset, leading to greater achievements and breakthroughs.",
+                },
+            ];
+
+            let index = 0;
+
+            function updateContent() {
+                index = (index + 1) % contents.length;
+                document.getElementById("heading").textContent = contents[index].heading;
+                document.getElementById("subheading").textContent = contents[index].subheading;
+                document.getElementById("paragraph").textContent = contents[index].paragraph;
+            }
+
+            setInterval(updateContent, 3000);
+        </script>
     </body>
 </html>
