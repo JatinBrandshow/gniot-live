@@ -17,7 +17,9 @@
                         Collaboration fosters efficiency by integrating diverse expertise, streamlining workflows, and driving innovation through teamwork. It strengthens communication, enhances creativity, and accelerates decision-making,
                         ensuring sustainable growth and success in every field.
                     </p>
-                    <a href="#" class="inline-block mt-6 bg-white text-black px-6 py-3 rounded-lg shadow-md hover:bg-gray-200 transition max-md:py-2 max-sm:py-1.5 max-lg:px-5 max-md:px-4 max-sm:px-3 max-lg:mt-5 max-md:mt-4 max-sm:mt-3">KNOW MORE →</a>
+                    <a href="#" class="inline-block mt-6 bg-white text-black px-6 py-3 rounded-lg shadow-md hover:bg-gray-200 transition max-md:py-2 max-sm:py-1.5 max-lg:px-5 max-md:px-4 max-sm:px-3 max-lg:mt-5 max-md:mt-4 max-sm:mt-3">
+                        KNOW MORE →
+                    </a>
                 </div>
 
                 <div class="w-full max-w-md bg-white/80 p-6 rounded-lg shadow-lg max-lg:p-5 max-md:p-4 max-sm:p-3">
@@ -56,6 +58,23 @@
             </div>
         </section>
 
+        <section class="relative bg-fixed h-[60vh] bg-cover bg-center px-6 md:px-12 lg:px-24" style="background-image: url('/img/about/transforming-education.webp');">
+            <div class="max-w-7xl mx-auto flex items-center h-full">
+                <div class="max-w-xl text-white">
+                    <h1 class="text-3xl md:text-5xl font-semibold leading-loose font-playfair">WHO WE ARE ?</h1>
+                    <p class="mt-4 text-sm md:text-lg leading-relaxed text-justify font-playfair">
+                        Greater Noida Institute of Technology (GNIOT) is one of the premier Institutions in the field of Technical and Management Education. It has been formed by Shri Ram Educational Trust, Noida . The Trust was formed in
+                        the year 2000 and the Institute was established in the year 2001. The Trust has had a meteoric rise, and on date, has established a chain of educational institutions covering the fields of engineering and management
+                        leading towards Graduate and Post Graduate degrees.
+                    </p>
+                    <p class="mt-4 text-sm md:text-lg leading-relaxed text-justify font-playfair">
+                        It has been approved by AICTE, Ministry of HRD, Government of India and affiliated to Dr. A.P.J. Abdul Kalam Technical University, Lucknow .Also accredited with NAAC A+ in first cycle round which represents Strong
+                        Academic Framework & Student-Centric Practices.​
+                    </p>
+                </div>
+            </div>
+        </section>
+
         <section class="py-10 overflow-hidden">
             <div class="bg-white py-10 px-16 max-lg:py-7 max-lg:px-8 max-md:py-5 max-md:px-6 max-sm:px-3 max-sm:py-3">
                 <h1 class="text-4xl flex items-center justify-center gap-2 max-lg:text-3xl max-md:text-2xl max-sm:text-xl font-bold">
@@ -90,13 +109,47 @@
             }
 
             .animate-[scroll-right_90s_linear_infinite] {
-    animation: scroll-right 90s linear infinite;
-}
+                animation: scroll-right 90s linear infinite;
+            }
 
-.animate-[scroll-left_90s_linear_infinite] {
-    animation: scroll-left 90s linear infinite;
-}
+            .animate-[scroll-left_90s_linear_infinite] {
+                animation: scroll-left 90s linear infinite;
+            }
         </style>
+
+        <script>
+            const contents = [
+                {
+                    heading: "COLLABORATE FOR",
+                    subheading: "EFFICIENCY",
+                    paragraph:
+                        "Collaboration fosters efficiency by integrating diverse expertise, streamlining workflows, and driving innovation through teamwork. It strengthens communication, enhances creativity, and accelerates decision-making, ensuring sustainable growth and success in every field.",
+                },
+                {
+                    heading: "Bridge to Your",
+                    subheading: "Career",
+                    paragraph:
+                        "Education serves as the bridge to a successful career, providing knowledge, skills, and opportunities for growth and advancement. It empowers individuals with confidence, fosters adaptability, and unlocks new possibilities for long-term professional success.",
+                },
+                {
+                    heading: "TURN OBSTACLES INTO ",
+                    subheading: "OPPORTUNITIES",
+                    paragraph:
+                        "Challenges pave the way for success, transforming obstacles into opportunities through resilience, learning, and adaptation. Each challenge builds character, refines skills, and fosters an innovative mindset, leading to greater achievements and breakthroughs.",
+                },
+            ];
+
+            let index = 0;
+
+            function updateContent() {
+                index = (index + 1) % contents.length;
+                document.getElementById("heading").textContent = contents[index].heading;
+                document.getElementById("subheading").textContent = contents[index].subheading;
+                document.getElementById("paragraph").textContent = contents[index].paragraph;
+            }
+
+            setInterval(updateContent, 3000);
+        </script>
 
         <script>
             document.addEventListener("DOMContentLoaded", function () {
@@ -163,40 +216,6 @@
                 populateContainer("logoRow2");
                 populateContainer("logoRow3");
             });
-        </script>
-
-        <script>
-            const contents = [
-                {
-                    heading: "COLLABORATE FOR",
-                    subheading: "EFFICIENCY",
-                    paragraph:
-                        "Collaboration fosters efficiency by integrating diverse expertise, streamlining workflows, and driving innovation through teamwork. It strengthens communication, enhances creativity, and accelerates decision-making, ensuring sustainable growth and success in every field.",
-                },
-                {
-                    heading: "Bridge to Your",
-                    subheading: "Career",
-                    paragraph:
-                        "Education serves as the bridge to a successful career, providing knowledge, skills, and opportunities for growth and advancement. It empowers individuals with confidence, fosters adaptability, and unlocks new possibilities for long-term professional success.",
-                },
-                {
-                    heading: "TURN OBSTACLES INTO ",
-                    subheading: "OPPORTUNITIES",
-                    paragraph:
-                        "Challenges pave the way for success, transforming obstacles into opportunities through resilience, learning, and adaptation. Each challenge builds character, refines skills, and fosters an innovative mindset, leading to greater achievements and breakthroughs.",
-                },
-            ];
-
-            let index = 0;
-
-            function updateContent() {
-                index = (index + 1) % contents.length;
-                document.getElementById("heading").textContent = contents[index].heading;
-                document.getElementById("subheading").textContent = contents[index].subheading;
-                document.getElementById("paragraph").textContent = contents[index].paragraph;
-            }
-
-            setInterval(updateContent, 3000);
         </script>
     </body>
 </html>
