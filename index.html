@@ -7,41 +7,41 @@
         <title>GNIOT-Group</title>
     </head>
     <body>
-        <section class="relative h-screen bg-cover bg-center bg-[url('/img/gniot-banner.webp')]">
+        <section class="relative h-screen bg-cover bg-center bg-[url('/img/gniot-banner.webp')] max-sm:h-[135vh]">
             <div class="absolute inset-0 bg-black/50"></div>
-            <div class="relative max-w-7xl mx-auto px-6 py-24 flex justify-between items-center h-full">
+            <div class="relative max-w-7xl mx-auto px-6 py-24 flex justify-between items-center h-full max-sm:flex-col max-sm:space-y-4 max-md:px-4 max-sm:px-2 max-lg:py-20 max-md:py-14 max-sm:py-10">
                 <div class="max-w-lg text-white">
-                    <h3 id="heading" class="text-3xl font-semibold -ml-48">COLLABORATE FOR</h3>
-                    <h1 id="subheading" class="text-[100px] leading-none font-bold text-red-600 -ml-48">EFFICIENCY</h1>
-                    <p id="paragraph" class="mt-4 text-lg">
+                    <h3 id="heading" class="text-3xl font-semibold -ml-48 max-md:text-2xl max-sm:text-xl max-sm:ml-0">COLLABORATE FOR</h3>
+                    <h1 id="subheading" class="text-[100px] leading-none font-bold text-red-600 max-sm:text-3xl max-md:text-4xl -ml-48 max-sm:ml-0">EFFICIENCY</h1>
+                    <p id="paragraph" class="mt-4 text-lg max-md:text-base max-sm:text-sm max-md:mt-3 max-sm:mt-2">
                         Collaboration fosters efficiency by integrating diverse expertise, streamlining workflows, and driving innovation through teamwork. It strengthens communication, enhances creativity, and accelerates decision-making,
                         ensuring sustainable growth and success in every field.
                     </p>
-                    <a href="#" class="inline-block mt-6 bg-white text-black px-6 py-3 rounded-lg shadow-md hover:bg-gray-200 transition">KNOW MORE →</a>
+                    <a href="#" class="inline-block mt-6 bg-white text-black px-6 py-3 rounded-lg shadow-md hover:bg-gray-200 transition max-md:py-2 max-sm:py-1.5 max-lg:px-5 max-md:px-4 max-sm:px-3 max-lg:mt-5 max-md:mt-4 max-sm:mt-3">KNOW MORE →</a>
                 </div>
 
-                <div class="w-full max-w-md bg-white/80 p-6 rounded-lg shadow-lg">
-                    <h2 class="text-2xl font-bold text-center text-gray-700 mb-4">
+                <div class="w-full max-w-md bg-white/80 p-6 rounded-lg shadow-lg max-lg:p-5 max-md:p-4 max-sm:p-3">
+                    <h2 class="text-2xl font-bold text-center text-gray-700 mb-4 max-md:text-xl max-sm:text-lg max-md:mb-3 max-sm:mb-2">
                         Apply Today For <br />
                         <span class="text-black">GNIOT Group Programs</span>
                     </h2>
-                    <form action="#" method="POST" class="space-y-4">
-                        <div class="grid grid-cols-2 gap-2">
-                            <input type="text" name="name" placeholder="Student Name" class="w-full p-3 border rounded" required />
-                            <input type="email" name="email" placeholder="Student Email ID" class="w-full p-3 border rounded" required />
+                    <form action="#" method="POST" class="space-y-4 max-md:space-y-3 max-sm:space-y-2">
+                        <div class="grid grid-cols-2 gap-2 max-sm:grid-cols-1">
+                            <input type="text" name="name" placeholder="Student Name" class="w-full p-3 border rounded max-sm:p-1.5 max-md:p-2" required />
+                            <input type="email" name="email" placeholder="Student Email ID" class="w-full p-3 border rounded max-sm:p-1.5 max-md:p-2" required />
                         </div>
-                        <input type="tel" name="mobile" placeholder="Student Mobile No" class="w-full p-3 border rounded" required />
-                        <div class="grid grid-cols-2 gap-2">
-                            <input type="date" name="dob" class="w-full p-3 border rounded" required />
-                            <input type="text" name="city" placeholder="Student City" class="w-full p-3 border rounded" required />
+                        <input type="tel" name="mobile" placeholder="Student Mobile No" class="w-full p-3 border rounded max-sm:p-1.5 max-md:p-2" required />
+                        <div class="grid grid-cols-2 gap-2 max-sm:grid-cols-1">
+                            <input type="date" name="dob" class="w-full p-3 border rounded max-sm:p-1.5 max-md:p-2" required />
+                            <input type="text" name="city" placeholder="Student City" class="w-full p-3 border rounded max-sm:p-1.5 max-md:p-2" required />
                         </div>
-                        <div class="grid grid-cols-2 gap-2">
-                            <select name="discipline" class="w-full p-3 border rounded" required>
+                        <div class="grid grid-cols-2 gap-2 max-sm:grid-cols-1">
+                            <select name="discipline" class="w-full p-3 border rounded max-sm:p-1.5 max-md:p-2" required>
                                 <option value="" disabled selected>Select Discipline</option>
                                 <option value="Engineering">Engineering</option>
                                 <option value="Management">Management</option>
                             </select>
-                            <select name="program" class="w-full p-3 border rounded" required>
+                            <select name="program" class="w-full p-3 border rounded max-sm:p-1.5 max-md:p-2" required>
                                 <option value="" disabled selected>Select Program</option>
                                 <option value="B.Tech">B.Tech</option>
                                 <option value="MBA">MBA</option>
@@ -49,8 +49,8 @@
                                 <option value="BBA">BBA</option>
                             </select>
                         </div>
-                        <button type="submit" class="w-full bg-red-600 text-white p-3 rounded hover:bg-red-700 transition">APPLY NOW</button>
-                        <p class="text-center text-gray-600 text-sm mt-2">Already Registered? <a href="#" class="text-red-600 font-semibold">Login</a></p>
+                        <button type="submit" class="w-full bg-red-600 text-white p-3 rounded hover:bg-red-700 transition max-sm:p-1.5 max-md:p-2">APPLY NOW</button>
+                        <p class="text-center text-gray-600 text-sm mt-2 max-sm:mt-1">Already Registered? <a href="#" class="text-red-600 font-semibold">Login</a></p>
                     </form>
                 </div>
             </div>
