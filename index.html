@@ -89,6 +89,33 @@
             </div>
         </section>
 
+        <section class="relative h-[80vh] bg-[url('/img/gniot-banner.webp')] text-white overflow-hidden">
+            <div class="absolute inset-0 bg-black/50 bg-blend-multiply"></div>
+            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 px-4 py-12 relative z-10">
+                <div class="flex flex-col justify-center space-y-6">
+                    <h1 id="program-name" class="text-5xl md:text-6xl font-bold tracking-tight">B.Tech</h1>
+                    <p class="text-xl md:text-2xl leading-relaxed" id="program-description">
+                        Grooming leaders who are not only thorough professionals but also good human beings with values.
+                    </p>
+                    <div class="mt-4">
+                        <p class="text-lg">This is why we are consistently ranked</p>
+                        <p class="text-7xl font-bold">No.1</p>
+                    </div>
+                    <div class="pt-6">
+                        <a href="#" class="inline-block border-2 border-white px-6 py-3 text-white hover:bg-white hover:text-blue-900 transition-colors"> Read More About <span id="program-link">B.Tech</span> </a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-center space-y-12">
+                    <div id="stats-container" class="grid grid-cols-4 gap-4 text-center"></div>
+                </div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-2">
+                <div id="company-Logo" class="grid grid-cols-5 gap-4 justify-center items-center"></div>
+            </div>
+        </section>
+
         <style>
             @keyframes scroll-right {
                 from {
@@ -216,6 +243,157 @@
                 populateContainer("logoRow2");
                 populateContainer("logoRow3");
             });
+        </script>
+
+        <script>
+            const programs = [
+                {
+                    name: "B.Tech",
+                    description: "Grooming leaders who are not only thorough professionals but also good human beings with values.",
+                    stats: [
+                        { value: "563", label: "No. of Students Registered" },
+                        { value: "150+", label: "No. of Companies Visited" },
+                        { value: "450", label: "No. of Students Placed" },
+                        { value: "400", label: "No. of Offers Made" },
+                        { value: "3.5", label: "Minimum Salary LPA" },
+                        { value: "50", label: "Maximum Salary LPA (Offered)" },
+                        { value: "4.5", label: "AVG Salary LPA (Offered)" },
+                    ],
+                    companyLogo: [
+                        { name: "TCS", logoUrl: "/img/recruiters/logo26.webp" },
+                        { name: "Infosys", logoUrl: "/img/recruiters/logo27.webp" },
+                        { name: "Wipro", logoUrl: "/img/recruiters/logo28.webp" },
+                        { name: "Capgemini", logoUrl: "/img/recruiters/logo29.webp" },
+                        { name: "Cognizant", logoUrl: "/img/recruiters/logo30.webp" },
+                        { name: "Accenture", logoUrl: "/img/recruiters/logo31.webp" },
+                        { name: "Deloitte", logoUrl: "/img/recruiters/logo32.webp" },
+                        { name: "IBM", logoUrl: "/img/recruiters/logo33.webp" },
+                        { name: "Tech Mahindra", logoUrl: "/img/recruiters/logo34.webp" },
+                        { name: "HCL", logoUrl: "/img/recruiters/logo35.webp" },
+                    ],
+                },
+                {
+                    name: "BBA",
+                    description: "Empowering students with leadership, communication, and business skills for a successful career.",
+                    stats: [
+                        { value: "193", label: "No. of Students Registered" },
+                        { value: "89", label: "No. of Companies Visited" },
+                        { value: "118", label: "No. of Students Placed" },
+                        { value: "106", label: "No. of Offers Made" },
+                        { value: "3", label: "Minimum Salary LPA" },
+                        { value: "10", label: "Maximum Salary LPA (Offered)" },
+                        { value: "4.5", label: "AVG Salary LPA (Offered)" },
+                    ],
+                    companyLogo: [
+                        { name: "TCS", logoUrl: "/img/recruiters/logo26.webp" },
+                        { name: "Infosys", logoUrl: "/img/recruiters/logo26.webp" },
+                        { name: "Wipro", logoUrl: "/img/recruiters/logo26.webp" },
+                        { name: "Capgemini", logoUrl: "/img/recruiters/logo26.webp" },
+                        { name: "Cognizant", logoUrl: "/img/recruiters/logo26.webp" },
+                        { name: "Accenture", logoUrl: "/img/recruiters/logo26.webp" },
+                        { name: "Deloitte", logoUrl: "/img/recruiters/logo26.webp" },
+                        { name: "IBM", logoUrl: "/img/recruiters/logo26.webp" },
+                        { name: "Tech Mahindra", logoUrl: "/img/recruiters/logo26.webp" },
+                        { name: "HCL", logoUrl: "/img/recruiters/logo26.webp" },
+                    ],
+                },
+                {
+                    name: "B.Com",
+                    description: "Building financial acumen and analytical skills to excel in commerce and business sectors.",
+                    stats: [
+                        { value: "83", label: "No. of Students Registered" },
+                        { value: "65", label: "No. of Companies Visited" },
+                        { value: "76", label: "No. of Students Placed" },
+                        { value: "68", label: "No. of Offers Made" },
+                        { value: "3", label: "Minimum Salary LPA" },
+                        { value: "5", label: "Maximum Salary LPA (Offered)" },
+                        { value: "4", label: "AVG Salary LPA (Offered)" },
+                    ],
+                    companyLogo: [
+                        { name: "TCS", logoUrl: "/img/recruiters/logo26.webp" },
+                        { name: "Infosys", logoUrl: "/img/recruiters/logo26.webp" },
+                        { name: "Wipro", logoUrl: "/img/recruiters/logo26.webp" },
+                        { name: "Capgemini", logoUrl: "/img/recruiters/logo26.webp" },
+                        { name: "Cognizant", logoUrl: "/img/recruiters/logo26.webp" },
+                        { name: "Accenture", logoUrl: "/img/recruiters/logo26.webp" },
+                        { name: "Deloitte", logoUrl: "/img/recruiters/logo26.webp" },
+                        { name: "IBM", logoUrl: "/img/recruiters/logo26.webp" },
+                        { name: "Tech Mahindra", logoUrl: "/img/recruiters/logo26.webp" },
+                        { name: "HCL", logoUrl: "/img/recruiters/logo26.webp" },
+                    ],
+                },
+                {
+                    name: "BCA",
+                    description: "Preparing students for the ever-evolving tech industry with hands-on experience in computing.",
+                    stats: [
+                        { value: "202", label: "No. of Students Registered" },
+                        { value: "110", label: "No. of Companies Visited" },
+                        { value: "170", label: "No. of Students Placed" },
+                        { value: "150", label: "No. of Offers Made" },
+                        { value: "3", label: "Minimum Salary LPA" },
+                        { value: "14", label: "Maximum Salary LPA (Offered)" },
+                        { value: "4", label: "AVG Salary LPA (Offered)" },
+                    ],
+                    companyLogo: [
+                        { name: "TCS", logoUrl: "/img/recruiters/logo26.webp" },
+                        { name: "Infosys", logoUrl: "/img/recruiters/logo26.webp" },
+                        { name: "Wipro", logoUrl: "/img/recruiters/logo26.webp" },
+                        { name: "Capgemini", logoUrl: "/img/recruiters/logo26.webp" },
+                        { name: "Cognizant", logoUrl: "/img/recruiters/logo26.webp" },
+                        { name: "Accenture", logoUrl: "/img/recruiters/logo26.webp" },
+                        { name: "Deloitte", logoUrl: "/img/recruiters/logo26.webp" },
+                        { name: "IBM", logoUrl: "/img/recruiters/logo26.webp" },
+                        { name: "Tech Mahindra", logoUrl: "/img/recruiters/logo26.webp" },
+                        { name: "HCL", logoUrl: "/img/recruiters/logo26.webp" },
+                    ],
+                },
+            ];
+
+            let currentIndex = 0;
+
+    function updateContent() {
+        const program = programs[currentIndex];
+
+        // Update program name, description, and link text
+        document.getElementById("program-name").innerText = program.name;
+        document.getElementById("program-description").innerText = program.description;
+        document.getElementById("program-link").innerText = program.name;
+
+        // Update statistics content
+        const statsContainer = document.getElementById("stats-container");
+        statsContainer.innerHTML = ""; // Clear previous stats
+
+        program.stats.forEach(stat => {
+            const statDiv = document.createElement("div");
+            statDiv.className = "space-y-2";
+            statDiv.innerHTML = `
+                <h2 class="text-4xl md:text-5xl font-bold">${stat.value}</h2>
+                <p class="text-sm md:text-base">${stat.label}</p>
+            `;
+            statsContainer.appendChild(statDiv);
+        });
+
+        // Update company logos
+        const logoContainer = document.getElementById("company-Logo");
+        logoContainer.innerHTML = ""; // Clear previous logos
+
+        program.companyLogo.forEach(company => {
+            const logoDiv = document.createElement("div");
+            logoDiv.className = "flex justify-center";
+            logoDiv.innerHTML = `
+                <img src="${company.logoUrl}" alt="${company.name}" class="w-full h-20 object-contain">
+            `;
+            logoContainer.appendChild(logoDiv);
+        });
+
+        currentIndex = (currentIndex + 1) % programs.length; // Cycle through programs
+    }
+
+    // Initial load
+    updateContent();
+
+    // Change content every 5 seconds
+    setInterval(updateContent, 5000);
         </script>
     </body>
 </html>
