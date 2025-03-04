@@ -77,10 +77,7 @@
 
         <section class="py-10 overflow-hidden">
             <div class="bg-white py-10 px-16 max-lg:py-7 max-lg:px-8 max-md:py-5 max-md:px-6 max-sm:px-3 max-sm:py-3">
-                <h1 class="text-4xl flex items-center justify-center gap-2 max-lg:text-3xl max-md:text-2xl max-sm:text-xl font-bold">
-                    Placements – Our Key Recruiters​
-                </h1>
-
+                <h1 class="text-4xl flex items-center justify-center gap-2 max-lg:text-3xl max-md:text-2xl max-sm:text-xl font-bold">Placements – Our Key Recruiters</h1>
                 <div class="relative w-full overflow-hidden my-8 space-y-6 py-7">
                     <div class="flex space-x-6 animate-[scroll-right_120s_linear_infinite] w-max" id="logoRow1"></div>
                     <div class="flex space-x-6 animate-[scroll-left_120s_linear_infinite] w-max" id="logoRow2"></div>
@@ -113,6 +110,15 @@
 
             <div class="max-w-7xl mx-auto px-2">
                 <div id="company-Logo" class="grid grid-cols-5 gap-4 justify-center items-center"></div>
+            </div>
+        </section>
+
+        <section class="py-10 overflow-hidden">
+            <div class="bg-white py-10 px-16 max-lg:py-7 max-lg:px-8 max-md:py-5 max-md:px-6 max-sm:px-3 max-sm:py-3">
+                <h1 class="text-4xl flex items-center justify-center gap-2 max-lg:text-3xl max-md:text-2xl max-sm:text-xl font-bold">Affiliations, Accreditations & Collaborations</h1>
+                <div class="relative w-full overflow-hidden my-8 space-y-6 py-7">
+                    <div class="flex space-x-6 animate-[scroll-right_120s_linear_infinite] w-max" id="affiliationRow"></div>
+                </div>
             </div>
         </section>
 
@@ -180,58 +186,101 @@
 
         <script>
             document.addEventListener("DOMContentLoaded", function () {
-                const collaborationsLogo = [
-                    { alt: "COURSERA", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/idfc-first-bank.webp" },
-                    { alt: "Archer", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo22.webp" },
-                    { alt: "EY", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo23.webp" },
-                    { alt: "CNH", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo24.webp" },
-                    { alt: "INFOSYS", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo25.webp" },
-                    { alt: "ASHOK", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo26.webp" },
-                    { alt: "ANAND", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo27.webp" },
-                    { alt: "YESBANK", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo28.webp" },
-                    { alt: "PhonePe", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo29.webp" },
-                    { alt: "Deloitte", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo30.webp" },
-                    { alt: "ACCENTURE", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo31.webp" },
-                    { alt: "BOB", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo32.webp" },
-                    { alt: "UPGRAD", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo33.webp" },
-                    { alt: "DECATHLON", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo34.webp" },
-                    { alt: "HDB", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo35.webp" },
-                    { alt: "HCL", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo36.webp" },
-                    { alt: "KPMG", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo37.webp" },
-                    { alt: "IBM", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo38.webp" },
-                    { alt: "ITC", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo39.webp" },
-                    { alt: "DS GROUP", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo40.webp" },
-                    { alt: "HITACHI", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo41.webp" },
-                    { alt: "SPARK", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo42.webp" },
-                    { alt: "AU", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo43.webp" },
-                    { alt: "DELL", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo44.webp" },
-                    { alt: "INFOEDGE", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo45.webp" },
-                    { alt: "PRISM", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo46.webp" },
-                    { alt: "SBI", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo47.webp" },
-                    { alt: "SBIOS", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo48.webp" },
-                    { alt: "KANSAI", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo49.webp" },
-                    { alt: "NAUKRI", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo50.webp" },
-                    { alt: "HDFC", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo52.webp" },
-                    { alt: "OLN", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo53.webp" },
-                    { alt: "PROPERTY", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo54.webp" },
-                    { alt: "AMAZON", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo71.webp" },
-                    { alt: "WIPRO", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo72.webp" },
-                    { alt: "CROMA", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo73.webp" },
-                    { alt: "BLINKIT", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo74.webp" },
-                    { alt: "CAFE", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo75.webp" },
-                    { alt: "DABUR", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo77.webp" },
-                    { alt: "ICICI", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo79.webp" },
+                const companyLogos = [
+                    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/idfc-first-bank.webp",
+                    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo22.webp",
+                    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo23.webp",
+                    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo24.webp",
+                    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo25.webp",
+                    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo26.webp",
+                    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo27.webp",
+                    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo28.webp",
+                    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo29.webp",
+                    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo30.webp",
+                    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo31.webp",
+                    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo32.webp",
+                    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo33.webp",
+                    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo34.webp",
+                    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo35.webp",
+                    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo36.webp",
+                    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo37.webp",
+                    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo38.webp",
+                    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo39.webp",
+                    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo40.webp",
+                    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo41.webp",
+                    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo42.webp",
+                    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo43.webp",
+                    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo44.webp",
+                    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo45.webp",
+                    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo46.webp",
+                    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo47.webp",
+                    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo48.webp",
+                    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo49.webp",
+                    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo50.webp",
+                    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo52.webp",
+                    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo53.webp",
+                    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo54.webp",
+                    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo71.webp",
+                    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo72.webp",
+                    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo73.webp",
+                    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo74.webp",
+                    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo75.webp",
+                    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo77.webp",
+                    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo79.webp",
+                ];
+                const affiliationLogos = [
+                    "/img/affiliation/affiliation-1.webp",
+                    "/img/affiliation/affiliation-2.webp",
+                    "/img/affiliation/affiliation-3.webp",
+                    "/img/affiliation/affiliation-4.webp",
+                    "/img/affiliation/affiliation-5.webp",
+                    "/img/affiliation/affiliation-6.webp",
+                    "/img/affiliation/affiliation-7.webp",
+                    "/img/affiliation/affiliation-8.webp",
+                    "/img/affiliation/affiliation-9.webp",
+                    "/img/affiliation/affiliation-10.webp",
+                    "/img/affiliation/affiliation-11.webp",
+                    "/img/affiliation/affiliation-12.webp",
+                    "/img/affiliation/affiliation-13.webp",
+                    "/img/affiliation/affiliation-14.webp",
+                    "/img/affiliation/affiliation-15.webp",
+                    "/img/affiliation/affiliation-16.webp",
+                    "/img/affiliation/affiliation-17.webp",
+                    "/img/affiliation/affiliation-18.webp",
+                    "/img/affiliation/affiliation-19.webp",
+                    "/img/affiliation/affiliation-20.webp",
+                    "/img/affiliation/affiliation-21.webp",
+                    "/img/affiliation/affiliation-22.webp",
+                    "/img/affiliation/affiliation-23.webp",
+                    "/img/affiliation/affiliation-24.webp",
+                    "/img/affiliation/affiliation-25.webp",
+                    "/img/affiliation/affiliation-26.webp",
+                    "/img/affiliation/affiliation-27.webp",
+                    "/img/affiliation/affiliation-28.webp",
+                    "/img/affiliation/affiliation-29.webp",
+                    "/img/affiliation/affiliation-30.webp",
+                    "/img/affiliation/affiliation-31.webp",
+                    "/img/affiliation/affiliation-32.webp",
+                    "/img/affiliation/affiliation-33.webp",
+                    "/img/affiliation/affiliation-34.webp",
+                    "/img/affiliation/affiliation-35.webp",
+                    "/img/affiliation/affiliation-36.webp",
+                    "/img/affiliation/affiliation-37.webp",
+                    "/img/affiliation/affiliation-38.webp",
+                    "/img/affiliation/affiliation-39.webp",
+                    "/img/affiliation/affiliation-40.webp",
+                    "/img/affiliation/affiliation-41.webp",
                 ];
 
-                function populateContainer(containerId) {
+                function populateMarquee(containerId, logos) {
                     const container = document.getElementById(containerId);
                     const duplicateContainer = document.createElement("div");
                     duplicateContainer.classList.add("flex", "space-x-6");
 
-                    collaborationsLogo.forEach((logo) => {
+                    logos.forEach((logo) => {
                         let div = document.createElement("div");
-                        div.classList.add("flex", "justify-center", "items-center", "border", "rounded-full", "shadow-lg", "h-20", "w-40", "max-sm:h-12", "px-4");
-                        div.innerHTML = `<img alt="${logo.alt}" src="${logo.src}" class="h-full w-full object-contain" loading="eager"/>`;
+                        div.classList.add("flex", "justify-center", "items-center", "border", "rounded-full", "shadow-lg", "h-20", "w-40","max-sm:h-12", "px-2","py-2");
+                        div.innerHTML = `<img src="${logo}" class="h-full w-full object-contain" loading="lazy"/>`;
                         container.appendChild(div.cloneNode(true));
                         duplicateContainer.appendChild(div.cloneNode(true));
                     });
@@ -239,9 +288,10 @@
                     container.appendChild(duplicateContainer);
                 }
 
-                populateContainer("logoRow1");
-                populateContainer("logoRow2");
-                populateContainer("logoRow3");
+                populateMarquee("logoRow1", companyLogos);
+                populateMarquee("logoRow2", companyLogos);
+                populateMarquee("logoRow3", companyLogos);
+                populateMarquee("affiliationRow", affiliationLogos);
             });
         </script>
 
@@ -351,49 +401,49 @@
 
             let currentIndex = 0;
 
-    function updateContent() {
-        const program = programs[currentIndex];
+            function updateContent() {
+                const program = programs[currentIndex];
 
-        // Update program name, description, and link text
-        document.getElementById("program-name").innerText = program.name;
-        document.getElementById("program-description").innerText = program.description;
-        document.getElementById("program-link").innerText = program.name;
+                // Update program name, description, and link text
+                document.getElementById("program-name").innerText = program.name;
+                document.getElementById("program-description").innerText = program.description;
+                document.getElementById("program-link").innerText = program.name;
 
-        // Update statistics content
-        const statsContainer = document.getElementById("stats-container");
-        statsContainer.innerHTML = ""; // Clear previous stats
+                // Update statistics content
+                const statsContainer = document.getElementById("stats-container");
+                statsContainer.innerHTML = ""; // Clear previous stats
 
-        program.stats.forEach(stat => {
-            const statDiv = document.createElement("div");
-            statDiv.className = "space-y-2";
-            statDiv.innerHTML = `
+                program.stats.forEach((stat) => {
+                    const statDiv = document.createElement("div");
+                    statDiv.className = "space-y-2";
+                    statDiv.innerHTML = `
                 <h2 class="text-4xl md:text-5xl font-bold">${stat.value}</h2>
                 <p class="text-sm md:text-base">${stat.label}</p>
             `;
-            statsContainer.appendChild(statDiv);
-        });
+                    statsContainer.appendChild(statDiv);
+                });
 
-        // Update company logos
-        const logoContainer = document.getElementById("company-Logo");
-        logoContainer.innerHTML = ""; // Clear previous logos
+                // Update company logos
+                const logoContainer = document.getElementById("company-Logo");
+                logoContainer.innerHTML = ""; // Clear previous logos
 
-        program.companyLogo.forEach(company => {
-            const logoDiv = document.createElement("div");
-            logoDiv.className = "flex justify-center";
-            logoDiv.innerHTML = `
+                program.companyLogo.forEach((company) => {
+                    const logoDiv = document.createElement("div");
+                    logoDiv.className = "flex justify-center";
+                    logoDiv.innerHTML = `
                 <img src="${company.logoUrl}" alt="${company.name}" class="w-full h-20 object-contain">
             `;
-            logoContainer.appendChild(logoDiv);
-        });
+                    logoContainer.appendChild(logoDiv);
+                });
 
-        currentIndex = (currentIndex + 1) % programs.length; // Cycle through programs
-    }
+                currentIndex = (currentIndex + 1) % programs.length; // Cycle through programs
+            }
 
-    // Initial load
-    updateContent();
+            // Initial load
+            updateContent();
 
-    // Change content every 5 seconds
-    setInterval(updateContent, 5000);
+            // Change content every 5 seconds
+            setInterval(updateContent, 5000);
         </script>
     </body>
 </html>
