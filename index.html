@@ -4,6 +4,8 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
         <title>GNIOT-Group</title>
     </head>
     <body>
@@ -96,6 +98,22 @@
                     <div class="flex space-x-6 animate-[scroll-left_120s_linear_infinite] w-max" id="logoRow2"></div>
                     <div class="flex space-x-6 animate-[scroll-right_120s_linear_infinite] w-max" id="logoRow3"></div>
                 </div>
+            </div>
+        </section>
+
+        <section class="">
+            <div class="relative w-[1500px] h-[750px] flex items-center justify-center overflow-visible mx-auto">
+                <svg class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-10" width="1500" height="750">
+                    <path id="semiCirclePath" d="M 150 750 A 600 600 0 1 1 1350 750" stroke="blue" stroke-width="4" fill="none" />
+                </svg>
+                <svg class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-10" width="1000" height="500">
+                    <path id="semiCirclePath" d="M 50 500 A 450 450 0 1 1 950 500" stroke="blue" stroke-width="4" fill="none" />
+                </svg>
+                <svg class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-0" width="500" height="250">
+                    <path id="semiCirclePath" d="M 50 250 A 200 200 0 1 1 450 250" stroke="blue" stroke-width="6" fill="none" />
+                </svg>
+
+                <div id="circle-container" class="absolute"></div>
             </div>
         </section>
 
@@ -786,6 +804,61 @@
 
                 awardsContainer.appendChild(awardDiv);
             });
+        </script>
+
+        <script>
+            gsap.registerPlugin(MotionPathPlugin);
+
+            const dataPoints = [
+                "19500+ Group Alumni Base",
+                "Faculty with diverse experience",
+                "Legacy of 24 years in the field of education",
+                "Accredited with NAAC A+ in first cycle round",
+                "20+ Certification courses for enhancement of skills",
+                "Value added skills and incubations",
+                "CSDC: PATHWAY TOWARDS CORPORATE READINESS",
+                "CRC: SUPPORTIVE HAND FOR PLACEMENT",
+            ];
+
+            const container = document.getElementById("circle-container");
+            const semiCirclePath = document.querySelector("#semiCirclePath");
+            let semiIndex = 0;
+
+            function createMovingCard(text) {
+                const card = document.createElement("div");
+                card.className = "absolute flex items-center justify-center w-40 h-40 bg-white shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px] rounded-full text-center text-xs p-2";
+                card.textContent = text;
+                container.appendChild(card);
+
+                gsap.set(card, { opacity: 0 });
+
+                gsap.to(card, {
+                    opacity: 1,
+                    duration: 0.5,
+                    ease: "power1.inOut",
+                });
+
+                gsap.to(card, {
+                    motionPath: {
+                        path: semiCirclePath,
+                        align: semiCirclePath,
+                        alignOrigin: [0.5, 0.5],
+                        autoRotate: true,
+                    },
+                    duration: 15,
+                    ease: "power1.inOut",
+                    onComplete: () => card.remove(),
+                });
+            }
+
+            function startAnimation() {
+                setInterval(() => {
+                    createMovingCard(dataPoints[semiIndex]);
+                    semiIndex = (semiIndex + 1) % dataPoints.length;
+                }, 2500);
+            }
+
+            startAnimation();
         </script>
     </body>
 </html>
