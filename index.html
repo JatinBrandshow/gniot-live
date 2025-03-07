@@ -297,13 +297,13 @@
             </div>
         </section>
 
-        <!-- <section class="min-h-[60vh] relative bg-[url('/img/building-gniot.webp')] bg-cover bg-no-repeat bg-center flex items-center">
+        <section class="min-h-[60vh] relative bg-[url('/img/building-gniot.webp')] bg-cover bg-no-repeat bg-center flex items-center">
             <div class="absolute bg-blue-900 inset-0 opacity-90 z-0"></div>
-            <div class="relative max-w-[1400px] mx-auto px-6 z-10 text-center py-10">
-                <h3 class="text-5xl font-bold text-white mb-10">Awards & Recognitions</h3>
-                <div id="awards-container" class="grid grid-cols-4 max-md:grid-cols-2 max-sm:grid-cols-1 gap-6 p-6"></div>
+            <div class="relative max-w-[1400px] mx-auto px-6 z-10 text-center py-10 max-md:px-4 max-sm:px-3 max-lg:py-8 max-md:py-7 max-sm:py-5">
+                <h3 class="text-5xl font-bold text-white mb-10 max-lg:mb-8 max-md:mb-6 max-sm:mb-4 max-lg:text-4xl max-md:text-3xl max-sm:text-2xl">Awards & Recognitions</h3>
+                <div id="awards-container" class="grid grid-cols-4 max-md:grid-cols-2 max-sm:grid-cols-1 gap-6 p-6 max-lg:gap-5 max-md:gap-4 max-sm:gap-3 max-lg:p-5 max-md:p-4 max-sm:p-3"></div>
             </div>
-        </section> -->
+        </section>
 
         <div class="placement-component relative bg-primary h-auto w-full pt-[5rem] pb-12 mt-[10rem]">
             <div class="max-w-6xl mx-auto px-4 absolute top-[-10rem] left-0 right-0">
@@ -909,7 +909,7 @@
 
             awards.forEach((award) => {
                 const awardDiv = document.createElement("div");
-                awardDiv.className = "p-4 rounded-lg h-24 flex justify-center items-center text-center transition-all duration-300 group";
+                awardDiv.className = "p-4 rounded-lg h-24 flex justify-center items-center text-center transition-all duration-300 group max-md:p-3 max-sm:p-2";
 
                 awardDiv.innerHTML = `
                     <div class="flex items-center gap-2">
@@ -917,7 +917,7 @@
                         <h4 class="font-semibold text-base text-white group-hover:hidden">${award.title}</h4>
                         <img src="${award.rightImage}" alt="Right Image" class="w-10 h-20 group-hover:hidden">
                     </div>
-                    <p class="hidden text-white text-sm p-4 rounded-lg bg-gradient-to-r from-blue-500 to-purple-500 shadow-lg group-hover:block">
+                    <p class="hidden text-white text-sm p-4 rounded-lg bg-gradient-to-r from-blue-500 to-purple-500 shadow-lg group-hover:block max-md:p-3 max-sm:p-2">
                         ${award.description}
                     </p>
                 `;
