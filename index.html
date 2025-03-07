@@ -72,16 +72,16 @@
         <section class="relative bg-fixed h-[60vh] bg-cover bg-center max-sm:h-[60vh] max-sm:py-6" style="background-image: url('/img/about/transforming-education.webp');">
             <div class="max-w-7xl mx-auto flex items-center h-full px-2">
                 <div class="max-w-xl text-white">
-                    <h1 class="text-5xl font-semibold leading-loose font-playfair max-md:text-3xl max-sm:text-2xl">
+                    <h1 class="text-5xl font-semibold leading-loose max-lg:text-4xl max-md:text-3xl max-sm:text-2xl">
                         WHO WE ARE ?
                     </h1>
-                    <p class="mt-4 text-lg leading-relaxed text-justify max-md:text-base max-sm:text-sm">
+                    <p class="mt-4 text-lg leading-relaxed max-md:text-base max-sm:text-sm">
                         Greater Noida Institute of Technology (GNIOT) is one of the premier Institutions in the field of Technical and Management Education. It has been formed by Shri Ram Educational Trust, Noida . The Trust was formed in
                         the year 2000 and the Institute was established in the year 2001. The Trust has had a meteoric rise, and on date, has established a chain of educational institutions covering the fields of engineering and management
                         leading towards Graduate and Post Graduate degrees.
                     </p>
-                    <p class="mt-4 text-lg leading-relaxed text-justify max-md:text-base max-sm:text-sm">
-                        It has been approved by AICTE, Ministry of HRD, Government of India and affiliated to Dr. A.P.J. Abdul Kalam Technical University, Lucknow .Also accredited with NAAC A+ in first cycle round which represents Strong
+                    <p class="mt-4 text-lg leading-relaxed max-md:text-base max-sm:text-sm">
+                        It has been approved by AICTE, Ministry of HRD, Government of India and affiliated to Dr. A.P.J. Abdul Kalam Technical University, Lucknow. Also accredited with NAAC A+ in first cycle round which represents Strong
                         Academic Framework & Student-Centric Practices.​
                     </p>
                 </div>
@@ -89,14 +89,14 @@
         </section>
 
         <section class="px-2 overflow-hidden">
-            <div class="bg-white py-10 px-16 max-lg:py-7 max-lg:px-8 max-md:py-5 max-md:px-6 max-sm:px-3 max-sm:py-3">
+            <div class="bg-white py-10 px-16 max-lg:py-7 max-lg:px-8 max-md:py-5 max-md:px-6 max-sm:px-0 max-sm:py-3">
                 <h1 class="text-4xl flex items-center justify-center gap-2 max-lg:text-3xl max-md:text-2xl max-sm:text-xl font-bold">
                     Placements – Our Key Recruiters
                 </h1>
-                <div class="relative w-full overflow-hidden my-8 space-y-6 py-7">
-                    <div class="flex space-x-6 animate-[scroll-right_120s_linear_infinite] w-max" id="logoRow1"></div>
-                    <div class="flex space-x-6 animate-[scroll-left_120s_linear_infinite] w-max" id="logoRow2"></div>
-                    <div class="flex space-x-6 animate-[scroll-right_120s_linear_infinite] w-max" id="logoRow3"></div>
+                <div class="relative w-full overflow-hidden space-y-6 py-7 max-lg:py-6 max-md:py-5 max-sm:py-4">
+                    <div class="flex space-x-6 animate-[scroll-right_120s_linear_infinite] w-max max-lg:spaxe-x-4 max-md:spaxe-x-3 max-sm:space-x-2" id="logoRow1"></div>
+                    <div class="flex space-x-6 animate-[scroll-left_120s_linear_infinite] w-max max-lg:spaxe-x-4 max-md:spaxe-x-3 max-sm:space-x-2" id="logoRow2"></div>
+                    <div class="flex space-x-6 animate-[scroll-right_120s_linear_infinite] w-max max-lg:spaxe-x-4 max-md:spaxe-x-3 max-sm:space-x-2" id="logoRow3"></div>
                 </div>
             </div>
         </section>
@@ -590,7 +590,7 @@
 
                     logos.forEach((logo) => {
                         let div = document.createElement("div");
-                        div.classList.add("flex", "justify-center", "items-center", "border", "rounded-full", "shadow-lg", "h-20", "w-40", "max-sm:h-12", "px-3", "py-2");
+                        div.classList.add("flex", "justify-center", "items-center", "border", "rounded-full", "shadow-lg", "h-20", "w-40", "max-sm:h-12", "px-3", "py-2","max-md:px-2","max-md:py-1.5","max-sm:px-1.5","max-sm:py-1");
                         div.innerHTML = `<img src="${logo}" class="h-full w-full object-contain" loading="lazy"/>`;
                         container.appendChild(div.cloneNode(true));
                         duplicateContainer.appendChild(div.cloneNode(true));
