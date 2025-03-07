@@ -117,32 +117,32 @@
             </div>
         </section> -->
 
-        <section class="relative h-[80vh] bg-[url('/img/gniot-banner.webp')] text-white overflow-hidden">
+        <section class="relative bg-[url('/img/gniot-banner.webp')] bg-no-repeat bg-cover text-white overflow-hidden py-12 max-lg:py-10 max-md:py-8 max-sm:py-6 ">
             <div class="absolute inset-0 bg-black/50 bg-blend-multiply"></div>
-            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 px-4 py-12 relative z-10">
-                <div class="flex flex-col justify-center space-y-6">
-                    <h1 id="program-name" class="text-5xl md:text-6xl font-bold tracking-tight">
+            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 px-4 py-6 relative z-10">
+                <div class="flex flex-col justify-center space-y-6 max-lg:space-y-5 max-md:space-y-4 max-sm:space-y-3">
+                    <h1 id="program-name" class="text-6xl font-bold tracking-tight max-lg:text-5xl max-md:text-4xl max-sm:text-3xl">
                         B.Tech
                     </h1>
-                    <p class="text-xl md:text-2xl leading-relaxed" id="program-description">
+                    <p class="text-2xl leading-relaxed max-lg:text-xl max-md:text-lg max-sm:text-base"id="program-description">
                         Grooming leaders who are not only thorough professionals but also good human beings with values.
                     </p>
-                    <div class="mt-4">
-                        <p class="text-lg">This is why we are consistently ranked</p>
-                        <p class="text-7xl font-bold">No.1</p>
+                    <div class="mt-4 space-y-2 max-md:mt-3 max-sm:mt-2">
+                        <p class="text-lg max-md:text-base max-sm:text-base ">This is why we are consistently ranked</p>
+                        <p class="text-7xl font-bold max-lg:text-5xl max-md:text-4xl max-sm:text-3xl">No.1</p>
                     </div>
-                    <div class="pt-6">
-                        <a href="#" class="inline-block border-2 border-white px-6 py-3 text-white hover:bg-white hover:text-blue-900 transition-colors"> Read More About <span id="program-link">B.Tech</span> </a>
+                    <div class="pt-6 max-lg:pt-5 max-md:pt-4 max-sm:pt-3">
+                        <a href="#" class="inline-block border-2 border-white px-6 py-3 text-white hover:bg-white hover:text-blue-900 transition-colors max-md:py-2.5 max-md:px-4 max-sm:py-2 max-sm:px-3"> Read More About <span id="program-link">B.Tech</span> </a>
                     </div>
                 </div>
 
                 <div class="flex flex-col justify-center space-y-12">
-                    <div id="stats-container" class="grid grid-cols-4 gap-4 text-center"></div>
+                    <div id="stats-container" class="grid grid-cols-4 gap-4 text-center max-lg:grid-cols-3 max-md:grid-cols-3 max-sm:grid-cols-2 max-md:gap-3 max-sm:gap-2 "></div>
                 </div>
             </div>
 
-            <div class="max-w-7xl mx-auto px-2">
-                <div id="company-Logo" class="grid grid-cols-5 gap-4 justify-center items-center"></div>
+            <div class=" relative max-w-7xl mx-auto px-2 z-10">
+                <div id="company-Logo" class="grid grid-cols-5 gap-4 justify-center items-center max-md:grid-cols-3 max-sm:grid-cols-2 max-md:gap-3 max-sm:gap-2 "></div>
             </div>
         </section>
 
@@ -299,13 +299,13 @@
             </div>
         </section>
 
-        <section class="min-h-[60vh] relative bg-[url('/img/building-gniot.webp')] bg-cover bg-no-repeat bg-center flex items-center">
+        <!-- <section class="min-h-[60vh] relative bg-[url('/img/building-gniot.webp')] bg-cover bg-no-repeat bg-center flex items-center">
             <div class="absolute bg-blue-900 inset-0 opacity-90 z-0"></div>
             <div class="relative max-w-[1400px] mx-auto px-6 z-10 text-center py-10">
                 <h3 class="text-5xl font-bold text-white mb-10">Awards & Recognitions</h3>
                 <div id="awards-container" class="grid grid-cols-4 max-md:grid-cols-2 max-sm:grid-cols-1 gap-6 p-6"></div>
             </div>
-        </section>
+        </section> -->
 
         <div class="placement-component relative bg-primary h-auto w-full pt-[5rem] pb-12 mt-[10rem]">
             <div class="max-w-6xl mx-auto px-4 absolute top-[-10rem] left-0 right-0">
@@ -724,10 +724,10 @@
 
                 program.stats.forEach((stat) => {
                     const statDiv = document.createElement("div");
-                    statDiv.className = "space-y-2";
+                    statDiv.className = "space-y-2 max-sm:space-y-1.5";
                     statDiv.innerHTML = `
-                <h2 class="text-4xl md:text-5xl font-bold">${stat.value}</h2>
-                <p class="text-sm md:text-base">${stat.label}</p>
+                <h2 class="text-5xl font-bold max-lg:text-4xl max-md:text-3xl max-sm:text-2xl">${stat.value}</h2>
+                <p class="text-base max-md:text-sm max-sm:text-xs">${stat.label}</p>
             `;
                     statsContainer.appendChild(statDiv);
                 });
