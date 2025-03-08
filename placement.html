@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="placement-component relative bg-primary h-auto w-full pt-[5rem] pb-12 mt-[10rem]">
+            <div class="max-w-6xl mx-auto px-4 absolute top-[-10rem] left-0 right-0">
+                <div class="card-slider relative pt-12">
+                    <div class="slider-container overflow-hidden">
+                        <div id="slider" class="flex transition-transform duration-500 ease-in-out"></div>
+                    </div>
+
+                    <button id="prevBtn" class="absolute left-1 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg z-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+                    <button id="nextBtn" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg z-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="max-w-7xl mx-auto mt-12 py-6">
+                <div class="marquee">
+                    <div class="marquee-content"></div>
+                </div>
+            </div>
+
+            <div class="max-w-4xl mx-auto px-4 mt-2">
+                <div class="grid grid-cols-4 gap-6 text-center text-white max-md:grid-cols-4 max-sm:grid-cols-2">
+                    <div class="p-4 max-lg:p-3 max-md:p-2.5 max-sm:p-2">
+                        <h2 class="text-4xl font-bold max-lg:text-3xl max-md:text-2xl max-sm:text-xl">9000+</h2>
+                        <p class="text-base mt-2 max-md:text-sm max-sm:text-xs">Placement</p>
+                        <p class="text-base max-md:text-sm max-sm:text-xs">Offers</p>
+                    </div>
+                    <div class="p-4 max-lg:p-3 max-md:p-2.5 max-sm:p-2">
+                        <h2 class="text-4xl font-bold max-lg:text-3xl max-md:text-2xl max-sm:text-xl">900+</h2>
+                        <p class="text-base mt-2 max-md:text-sm max-sm:text-xs">Company Visited</p>
+                        <p class="text-base max-md:text-sm max-sm:text-xs">for Recruitment</p>
+                    </div>
+                    <div class="p-4 max-lg:p-3 max-md:p-2.5 max-sm:p-2">
+                        <h2 class="text-4xl font-bold max-lg:text-3xl max-md:text-2xl max-sm:text-xl">54.75<span class="text-lg">LPA</span></h2>
+                        <p class="text-base mt-2 max-md:text-sm max-sm:text-xs">Highest National</p>
+                        <p class="text-base max-md:text-sm max-sm:text-xs">Package Offered</p>
+                    </div>
+                    <div class="p-4 max-lg:p-3 max-md:p-2.5 max-sm:p-2">
+                        <h2 class="text-4xl font-bold max-lg:text-3xl max-md:text-2xl max-sm:text-xl">1.7<span class="text-lg">CR</span></h2>
+                        <p class="text-base mt-2 max-md:text-sm max-sm:text-xs">Highest International</p>
+                        <p class="text-base max-md:text-sm max-sm:text-xs">Package Offered</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="max-w-5xl mx-auto px-4 mt-2">
+                <div class="flex flex-wrap justify-center text-center text-white">
+                    <div class="w-1/2 md:w-1/5 p-4 border-r border-white/20 last:border-r-0 max-lg:p-3 max-md:p-2.5 max-sm:p-2">
+                        <h2 class="text-3xl font-bold max-md:text-2xl max-sm:text-xl">20<span class="text-sm">LPA</span></h2>
+                        <p class="mt-1 text-sm max-sm:text-xs">Package Offered by</p>
+                        <p class="text-sm max-sm:text-xs">90+ Companies</p>
+                    </div>
+                    <div class="w-1/2 md:w-1/5 p-4 border-r border-white/20 last:border-r-0 max-lg:p-3 max-md:p-2.5 max-sm:p-2">
+                        <h2 class="text-3xl font-bold max-md:text-2xl max-sm:text-xl">15<span class="text-sm">LPA</span></h2>
+                        <p class="mt-1 text-sm max-sm:text-xs">Package Offered by</p>
+                        <p class="text-sm max-sm:text-xs">60+ Companies</p>
+                    </div>
+                    <div class="w-1/2 md:w-1/5 p-4 border-r border-white/20 last:border-r-0 max-lg:p-3 max-md:p-2.5 max-sm:p-2">
+                        <h2 class="text-3xl font-bold max-md:text-2xl max-sm:text-xl">10<span class="text-sm">LPA</span></h2>
+                        <p class="mt-1 text-sm max-sm:text-xs">Package Offered by</p>
+                        <p class="text-sm max-sm:text-xs">200+ Companies</p>
+                    </div>
+                    <div class="w-1/2 md:w-1/5 p-4 border-r border-white/20 last:border-r-0 max-lg:p-3 max-md:p-2.5 max-sm:p-2">
+                        <h2 class="text-3xl font-bold max-md:text-2xl max-sm:text-xl">7<span class="text-sm">LPA</span></h2>
+                        <p class="mt-1 text-sm max-sm:text-xs">Package Offered by</p>
+                        <p class="text-sm max-sm:text-xs">127 Companies</p>
+                    </div>
+                    <div class="w-1/2 md:w-1/5 p-4 max-lg:p-3 max-md:p-2.5 max-sm:p-2">
+                        <h2 class="text-3xl font-bold max-md:text-2xl max-sm:text-xl">5<span class="text-sm">LPA</span></h2>
+                        <p class="mt-1 text-sm max-sm:text-xs">Package Offered by</p>
+                        <p class="text-sm max-sm:text-xs">500+ Companies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            .marquee {
+                white-space: nowrap;
+                overflow: hidden;
+            }
+
+            .marquee-content {
+                display: inline-block;
+                animation: marquee 30s linear infinite;
+            }
+
+            @keyframes marquee {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(-50%);
+                }
+            }
+
+            .card-slider {
+                margin-top: -50px;
+            }
+
+            @media (max-width: 768px) {
+                .card-slider {
+                    margin-top: -30px;
+                }
+            }
+        </style>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: "#0a558c",
+                            secondary: "#f8fafc",
+                            accent: "#fbbf24",
+                            danger: "#dc2626",
+                        },
+                    },
+                },
+            };
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const placementData = [
+                    {
+                        name: "Siddhant",
+                        surname: "Bhardwaj",
+                        details: "Hired by Dr. Damo Manna",
+                        subDetails: "Inove (Artifex, Educator & Humanitarian)",
+                        package: "1.7",
+                        packageUnit: "CRORE",
+                        packageLabel: "Salary Package",
+                        image: "/img/placements/placements-1.webp",
+                        companyLogo: "/img/affiliation/affiliation-40.webp",
+                    },
+                    {
+                        name: "Gaurav",
+                        surname: "Kumar",
+                        details: "Placed in Nutanix",
+                        subDetails: "",
+                        package: "51.00",
+                        packageUnit: "LPA",
+                        packageLabel: "Salary Package",
+                        image: "/img/placements/placements-1.webp",
+                        companyLogo: "/img/affiliation/affiliation-40.webp",
+                    },
+                    {
+                        name: "Priya",
+                        surname: "Sharma",
+                        details: "Placed in Google",
+                        subDetails: "",
+                        package: "45.50",
+                        packageUnit: "LPA",
+                        packageLabel: "Salary Package",
+                        image: "/img/placements/placements-1.webp",
+                        companyLogo: "/img/affiliation/affiliation-40.webp",
+                    },
+                    {
+                        name: "Rahul",
+                        surname: "Verma",
+                        details: "Placed in Microsoft",
+                        subDetails: "",
+                        package: "42.75",
+                        packageUnit: "LPA",
+                        packageLabel: "Salary Package",
+                        image: "/img/placements/placements-1.webp",
+                        companyLogo: "/img/affiliation/affiliation-40.webp",
+                    },
+                    {
+                        name: "Ananya",
+                        surname: "Patel",
+                        details: "Placed in Amazon",
+                        subDetails: "",
+                        package: "40.25",
+                        packageUnit: "LPA",
+                        packageLabel: "Salary Package",
+                        image: "/img/placements/placements-1.webp",
+                        companyLogo: "/img/affiliation/affiliation-40.webp",
+                    },
+                    {
+                        name: "Vikram",
+                        surname: "Singh",
+                        details: "Placed in Facebook",
+                        subDetails: "",
+                        package: "38.50",
+                        packageUnit: "LPA",
+                        packageLabel: "Salary Package",
+                        image: "/img/placements/placements-1.webp",
+                        companyLogo: "/img/affiliation/affiliation-40.webp",
+                    },
+                ];
+
+                const companies = [
+                    { name: "IBM", logo: "/img/affiliation/affiliation-1.webp" },
+                    { name: "Flipkart", logo: "/img/affiliation/affiliation-2.webp" },
+                    { name: "KPMG", logo: "/img/affiliation/affiliation-3.webp" },
+                    { name: "Deloitte", logo: "/img/affiliation/affiliation-4.webp" },
+                    { name: "Sapient", logo: "/img/affiliation/affiliation-5.webp" },
+                    { name: "Cognizant", logo: "/img/affiliation/affiliation-6.webp" },
+                    { name: "VMware", logo: "/img/affiliation/affiliation-7.webp" },
+                    { name: "Schneider", logo: "/img/affiliation/affiliation-8.webp" },
+                    { name: "Hitachi", logo: "/img/affiliation/affiliation-9.webp" },
+                    { name: "L&T", logo: "/img/affiliation/affiliation-10.webp" },
+                    { name: "IBM", logo: "/img/affiliation/affiliation-11.webp" },
+                    { name: "Flipkart", logo: "/img/affiliation/affiliation-12.webp" },
+                    { name: "KPMG", logo: "/img/affiliation/affiliation-13.webp" },
+                    { name: "Deloitte", logo: "/img/affiliation/affiliation-14.webp" },
+                    { name: "Sapient", logo: "/img/affiliation/affiliation-15.webp" },
+                    { name: "Cognizant", logo: "/img/affiliation/affiliation-16.webp" },
+                    { name: "VMware", logo: "/img/affiliation/affiliation-17.webp" },
+                    { name: "Schneider", logo: "/img/affiliation/affiliation-18.webp" },
+                    { name: "Hitachi", logo: "/img/affiliation/affiliation-19.webp" },
+                    { name: "L&T", logo: "/img/affiliation/affiliation-20.webp" },
+                ];
+
+                const slider = document.getElementById("slider");
+
+                placementData.forEach((person) => {
+                    const card = document.createElement("div");
+                    card.className = "flex-shrink-0 w-1/2 max-sm:w-full p-2";
+                    card.innerHTML = `
+                            <div class="bg-black text-white rounded-lg overflow-hidden shadow-lg flex flex-col md:flex-row h-[17rem] relative">
+                                <div class="py-1 px-2 flex-1 relative">
+                                    <h3 class="text-2xl font-bold text-yellow-400">${person.name}</h3>
+                                    <h3 class="text-xl font-bold text-yellow-400 mb-2">${person.surname}</h3>
+                                    <p class="text-sm mb-1">${person.details}</p>
+
+                                     <div class="bg-white/10 rounded inline-block">
+                                        <img src="${person.companyLogo}" alt="Company Logo" class="h-12 w-32 rounded-md">
+                                    </div>
+                                </div>
+
+                                <div class="relative flex-1 h-full">
+                                    <img src="${person.image}" alt="${person.name}" class="absolute left-1/2 lg:left-0 -translate-x-1/2 bottom-0 h-32 md:h-48 lg:h-72">
+
+                                    <div class="absolute top-4 right-4 text-right p-2">
+                                        <h4 class="text-3xl font-bold text-white">${person.package}</h4>
+                                        <p class="text-sm text-white">${person.packageUnit}</p>
+                                        <p class="text-xs text-white">${person.packageLabel}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                    slider.appendChild(card);
+                });
+
+                const marqueeContent = document.querySelector(".marquee-content");
+
+                for (let i = 0; i < 2; i++) {
+                    companies.forEach((company) => {
+                        const logoContainer = document.createElement("div");
+                        logoContainer.className = "inline-block mx-4 bg-white p-1 rounded-md w-32 object-cover max-sm:mx-1.5";
+                        logoContainer.innerHTML = `
+                                <img src="${company.logo}" alt="${company.name}" class="h-12 mx-auto">
+                            `;
+                        marqueeContent.appendChild(logoContainer);
+                    });
+                }
+
+                const prevBtn = document.getElementById("prevBtn");
+                const nextBtn = document.getElementById("nextBtn");
+                let currentIndex = 0;
+                const cardWidth = 100;
+                const visibleCards = window.innerWidth >= 768 ? 2 : 1;
+                const maxIndex = placementData.length - visibleCards;
+
+                function updateSlider() {
+                    const translateValue = -currentIndex * (cardWidth / visibleCards);
+                    slider.style.transform = `translateX(${translateValue}%)`;
+                }
+
+                prevBtn.addEventListener("click", () => {
+                    currentIndex = Math.max(0, currentIndex - 1);
+                    updateSlider();
+                });
+
+                nextBtn.addEventListener("click", () => {
+                    currentIndex = Math.min(maxIndex, currentIndex + 1);
+                    updateSlider();
+                });
+
+                setInterval(() => {
+                    currentIndex = currentIndex >= maxIndex ? 0 : currentIndex + 1;
+                    updateSlider();
+                }, 5000);
+
+                window.addEventListener("resize", () => {
+                    const newVisibleCards = window.innerWidth >= 768 ? 2 : 1;
+                    if (newVisibleCards !== visibleCards) {
+                        const newMaxIndex = placementData.length - newVisibleCards;
+                        currentIndex = Math.min(currentIndex, newMaxIndex);
+                        updateSlider();
+                    }
+                });
+
+                let marqueeInterval;
+
+                function startMarquee() {
+                    clearInterval(marqueeInterval);
+                    marqueeInterval = setInterval(() => {
+                        const firstLogo = marqueeContent.firstElementChild;
+                        const width = firstLogo.offsetWidth + Number.parseInt(getComputedStyle(firstLogo).marginLeft) + Number.parseInt(getComputedStyle(firstLogo).marginRight);
+
+                        marqueeContent.style.transition = "transform 1s ease-in-out";
+                        marqueeContent.style.transform = `translateX(-${width}px)`;
+
+                        //   setTimeout(() => {
+                        //     marqueeContent.style.transition = "none"
+                        //     marqueeContent.style.transform = "translateX(0)"
+                        //     marqueeContent.appendChild(firstLogo)
+                        //   }, 1000)
+                    }, 3000);
+                }
+
+                startMarquee();
+            });
+        </script>
+    </body>
+</html>
