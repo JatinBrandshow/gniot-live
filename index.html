@@ -514,6 +514,18 @@
             </div>
         </section>
 
+        <section class="max-w-[1500px] mx-auto px-2">
+            <div class="relative sm:px-4 px-0 py-10">
+                <div class="">
+                    <div class="overflow-hidden">
+                        <div id="alumniSlider" class="flex transition-transform duration-500 ease-in-out"></div>
+                        <button id="prev" class="absolute md:left-10 left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white py-2 px-4 rounded-full">&#10094;</button>
+                        <button id="next" class="absolute md:right-12 right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white py-2 px-4 rounded-full">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <div class="placement-component relative bg-primary h-auto w-full pt-[5rem] pb-12 mt-[10rem]">
             <div class="max-w-6xl mx-auto px-4 absolute top-[-10rem] left-0 right-0">
                 <div class="card-slider relative pt-12">
@@ -1533,6 +1545,272 @@
                     },
                 },
             });
+        </script>
+
+        <script>
+            const data = [
+                {
+                    image: "img/alumni/alumni-1.webp",
+                    title: "ALUMNI",
+                    subheading: "Endless Growth Opportunities",
+                    text: "I have secured a role at Google India. My college played a major role in my success.",
+                    name: "Ms. Suruchi Sharan",
+                    designation: "AGM- Marketing and Communication MacMillan Education, India",
+                },
+                {
+                    image: "img/alumni/alumni-3.webp",
+                    title: "ALUMNI",
+                    subheading: "From Learning to Leading",
+                    text: "Thanks to my college, I am now leading projects at Microsoft.",
+                    name: "Mr. Anupam Singh",
+                    designation: "Senior Manager Mphasis California, US",
+                },
+                {
+                    image: "img/alumni/alumni-2.webp",
+                    title: "ALUMNI",
+                    subheading: "Achieving Dreams",
+                    text: "I have been fortunate to be part of this university, thanks to my education.",
+                    name: "Ms. Jaya Pant",
+                    designation: "Co- Founder, Big Tree Resource Management",
+                },
+                {
+                    image: "img/alumni/alumni-4.webp",
+                    title: "ALUMNI",
+                    subheading: "Bridging Knowledge and Success",
+                    text: "I am proud to be part of Larsen & Toubro HR team.",
+                    name: "Mr. Shariq Ahmed",
+                    designation: "Manager-HR Larsen & Toubro",
+                },
+                {
+                    image: "img/alumni/alumni-5.webp",
+                    title: "ALUMNI",
+                    subheading: "Shaping a Better Future",
+                    text: "I owe my success at CISF to my professors and mentors.",
+                    name: "Mr. Pawan Kumar",
+                    designation: "Deputy Commandant Central Industrial Security Force (CISF)",
+                },
+                {
+                    image: "img/alumni/alumni-6.webp",
+                    title: "ALUMNI",
+                    subheading: "Hard Work Pays Off",
+                    text: "Today I am at HCL, and it all started with my college foundation.",
+                    name: "Mr. Anant Singhal",
+                    designation: "Deputy General Manager, HCL Technologies",
+                },
+                {
+                    image: "img/alumni/alumni-7.webp",
+                    title: "ALUMNI",
+                    subheading: "Transforming Vision into Reality",
+                    text: "I am grateful for my journey from college to Lohmann & Raucher.",
+                    name: "Mr. Ravi Yadav",
+                    designation: "Regional Manager Organisation Lohmann & Raucher",
+                },
+                {
+                    image: "img/alumni/alumni-8.webp",
+                    title: "ALUMNI",
+                    subheading: "Innovation and Excellence",
+                    text: "I am making an impact at Hindustan Petroleum with the skills I learned.",
+                    name: "Mr. Ravi Singh",
+                    designation: "GM Technical ,Hindustan Petroleum",
+                },
+                {
+                    image: "img/alumni/alumni-9.webp",
+                    title: "ALUMNI",
+                    subheading: "From Campus to Corporate",
+                    text: "Being here has been a dream come true.",
+                    name: "Mr. Kshitij Bansal",
+                    designation: "ENGINEER Merchant officer",
+                },
+                {
+                    image: "img/alumni/alumni-10.webp",
+                    title: "ALUMNI",
+                    subheading: "Pushing Boundaries",
+                    text: "I found my passion for civil services at GNIOT.",
+                    name: "Mr. Sumit Kr. Arya",
+                    designation: " Deputy SP, Patna",
+                },
+                {
+                    image: "img/alumni/alumni-11.webp",
+                    title: "ALUMNI",
+                    subheading: "Building a Brighter Tomorrow",
+                    text: "I am making strides in Management Consultant at Sydney.",
+                    name: "Mr. Harshit Bajpai",
+                    designation: "Management Consultant Sydney, Australia",
+                },
+                {
+                    image: "img/alumni/alumni-12.webp",
+                    title: "ALUMNI",
+                    subheading: "Achieving the Extraordinary",
+                    text: "I turned my education into a successful career at Natwest Bank.",
+                    name: "Mr. Avinash Kr. Tripathi",
+                    designation: "Manager, Natwest Bank",
+                },
+                {
+                    image: "img/alumni/alumni-13.webp",
+                    title: "ALUMNI",
+                    subheading: "Building a Brighter Tomorrow",
+                    text: "My transition from college to CNH Industrial has been an incredible learning experience, and I’m deeply grateful for it.",
+                    name: "Ms. Mansi Mishra",
+                    designation: "Site Coordinator PD, CNH Industrial (India) Pvt Ltd",
+                },
+                {
+                    image: "img/alumni/alumni-14.webp",
+                    title: "ALUMNI",
+                    subheading: "Building a Brighter Tomorrow",
+                    text: "Joining Oppo Mobile India straight out of college was a dream come true, and I cherish every moment of this journey.",
+                    name: "Mr. Shubham Rai",
+                    designation: "Process Quality Control Engineer ,Oppo Mobile India Pvt Ltd",
+                },
+                {
+                    image: "img/alumni/alumni-15.webp",
+                    title: "ALUMNI",
+                    subheading: "Building a Brighter Tomorrow",
+                    text: "From a student to an engineer at Bristol, my journey has been nothing short of inspiring.",
+                    name: "Mr. Rajesh Pandey",
+                    designation: "Technical Architect Bristol, United Kingdom TCS",
+                },
+                {
+                    image: "img/alumni/alumni-16.webp",
+                    title: "ALUMNI",
+                    subheading: "Building a Brighter Tomorrow",
+                    text: "I feel truly blessed to have started my career at Infosys after graduating from college.",
+                    name: "Ms. Ayushi Bajpai",
+                    designation: "Senior Cyber Security Engineer Infosys Limited USA",
+                },
+                {
+                    image: "img/alumni/alumni-17.webp",
+                    title: "ALUMNI",
+                    subheading: "Building a Brighter Tomorrow",
+                    text: "The leap from college to Asian Paints was challenging but immensely rewarding, and I couldn’t be more thankful.",
+                    name: "Mr. Kishan Kumar",
+                    designation: "Executive 1st Retail Sales Asian Paints",
+                },
+                {
+                    image: "img/alumni/alumni-18.webp",
+                    title: "ALUMNI",
+                    subheading: "Building a Brighter Tomorrow",
+                    text: "Moving from college to ITC limited has been an exciting ride, and I appreciate every opportunity that came my way.",
+                    name: "Ms. Navda Tyagi",
+                    designation: "Sales Officer Institutional Delhi Head ITC limited",
+                },
+                {
+                    image: "img/alumni/alumni-19.webp",
+                    title: "ALUMNI",
+                    subheading: "Building a Brighter Tomorrow",
+                    text: "Stepping into the professional world with Radisson Blu after college has been a fulfilling experience.",
+                    name: "Tipu Sakia",
+                    designation: "Senior Executive — Corporate, Radisson Blu",
+                },
+                {
+                    image: "img/alumni/alumni-20.webp",
+                    title: "ALUMNI",
+                    subheading: "Building a Brighter Tomorrow",
+                    text: "My journey from a college student to a Examiner Of Patents has shaped me in ways I never imagined.",
+                    name: "Mr. Aashis Kr. Singh",
+                    designation: "Examiner Of Patents and Design ( Ministry of Commerce and Industry).",
+                },
+                {
+                    image: "img/alumni/alumni-21.webp",
+                    title: "ALUMNI",
+                    subheading: "Building a Brighter Tomorrow",
+                    text: "The transition from my academic life to working at DXC Technologies has been a remarkable  experience.",
+                    name: "Mr. Deepak Sharma",
+                    designation: "Service Delivery Coordinator  DXC Technologies",
+                },
+                {
+                    image: "img/alumni/alumni-22.webp",
+                    title: "ALUMNI",
+                    subheading: "Building a Brighter Tomorrow",
+                    text: "I am thankful for the opportunity to start my corporate journey at Deloitte right after college.",
+                    name: "Ms. Ritika Saxena",
+                    designation: "Senior Analyst Risk Advisor Deloitte",
+                },
+                {
+                    image: "img/alumni/alumni-23.webp",
+                    title: "ALUMNI",
+                    subheading: "Building a Brighter Tomorrow",
+                    text: "Looking back, I am truly grateful for how my path led me from college to The Economic Times, opening doors to endless possibilities.",
+                    name: "Mr. Omar Farooq",
+                    designation: "Lead- Brand Solutions, The Economic Times, Noida",
+                },
+                {
+                    image: "img/alumni/alumni-24.webp",
+                    title: "ALUMNI",
+                    subheading: "Building a Brighter Tomorrow",
+                    text: "Growing from a fresh graduate to an employee at Samsung has been an incredible adventure.",
+                    name: "Ms. Manali Arora",
+                    designation: "Samsung Research Institute Samsung India Electronics Pvt. Ltd .NOIDA",
+                },
+            ];
+
+            const alumniSlider = document.getElementById("alumniSlider");
+            let slideIndex = 0;
+
+            function renderSlides() {
+                alumniSlider.innerHTML = "";
+                data.forEach((item) => {
+                    const card = `
+                <div class="w-full md:w-1/2 flex-shrink-0 p-4">
+                    <div class="bg-white shadow-lg hover:shadow-xl flex sm:h-[320px] h-[280px] p-6 items-center">
+                        <div class="w-1/3 relative h-full">
+                            <img src="${item.image}" alt="Testimonial Image" class="w-full h-full object-cover filter brightness-50">
+                            <div class="absolute inset-0 opacity-35"></div>
+                        </div>
+                        <div class="w-2/3 pl-6 flex flex-col justify-center">
+                            <p class="text-gray-600 italic text-lg text-center mb-4 text-[15px] lg:text-[20px] ">
+                                ${item.text}
+                            </p>
+                            <div class="mt-4 text-center">
+                                <h4 class="text-blue-600 font-bold text-2xl">${item.name}</h4>
+                                <p class="text-gray-500 text-sm">${item.designation}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>`;
+                    alumniSlider.innerHTML += card;
+                });
+            }
+
+            function updateSlidePosition() {
+                const slidesPerView = window.innerWidth < 768 ? 1 : 2;
+                const totalSlides = data.length;
+                const translateX = -(slideIndex * (100 / slidesPerView)) + "%";
+                alumniSlider.style.transform = `translateX(${translateX})`;
+            }
+
+            function nextSlide() {
+                const maxIndex = data.length - (window.innerWidth < 768 ? 1 : 2);
+                slideIndex = slideIndex < maxIndex ? slideIndex + 1 : 0;
+                updateSlidePosition();
+            }
+
+            function prevSlide() {
+                const maxIndex = data.length - (window.innerWidth < 768 ? 1 : 2);
+                slideIndex = slideIndex > 0 ? slideIndex - 1 : maxIndex;
+                updateSlidePosition();
+            }
+
+            document.getElementById("next").addEventListener("click", () => {
+                nextSlide();
+                resetAutoSlide();
+            });
+
+            document.getElementById("prev").addEventListener("click", () => {
+                prevSlide();
+                resetAutoSlide();
+            });
+
+            window.addEventListener("resize", updateSlidePosition);
+
+            let autoSlide = setInterval(nextSlide, 3000);
+
+            function resetAutoSlide() {
+                clearInterval(autoSlide);
+                autoSlide = setInterval(nextSlide, 3000);
+            }
+
+            renderSlides();
+            updateSlidePosition();
         </script>
     </body>
 </html>
