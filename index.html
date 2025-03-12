@@ -40,84 +40,86 @@
             </div>
         </header>
 
-        <section class="relative h-screen bg-cover bg-center bg-[url('/img/hero-image.jpg')] max-lg:h-fit max-md:h-fit max-sm:h-fit pt-20">
-            <div class="absolute inset-0 bg-black/50"></div>
-            <div class="relative max-w-7xl mx-auto px-6 py-24 flex justify-between items-center h-full gap-5 max-lg:flex-col max-md:flex-col max-sm:flex-col max-sm:space-y-4 max-md:px-4 max-sm:px-2 max-lg:py-20 max-md:py-14 max-sm:py-10">
+        <section class="relative h-screen w-full max-lg:h-fit max-md:h-fit max-sm:h-fit pt-20">
+            <div class="absolute inset-0 bg-black bg-blend-multiply bg-opacity-70 z-10"></div>
+            <video class="absolute inset-0 w-full h-full object-cover" autoplay loop muted>
+                <source src="/video/VID-20250311-WA0063.mp4" type="video/mp4" />
+            </video>
+            <div class="absolute z-10 inset-0 max-w-7xl mx-auto px-6 py-24 flex justify-between items-center h-full gap-5 max-lg:flex-col max-md:flex-col max-sm:flex-col max-sm:space-y-4 max-md:px-4 max-sm:px-2 max-lg:py-20 max-md:py-14 max-sm:py-10">
                 <div class="max-w-lg text-white">
-                    <h3 id="heading" class="text-4xl font-semibold -ml-48 max-lg:text-4xl max-md:text-3xl max-sm:text-2xl max-[1600px]:-ml-28 max-2xl:-ml-14 max-xl:ml-0 max-lg:-ml-16 max-md:-ml-14 max-sm:ml-0">
+                    <h3 id="heading" class="uppercase text-4xl font-semibold -ml-48 max-lg:text-4xl max-md:text-3xl max-sm:text-2xl max-[1600px]:-ml-28 max-2xl:-ml-14 max-xl:ml-0 max-lg:-ml-16 max-md:-ml-14 max-sm:ml-0">
                         COLLABORATE FOR
                     </h3>
-                    <h1
-                        id="subheading"
-                        class="text-[100px] leading-none font-bold text-red-600 -ml-48 max-xl:text-7xl max-lg:text-6xl max-md:text-5xl max-sm:text-3xl max-[1600px]:-ml-28 max-2xl:-ml-14 max-xl:ml-0 max-lg:-ml-16 max-md:-ml-14 max-sm:ml-0"
-                    >
+                    <h1 id="subheading" class="uppercase text-[100px] leading-none font-bold text-red-600 -ml-48 max-xl:text-7xl max-lg:text-6xl max-md:text-5xl max-sm:text-3xl max-[1600px]:-ml-28 max-2xl:-ml-14 max-xl:ml-0 max-lg:-ml-16 max-md:-ml-14 max-sm:ml-0">
                         EFFICIENCY
                     </h1>
                     <p id="paragraph" class="mt-4 text-xl max-lg:text-lg max-md:text-lg max-sm:text-base max-md:mt-3 max-sm:mt-2">
-                        Collaboration fosters efficiency by integrating diverse expertise, streamlining workflows, and driving innovation through teamwork. It strengthens communication, enhances creativity, and accelerates decision-making,
-                        ensuring sustainable growth and success in every field.
+                        Collaboration fosters efficiency by integrating diverse expertise, streamlining workflows, and driving innovation through teamwork. It strengthens communication, enhances creativity, and accelerates decision-making, ensuring sustainable growth and success in every field.
                     </p>
                     <a href="#" class="inline-block mt-6 bg-white text-black px-6 py-3 rounded-lg shadow-md hover:bg-gray-200 transition max-md:py-2 max-sm:py-1.5 max-lg:px-5 max-md:px-4 max-sm:px-3 max-lg:mt-5 max-md:mt-4 max-sm:mt-3">
                         KNOW MORE →
                     </a>
                 </div>
-
-                <div class="w-full max-w-md bg-white/80 p-6 rounded-lg shadow-lg max-lg:p-5 max-lg:max-w-lg max-md:p-4 max-sm:p-3">
-                    <h2 class="text-2xl font-bold text-center text-gray-700 mb-4 max-md:text-xl max-sm:text-lg max-md:mb-3 max-sm:mb-2">
-                        Apply Today For <br />
-                        <span class="text-black">GNIOT Group Programs</span>
-                    </h2>
-                    <form action="#" method="POST" class="space-y-4 max-md:space-y-3 max-sm:space-y-2">
-                        <div class="grid grid-cols-2 gap-2 max-sm:grid-cols-1">
-                            <input type="text" name="name" placeholder="Student Name" class="w-full p-3 border rounded max-sm:p-1.5 max-md:p-2" required />
-                            <input type="email" name="email" placeholder="Student Email ID" class="w-full p-3 border rounded max-sm:p-1.5 max-md:p-2" required />
-                        </div>
-                        <input type="tel" name="mobile" placeholder="Student Mobile No" class="w-full p-3 border rounded max-sm:p-1.5 max-md:p-2" required />
-                        <div class="grid grid-cols-2 gap-2 max-sm:grid-cols-1">
-                            <input type="date" name="dob" class="w-full p-3 border rounded max-sm:p-1.5 max-md:p-2" required />
-                            <input type="text" name="city" placeholder="Student City" class="w-full p-3 border rounded max-sm:p-1.5 max-md:p-2" required />
-                        </div>
-                        <div class="grid grid-cols-2 gap-2 max-sm:grid-cols-1">
-                            <select name="discipline" class="w-full p-3 border rounded max-sm:p-1.5 max-md:p-2" required>
-                                <option value="" disabled selected>Select Discipline</option>
-                                <option value="Engineering">Engineering</option>
-                                <option value="Management">Management</option>
-                            </select>
-                            <select name="program" class="w-full p-3 border rounded max-sm:p-1.5 max-md:p-2" required>
-                                <option value="" disabled selected>Select Program</option>
-                                <option value="B.Tech">B.Tech</option>
-                                <option value="MBA">MBA</option>
-                                <option value="MCA">MCA</option>
-                                <option value="BBA">BBA</option>
-                            </select>
-                        </div>
-                        <button type="submit" class="w-full bg-red-600 text-white p-3 rounded hover:bg-red-700 transition max-sm:p-1.5 max-md:p-2">
-                            APPLY NOW
-                        </button>
-                        <p class="text-center text-gray-600 text-sm mt-2 max-sm:mt-1">
-                            Already Registered?
-                            <a href="#" class="text-red-600 font-semibold">Login</a>
-                        </p>
-                    </form>
-                </div>
             </div>
         </section>
+        
 
         <section class="relative bg-fixed h-[78vh] bg-cover bg-center max-sm:h-[64vh] max-sm:py-6" style="background-image: url('/img/about/transforming-education.webp');">
             <div class="max-w-7xl mx-auto flex items-center h-full max-lg:px-7 max-md:px-5 max-sm:px-3">
-                <div class="max-w-xl text-white">
-                    <h1 class="text-5xl font-semibold leading-loose max-lg:text-4xl max-md:text-3xl max-sm:text-2xl">
-                        WHO WE ARE ?
-                    </h1>
-                    <p class="mt-4 text-lg leading-relaxed max-md:text-base max-sm:text-sm">
-                        Greater Noida Institute of Technology (GNIOT) is one of the premier Institutions in the field of Technical and Management Education. It has been formed by Shri Ram Educational Trust, Noida . The Trust was formed in
-                        the year 2000 and the Institute was established in the year 2001. The Trust has had a meteoric rise, and on date, has established a chain of educational institutions covering the fields of engineering and management
-                        leading towards Graduate and Post Graduate degrees.
-                    </p>
-                    <p class="mt-4 text-lg leading-relaxed max-md:text-base max-sm:text-sm">
-                        It has been approved by AICTE, Ministry of HRD, Government of India and affiliated to Dr. A.P.J. Abdul Kalam Technical University, Lucknow. Also accredited with NAAC A+ in first cycle round which represents Strong
-                        Academic Framework & Student-Centric Practices.
-                    </p>
+                <div class="w-full flex justify-between">
+                    <div class="max-w-xl text-white">
+                        <h1 class="text-5xl font-semibold leading-loose max-lg:text-4xl max-md:text-3xl max-sm:text-2xl">
+                            WHO WE ARE ?
+                        </h1>
+                        <p class="mt-4 text-lg leading-relaxed max-md:text-base max-sm:text-sm">
+                            Greater Noida Institute of Technology (GNIOT) is one of the premier Institutions in the field of Technical and Management Education. It has been formed by Shri Ram Educational Trust, Noida . The Trust was formed in
+                            the year 2000 and the Institute was established in the year 2001. The Trust has had a meteoric rise, and on date, has established a chain of educational institutions covering the fields of engineering and management
+                            leading towards Graduate and Post Graduate degrees.
+                        </p>
+                        <p class="mt-4 text-lg leading-relaxed max-md:text-base max-sm:text-sm">
+                            It has been approved by AICTE, Ministry of HRD, Government of India and affiliated to Dr. A.P.J. Abdul Kalam Technical University, Lucknow. Also accredited with NAAC A+ in first cycle round which represents Strong
+                            Academic Framework & Student-Centric Practices.
+                        </p>
+                    </div>
+    
+                    <div class="w-full max-w-md bg-white/80 p-6 rounded-lg shadow-lg max-lg:p-5 max-lg:max-w-lg max-md:p-4 max-sm:p-3">
+                        <h2 class="text-2xl font-bold text-center text-gray-700 mb-4 max-md:text-xl max-sm:text-lg max-md:mb-3 max-sm:mb-2">
+                            Apply Today For <br />
+                            <span class="text-black">GNIOT Group Programs</span>
+                        </h2>
+                        <form action="#" method="POST" class="space-y-4 max-md:space-y-3 max-sm:space-y-2">
+                            <div class="grid grid-cols-2 gap-2 max-sm:grid-cols-1">
+                                <input type="text" name="name" placeholder="Student Name" class="w-full p-3 border rounded max-sm:p-1.5 max-md:p-2" required />
+                                <input type="email" name="email" placeholder="Student Email ID" class="w-full p-3 border rounded max-sm:p-1.5 max-md:p-2" required />
+                            </div>
+                            <input type="tel" name="mobile" placeholder="Student Mobile No" class="w-full p-3 border rounded max-sm:p-1.5 max-md:p-2" required />
+                            <div class="grid grid-cols-2 gap-2 max-sm:grid-cols-1">
+                                <input type="date" name="dob" class="w-full p-3 border rounded max-sm:p-1.5 max-md:p-2" required />
+                                <input type="text" name="city" placeholder="Student City" class="w-full p-3 border rounded max-sm:p-1.5 max-md:p-2" required />
+                            </div>
+                            <div class="grid grid-cols-2 gap-2 max-sm:grid-cols-1">
+                                <select name="discipline" class="w-full p-3 border rounded max-sm:p-1.5 max-md:p-2" required>
+                                    <option value="" disabled selected>Select Discipline</option>
+                                    <option value="Engineering">Engineering</option>
+                                    <option value="Management">Management</option>
+                                </select>
+                                <select name="program" class="w-full p-3 border rounded max-sm:p-1.5 max-md:p-2" required>
+                                    <option value="" disabled selected>Select Program</option>
+                                    <option value="B.Tech">B.Tech</option>
+                                    <option value="MBA">MBA</option>
+                                    <option value="MCA">MCA</option>
+                                    <option value="BBA">BBA</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="w-full bg-red-600 text-white p-3 rounded hover:bg-red-700 transition max-sm:p-1.5 max-md:p-2">
+                                APPLY NOW
+                            </button>
+                            <p class="text-center text-gray-600 text-sm mt-2 max-sm:mt-1">
+                                Already Registered?
+                                <a href="#" class="text-red-600 font-semibold">Login</a>
+                            </p>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
