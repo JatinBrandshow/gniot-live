@@ -491,7 +491,7 @@
                                         <h3 class="text-black text-xl mt-4 font-semibold">${alumni.name}</h3>
                                         <p class="text-black mt-2 font-medium">${alumni.company}</p>
                                         <p class="text-black text-sm mt-1">${alumni.location}</p>
-                                        <img src="${alumni.company_logo}" alt="${alumni.company} Logo" class="w-16 h-16 mt-3 object-contain">
+                                        ${alumni.company_logo ? `<img src="${alumni.company_logo}" alt="${alumni.company} Logo" class="w-16 h-16 mt-3 object-contain">` : ''}
                                     </li>
                                 `);
                             });
@@ -1707,7 +1707,7 @@
             };
         </script>
 
-        <!-- video 1 script -->
+        <!-- video 1 script Starts -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script>
             const swiper = new Swiper(".videoSwiper", {
@@ -1728,8 +1728,9 @@
                 },
             });
         </script>
+        <!-- video 1 script Ends -->
 
-        <!-- Video 2 Script -->
+        <!-- Video 2 Script Starts -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script>
             const swiper1 = new Swiper(".firstSwiper", {
@@ -1762,6 +1763,7 @@
                 },
             });
         </script>
+        <!-- Video 2 Script Ends -->
 
         <script>
             document.getElementById("menu-toggle").addEventListener("click", function () {
