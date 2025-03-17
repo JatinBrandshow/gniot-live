@@ -11,7 +11,7 @@
         <title>GNIOT-Group</title>
     </head>
     <body>
-        <header class="absolute top-0 left-0 w-full py-6 px-4 sm:px-12 bg-transparent flex justify-between items-center z-50 max-sm:bg-black max-md:bg-black max-md:relative max-sm:relative">
+        <header id="header" class="absolute top-0 left-0 w-full py-6 px-4 sm:px-12 bg-transparent flex justify-between items-center z-50 max-sm:bg-black max-md:bg-black max-md:relative max-sm:relative opacity-0">
             <div class="flex items-center">
                 <img src="/img/gniot-logo.webp" alt="Logo" class="h-10 w-auto lg:h-14" />
             </div>
@@ -49,20 +49,20 @@
                 class="absolute z-10 inset-0 max-w-7xl mx-auto px-6 py-24 flex justify-between items-center h-full max-md:px-4 max-sm:px-2 max-lg:py-20 max-md:py-14 max-sm:py-10 max-lg:justify-center max-md:justify-center max-sm:justify-center"
             >
                 <div class="max-w-lg text-white">
-                    <h3 id="heading" class="uppercase text-4xl font-semibold -ml-48 max-lg:text-4xl max-md:text-3xl max-sm:text-2xl max-[1600px]:-ml-28 max-2xl:-ml-14 max-xl:ml-0 max-lg:-ml-16 max-md:-ml-14 max-sm:ml-0">
+                    <h3 id="heading" class="uppercase text-4xl font-semibold -ml-48 max-lg:text-4xl max-md:text-3xl max-sm:text-2xl max-[1600px]:-ml-28 max-2xl:-ml-14 max-xl:ml-0 max-lg:-ml-16 max-md:-ml-14 max-sm:ml-0 opacity-0">
                         COLLABORATE FOR
                     </h3>
                     <h1
                         id="subheading"
-                        class="uppercase text-[100px] leading-none font-bold text-red-600 -ml-48 max-xl:text-7xl max-lg:text-6xl max-md:text-5xl max-sm:text-3xl max-[1600px]:-ml-28 max-2xl:-ml-14 max-xl:ml-0 max-lg:-ml-16 max-md:-ml-14 max-sm:ml-0"
+                        class="uppercase text-[100px] leading-none font-bold text-red-600 -ml-48 max-xl:text-7xl max-lg:text-6xl max-md:text-5xl max-sm:text-3xl max-[1600px]:-ml-28 max-2xl:-ml-14 max-xl:ml-0 max-lg:-ml-16 max-md:-ml-14 max-sm:ml-0 opacity-0"
                     >
                         EFFICIENCY
                     </h1>
-                    <p id="paragraph" class="mt-4 text-xl max-lg:text-lg max-md:text-lg max-sm:text-base max-md:mt-3 max-sm:mt-2">
+                    <p id="paragraph" class="mt-4 text-xl max-lg:text-lg max-md:text-lg max-sm:text-base max-md:mt-3 max-sm:mt-2 opacity-0">
                         Collaboration fosters efficiency by integrating diverse expertise, streamlining workflows, and driving innovation through teamwork. It strengthens communication, enhances creativity, and accelerates decision-making,
                         ensuring sustainable growth and success in every field.
                     </p>
-                    <a href="#" class="inline-block mt-6 bg-white text-black px-6 py-3 rounded-lg shadow-md hover:bg-gray-200 transition max-md:py-2 max-sm:py-1.5 max-lg:px-5 max-md:px-4 max-sm:px-3 max-lg:mt-5 max-md:mt-4 max-sm:mt-3">
+                    <a id="button" href="#" class="inline-block mt-6 bg-white text-black px-6 py-3 rounded-lg shadow-md hover:bg-gray-200 transition max-md:py-2 max-sm:py-1.5 max-lg:px-5 max-md:px-4 max-sm:px-3 max-lg:mt-5 max-md:mt-4 max-sm:mt-3 opacity-0">
                         KNOW MORE →
                     </a>
                 </div>
@@ -770,10 +770,10 @@
                 </h1>
                 <div class="relative w-36 h-[3px] bg-lime-400 mt-2 z-10"></div>
             </div>
-            <div class="max-w-7xl mx-auto px-4 py-8 flex flex-col md:flex-row gap-16">
-                <div class="w-full md:w-1/5">
+            <div class="max-w-7xl mx-auto px-4 py-8 flex flex-col-reverse md:flex-row gap-16">
+                <div class="w-full md:w-2/5 lg:w-1/5">
                     <div class="space-y-4">
-                        <div class="bg-gray-200 flex items-center p-4 shadow-md">
+                        <div class="bg-gray-200 flex items-center p-4 shadow-md mx-auto">
                             <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1d/Indian_Institute_of_Technology_Bombay_Logo.svg/300px-Indian_Institute_of_Technology_Bombay_Logo.svg.png" alt="IIT Mumbai" class="mr-4 w-16 h-16" />
                             <p class="font-bold text-lg text-blue-800 text-nowrap">
                                 IIT MUMBAI <br />
@@ -791,7 +791,7 @@
                     <div id="logo-grid" class="grid grid-cols-2 gap-0 mt-6"></div>
                 </div>
 
-                <div class="w-full md:w-4/5">
+                <div class="w-full md:w-3/5 lg:w-4/5">
                     <div class="relative flex flex-wrap gap-0">
                         <div class="relative w-full md:w-1/2">
                             <img src="https://st1.bollywoodlife.com/wp-content/uploads/2019/09/hip-hip-hurray.png" alt="Training Image 1" class="w-full h-auto" />
@@ -839,29 +839,28 @@
             }
         </style>
 
+        <!-- Awards Section -->
         <section class="min-h-[60vh] relative bg-[url('/img/building-gniot.webp')] bg-cover bg-no-repeat bg-center flex items-center">
             <div class="absolute bg-blue-800 inset-0 opacity-90 z-0"></div>
             <div class="relative max-w-[1400px] mx-auto px-6 z-10 text-center py-10 max-md:px-4 max-sm:px-3 max-lg:py-8 max-md:py-7 max-sm:py-5">
                 <h3 class="text-5xl font-bold text-white mb-10 max-lg:mb-8 max-md:mb-6 max-sm:mb-4 max-lg:text-4xl max-md:text-3xl max-sm:text-2xl">
                     Awards & Recognitions
                 </h3>
-                <div id="image-container" class="max-sm:hidden md:grid grid-cols-4 max-md:grid-cols-2 gap-6 p-6 max-lg:gap-5 max-md:gap-4"></div>
+                <!-- Image Grid Section (Only for Large Screens) -->
+                <div id="image-container" class="hidden lg:grid grid-cols-4 gap-6 p-6"></div>
 
-                <div class="sm:hidden">
+                <!-- Swiper Slider for Tablet & Mobile (Images) -->
+                <div class="block lg:hidden"> 
                     <div class="swiper imageSwiper w-full max-w-[90vw] mx-auto">
                         <div class="swiper-wrapper" id="swiper-image-container"></div>
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
 
-                <div id="awards-container" class="max-sm:hidden md:grid grid-cols-4 max-md:grid-cols-2 gap-6 p-6 max-lg:gap-5 max-md:gap-4"></div>
-
-                <div class="sm:hidden">
-                    <div class="swiper mySwiper w-full max-w-[90vw] mx-auto">
-                        <div class="swiper-wrapper" id="swiper-container"></div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
+                <!-- Grid Layout for Tablet and Above -->
+                <div id="awards-container" class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 p-2.5 max-lg:gap-5 max-md:gap-4"></div>
+                
+                
             </div>
         </section>
 
@@ -1035,6 +1034,40 @@
                 &copy; 2025 All Rights Reserved. Designed & Developed By BrandShow
             </p>
         </footer>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                gsap.fromTo(
+                    "#header",
+                    { y: -100, opacity: 0 },
+                    { y: 0, opacity: 1, duration: 1, ease: "power2.out" }
+                );
+
+                gsap.fromTo(
+                    "#heading",
+                    { x: -200, opacity: 0 },
+                    { x: 0, opacity: 1, duration: 1, delay: 1, ease: "power2.out" }
+                );
+
+                gsap.fromTo(
+                    "#subheading",
+                    { x: -200, opacity: 0 },
+                    { x: 0, opacity: 1, duration: 1, delay: 1.3, ease: "power2.out" }
+                );
+
+                gsap.fromTo(
+                    "#paragraph",
+                    { x: -200, opacity: 0 },
+                    { x: 0, opacity: 1, duration: 1, delay: 1.6, ease: "power2.out" }
+                );
+
+                gsap.fromTo(
+                    "#button",
+                    { x: -200, opacity: 0 },
+                    { x: 0, opacity: 1, duration: 1, delay: 1.9, ease: "power2.out" }
+                );
+            });
+        </script>
 
         <script>
             const contents = [
@@ -1403,52 +1436,59 @@
         <!-- Awards and Recognitions Starts -->
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script>
+    <script>
             const imagePaths = [
-                "/img/awards-and-recognitions/awards-and-recognitions.webp",
-                "/img/awards-and-recognitions/awards-and-recognitions-1.webp",
-                "/img/awards-and-recognitions/awards-and-recognitions-2.webp",
-                "/img/awards-and-recognitions/awards-and-recognitions-3.webp",
-                "/img/awards-and-recognitions/awards-and-recognitions-4.webp",
-                "/img/awards-and-recognitions/awards-and-recognitions-5.webp",
-                "/img/awards-and-recognitions/awards-and-recognitions-6.webp",
-                "/img/awards-and-recognitions/awards-and-recognitions-7.webp",
-                "/img/awards-and-recognitions/awards-and-recognitions-8.webp",
-                "/img/awards-and-recognitions/awards-and-recognitions-9.webp",
-                "/img/awards-and-recognitions/awards-and-recognitions-10.webp",
-                "/img/awards-and-recognitions/awards-and-recognitions-11.webp",
-            ];
+            "/img/awards-and-recognitions/awards-and-recognitions.webp",
+            "/img/awards-and-recognitions/awards-and-recognitions-1.webp",
+            "/img/awards-and-recognitions/awards-and-recognitions-2.webp",
+            "/img/awards-and-recognitions/awards-and-recognitions-3.webp",
+            "/img/awards-and-recognitions/awards-and-recognitions-4.webp",
+            "/img/awards-and-recognitions/awards-and-recognitions-5.webp",
+            "/img/awards-and-recognitions/awards-and-recognitions-6.webp",
+            "/img/awards-and-recognitions/awards-and-recognitions-7.webp",
+            "/img/awards-and-recognitions/awards-and-recognitions-8.webp",
+            "/img/awards-and-recognitions/awards-and-recognitions-9.webp",
+            "/img/awards-and-recognitions/awards-and-recognitions-10.webp",
+            "/img/awards-and-recognitions/awards-and-recognitions-11.webp",
+        ];
 
 
-            const imageContainer = document.getElementById("image-container");
-            const swiperImageContainer = document.getElementById("swiper-image-container");
+        const imageContainer = document.getElementById("image-container");
+        const swiperImageContainer = document.getElementById("swiper-image-container");
 
+        // **Desktop View: Grid Layout (only for large screens)**
+        if (window.innerWidth >= 1024) {
             imagePaths.forEach((image) => {
                 const imageDiv = document.createElement("div");
                 imageDiv.className = "rounded-lg overflow-hidden shadow-lg";
                 imageDiv.innerHTML = `<img src="${image}" class="w-full h-full object-cover">`;
                 imageContainer.appendChild(imageDiv);
             });
-
-            let imageRows = [imagePaths.slice(0, 3), imagePaths.slice(3, 6), imagePaths.slice(6, 9), imagePaths.slice(9, 12)];
+        } else {
+            // **Tablet & Mobile View: Swiper Slider**
+            let imageRows = [];
+            for (let i = 0; i < imagePaths.length; i += 4) {
+                imageRows.push(imagePaths.slice(i, i + 4)); // 3 rows total
+            }
 
             imageRows.forEach((row) => {
                 let slide = document.createElement("div");
-                slide.className = "swiper-slide flex flex-col gap-4 p-4";
-
-                slide.innerHTML = row
-                    .map(
-                        (image) => `
-            <div class="rounded-lg overflow-hidden shadow-lg">
-                <img src="${image}" class="w-full h-full object-cover">
-            </div>
-        `
-                    )
-                    .join("");
-
+            
+                // Apply 'grid-cols-2' if screen width is >= 425px, else 'grid-cols-1'
+                let gridClass = window.innerWidth >= 425 ? "grid-cols-2" : "grid-cols-1";
+                
+                slide.className = `swiper-slide grid ${gridClass} gap-4 p-4`;
+            
+                slide.innerHTML = row.map((image) => `
+                    <div class="rounded-lg overflow-hidden shadow-lg">
+                        <img src="${image}" class="w-full h-full object-cover">
+                    </div>
+                `).join("");
+            
                 swiperImageContainer.appendChild(slide);
             });
 
+            // **Initialize Swiper for Mobile & Tablet**
             var swiperImages = new Swiper(".imageSwiper", {
                 slidesPerView: 1,
                 spaceBetween: 15,
@@ -1457,153 +1497,53 @@
                     delay: 3000,
                     disableOnInteraction: false,
                 },
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
+                
+                breakpoints: {
+                    768: { // Tablet View (>=768px)
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    }
+                }
             });
-            const awards = [
-                {
-                    title: "Top B Schools Ranking",
-                    description: "Ranked GIMS 23rd among top B Schools in North Zone by BUSINESS WORLD.",
-                    leftImage: "/img/left-gold.webp",
-                    rightImage: "/img/right-gold.webp",
-                },
-                {
-                    title: "Best Private B Schools",
-                    description: "Ranked GIMS 20th among top private B Schools in Delhi/NCR by THE WEEK.",
-                    leftImage: "/img/left-gold.webp",
-                    rightImage: "/img/right-gold.webp",
-                },
-                {
-                    title: "Top Colleges in Delhi/NCR",
-                    description: "Ranked 9th among top colleges in Delhi /NCR by THE WEEK.",
-                    leftImage: "/img/left-gold.webp",
-                    rightImage: "/img/right-gold.webp",
-                },
-                {
-                    title: "Best Engineering College",
-                    description: "Ranked AAA the best engineering college by CAREERS 360.",
-                    leftImage: "/img/left-gold.webp",
-                    rightImage: "/img/right-gold.webp",
-                },
-                {
-                    title: "Leadership Award",
-                    description: "B-School leadership Award.",
-                    leftImage: "/img/left-gold.webp",
-                    rightImage: "/img/right-gold.webp",
-                },
-                {
-                    title: "Top Private Institute",
-                    description: "Top Private Institute in North India by JAGRAN JOSH.",
-                    leftImage: "/img/left-gold.webp",
-                    rightImage: "/img/right-gold.webp",
-                },
-                {
-                    title: "CSR Excellence",
-                    description: "CSR Award for Top Institute of India.",
-                    leftImage: "/img/left-gold.webp",
-                    rightImage: "/img/right-gold.webp",
-                },
-                {
-                    title: "B-School Survey Ranking",
-                    description: "A+ category & Ranked 36th in the B-School Survey.",
-                    leftImage: "/img/left-gold.webp",
-                    rightImage: "/img/right-gold.webp",
-                },
-                {
-                    title: "Emerging B Schools",
-                    description: "GIMS in top Emerging B Schools by Times OF India.",
-                    leftImage: "/img/left-gold.webp",
-                    rightImage: "/img/right-gold.webp",
-                },
-                {
-                    title: "Institution’s Innovation Council",
-                    description: "3.5-star rating in Institution’s Innovation Council.",
-                    leftImage: "/img/left-gold.webp",
-                    rightImage: "/img/right-gold.webp",
-                },
-                {
-                    title: "GIPS College Ranking",
-                    description: "GIPS - Ranked 14th among top colleges in North India by GHRDC.",
-                    leftImage: "/img/left-gold.webp",
-                    rightImage: "/img/right-gold.webp",
-                },
-                {
-                    title: "Top Management Colleges",
-                    description: "GIMS - Ranked AA+ among top management colleges in Delhi/NCR by Career360.",
-                    leftImage: "/img/left-gold.webp",
-                    rightImage: "/img/right-gold.webp",
-                },
-                {
-                    title: "National Management Ranking",
-                    description: "GIMS - Ranked 95th among top management colleges all over India by B-Schools (P).",
-                    leftImage: "/img/left-gold.webp",
-                    rightImage: "/img/right-gold.webp",
-                },
-            ];
+        }
+        const awards = [
+            { title: "Top B Schools Ranking", description: "Ranked GIMS 23rd among top B Schools in North Zone by BUSINESS WORLD.", leftImage: "/img/left-gold.webp", rightImage: "/img/right-gold.webp" },
+            { title: "Best Private B Schools", description: "Ranked GIMS 20th among top private B Schools in Delhi/NCR by THE WEEK.", leftImage: "/img/left-gold.webp", rightImage: "/img/right-gold.webp" },
+            { title: "Top Colleges in Delhi/NCR", description: "Ranked 9th among top colleges in Delhi /NCR by THE WEEK.", leftImage: "/img/left-gold.webp", rightImage: "/img/right-gold.webp" },
+            { title: "Best Engineering College", description: "Ranked AAA the best engineering college by CAREERS 360.", leftImage: "/img/left-gold.webp", rightImage: "/img/right-gold.webp" },
+            { title: "Leadership Award", description: "B-School leadership Award.", leftImage: "/img/left-gold.webp", rightImage: "/img/right-gold.webp" },
+            { title: "Top Private Institute", description: "Top Private Institute in North India by JAGRAN JOSH.", leftImage: "/img/left-gold.webp", rightImage: "/img/right-gold.webp" },
+            { title: "CSR Excellence", description: "CSR Award for Top Institute of India.", leftImage: "/img/left-gold.webp", rightImage: "/img/right-gold.webp" },
+            { title: "B-School Survey Ranking", description: "A+ category & Ranked 36th in the B-School Survey.", leftImage: "/img/left-gold.webp", rightImage: "/img/right-gold.webp" },
+            { title: "Emerging B Schools", description: "GIMS in top Emerging B Schools by Times OF India.", leftImage: "/img/left-gold.webp", rightImage: "/img/right-gold.webp" },
+            { title: "Institution’s Innovation Council", description: "3.5-star rating in Institution’s Innovation Council.", leftImage: "/img/left-gold.webp", rightImage: "/img/right-gold.webp" },
+            { title: "GIPS College Ranking", description: "GIPS - Ranked 14th among top colleges in North India by GHRDC.", leftImage: "/img/left-gold.webp", rightImage: "/img/right-gold.webp" },
+            { title: "Top Management Colleges", description: "GIMS - Ranked AA+ among top management colleges in Delhi/NCR by Career360.", leftImage: "/img/left-gold.webp", rightImage: "/img/right-gold.webp" },
+            { title: "National Management Ranking", description: "GIMS - Ranked 95th among top management colleges all over India by B-Schools (P).", leftImage: "/img/left-gold.webp", rightImage: "/img/right-gold.webp" }
+        ];
 
-            const awardsContainer = document.getElementById("awards-container");
-            const swiperContainer = document.getElementById("swiper-container");
+        const awardsContainer = document.getElementById("awards-container");
 
-            awards.forEach((award) => {
-                const awardDiv = document.createElement("div");
-                awardDiv.className = "p-4 rounded-lg h-24 flex justify-center items-center text-center transition-all duration-300 group";
-
-                awardDiv.innerHTML = `
-            <div class="flex items-center gap-1">
-                <img src="${award.leftImage}" alt="Left Image" class="w-18 h-24 group-hover:hidden">
-                <h4 class="font-semibold text-base text-white group-hover:hidden">${award.title}</h4>
-                <img src="${award.rightImage}" alt="Right Image" class="w-18 h-24 group-hover:hidden">
-            </div>
-            <p class="hidden text-white text-sm p-4 rounded-lg bg-gradient-to-r from-blue-500 to-purple-500 shadow-lg group-hover:block">
-                ${award.description}
-            </p>
-        `;
-
-                awardsContainer.appendChild(awardDiv);
-            });
-
-            let rows = [awards.slice(0, 4), awards.slice(4, 8), awards.slice(8, 12), awards.slice(12, 13)];
-
-            rows.forEach((row) => {
-                let slide = document.createElement("div");
-                slide.className = "swiper-slide flex flex-col gap-4 p-4";
-
-                slide.innerHTML = row
-                    .map(
-                        (award) => `
-            <div class="p-4 rounded-lg h-24 flex flex-col justify-center items-center text-center transition-all duration-300 group bg-blue-600 ">
-                <div class="flex items-center gap-2">
-                    <img class="w-10 h-20 max-sm:w-8 max-sm:h-16 group-hover:hidden" src="${award.leftImage}">
-                    <h4 class="font-semibold text-white text-sm group-hover:hidden">${award.title}</h4>
-                    <img class="w-10 h-20 max-sm:w-8 max-sm:h-16 group-hover:hidden" src="${award.rightImage}">
+        awards.forEach((award) => {
+            const awardDiv = document.createElement("div");
+            awardDiv.className = "p-2 rounded-lg h-24 flex justify-center items-center text-center transition-all duration-300 group";
+        
+            awardDiv.innerHTML = `
+                <div class="flex items-center gap-1">
+                    <img src="${award.leftImage}" alt="Left Image" class="w-18 h-24 max-sm:w-10 max-sm:h-20 group-hover:hidden">
+                    <h4 class="font-semibold text-base text-white group-hover:hidden">${award.title}</h4>
+                    <img src="${award.rightImage}" alt="Right Image" class="w-18 h-24 max-sm:w-10 max-sm:h-20 group-hover:hidden">
                 </div>
-                <p class="hidden text-white text-xs p-3 rounded-lg bg-gradient-to-r from-blue-500 to-purple-500 shadow-lg group-hover:block">
+                <p class="hidden text-white text-sm p-4 rounded-lg bg-gradient-to-r from-blue-500 to-purple-500 shadow-lg group-hover:block">
                     ${award.description}
                 </p>
-            </div>
-        `
-                    )
-                    .join("");
+            `;
+        
+            awardsContainer.appendChild(awardDiv);
+        });
 
-                swiperContainer.appendChild(slide);
-            });
-
-            var swiper = new Swiper(".mySwiper", {
-                slidesPerView: 1,
-                spaceBetween: 15,
-                loop: true,
-                autoplay: {
-                    delay: 3000,
-                    disableOnInteraction: false,
-                },
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
-            });
-        </script>
+        
+    </script>
 
         <!-- Awards and Recognitions Ends -->
 
