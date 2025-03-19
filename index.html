@@ -51,13 +51,13 @@
             </div>
         </header>
 
-        <section class="relative h-screen w-full max-lg:h-[70vh] max-md:h-[60vh] max-sm:h-[50vh]">
+        <section class="relative h-screen w-full max-lg:h-[100vh] max-md:h-[60vh] max-sm:h-[100vh]">
             <div class="absolute inset-0 bg-black bg-blend-multiply bg-opacity-40 z-10"></div>
             <video class="absolute inset-0 w-full h-full object-cover" autoplay loop muted>
                 <source src="/video/VID-20250311-WA0063.mp4" type="video/mp4" />
             </video>
             <div
-                class="absolute z-10 inset-0 max-w-7xl mx-auto px-6 py-24 flex justify-between items-center h-full max-md:px-4 max-sm:px-2 max-lg:py-20 max-md:py-14 max-sm:py-10 max-lg:justify-center max-md:justify-center max-sm:justify-center"
+                class="absolute z-10 inset-0 max-w-7xl mx-auto px-6 py-24 flex justify-between items-center max-sm:items-start h-full max-md:px-4 max-sm:px-2 max-lg:py-20 max-md:py-14 max-sm:py-10 max-lg:justify-center max-md:justify-center max-sm:justify-center"
             >
                 <div class="max-w-lg text-white">
                     <h3 id="heading" class="uppercase text-4xl font-semibold -ml-48 max-lg:text-4xl max-md:text-3xl max-sm:text-2xl max-[1600px]:-ml-28 max-2xl:-ml-14 max-xl:ml-0 max-lg:-ml-16 max-md:-ml-14 max-sm:ml-0 opacity-0">
@@ -78,7 +78,34 @@
                     </a>
                 </div>
             </div>
+        
+            <!-- Stats Section -->
+            <div id="bottom-section" class="absolute bottom-0 w-full bg-indigo-900 bg-opacity-80 z-20">
+                <div class="max-w-7xl mx-auto grid grid-cols-5 max-sm:grid-cols-2 max-sm:px-2 max-sm:gap-3 py-10 max-md:py-8 text-white text-center">
+                    <div>
+                        <span class="text-4xl font-bold max-lg:text-3xl max-md:text-2xl max-sm:text-xl">19500+</span>
+                        <p class="text-lg max-md:text-base max-sm:text-sm">Proud Alumni</p>
+                    </div>
+                    <div>
+                        <span class="text-4xl font-bold max-lg:text-3xl max-md:text-2xl max-sm:text-xl">10900+</span>
+                        <p class="text-lg max-md:text-base max-sm:text-sm">Placements</p>
+                    </div>
+                    <div>
+                        <span class="text-4xl font-bold max-lg:text-3xl max-md:text-2xl max-sm:text-xl">9000+</span>
+                        <p class="text-lg max-md:text-base max-sm:text-sm">Students</p>
+                    </div>
+                    <div>
+                        <span class="text-4xl font-bold max-lg:text-3xl max-md:text-2xl max-sm:text-xl">510+</span>
+                        <p class="text-lg max-md:text-base max-sm:text-sm">Faculties</p>
+                    </div>
+                    <div class="max-sm:col-span-2">
+                        <span class="text-4xl font-bold max-lg:text-3xl max-md:text-2xl max-sm:text-xl">09</span>
+                        <p class="text-lg max-md:text-base max-sm:text-sm">Institutions</p>
+                    </div>
+                </div>
+            </div>
         </section>
+        
 
         <section class="relative bg-fixed h-[78vh] bg-cover bg-center max-lg:h-fit max-md:h-fit max-sm:h-fit" style="background-image: url('/img/about/transforming-education.webp');">
             <div class="max-w-7xl mx-auto flex items-center px-5 py-6 h-full max-sm:px-3 sm:py-10">
@@ -1108,6 +1135,12 @@
                     "#button",
                     { x: -200, opacity: 0 },
                     { x: 0, opacity: 1, duration: 1, delay: 1.9, ease: "power2.out" }
+                );
+
+                gsap.fromTo(
+                    "#bottom-section",
+                    { y: 200, opacity: 0 },
+                    { y: 0, opacity: 1, duration: 1, delay: 1, ease: "power2.out" }
                 );
             });
         </script>
