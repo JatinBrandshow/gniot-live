@@ -24,7 +24,7 @@
     <body>
         <header id="header" class="absolute top-0 left-0 w-full py-6 px-4 sm:px-12 bg-transparent flex justify-between items-center z-50 max-sm:bg-black max-md:bg-black max-md:relative max-sm:relative opacity-0">
             <div class="flex items-center">
-                <img src="/img/gniot-logo-2.webp" alt="Logo" class="h-10 w-auto lg:h-14" />
+                <img src="/img/GNIOT-Group-NAAC-A+-Logo-(1)-(2).webp" alt="Logo" class="h-10 w-auto lg:h-14" />
             </div>
 
             <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
@@ -173,7 +173,7 @@
             </div>
         </section> -->
 
-        <section class="relative bg-[url('/img/gniot-banner.webp')] bg-no-repeat bg-cover text-white overflow-hidden py-12 max-lg:py-10 max-md:py-8 max-sm:py-6">
+        <!-- <section class="relative bg-[url('/img/gniot-banner.webp')] bg-no-repeat bg-cover text-white overflow-hidden py-12 max-lg:py-10 max-md:py-8 max-sm:py-6">
             <div class="absolute inset-0 bg-black/50 bg-blend-multiply"></div>
             <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 px-4 py-6 relative z-10">
                 <div class="flex flex-col justify-center space-y-6 max-lg:space-y-5 max-md:space-y-4 max-sm:space-y-3">
@@ -206,7 +206,7 @@
             <div class="relative max-w-7xl mx-auto px-2 z-10">
                 <div id="company-Logo" class="grid grid-cols-5 gap-4 justify-center items-center max-md:grid-cols-3 max-sm:grid-cols-2 max-md:gap-3 max-sm:gap-2"></div>
             </div>
-        </section>
+        </section> -->
 
         <!-- <section class="max-w-7xl mx-auto h-auto md:h-[60vh] relative py-10">
             ✅ For Large Screen (lg) - Fixed Layout
@@ -536,7 +536,7 @@
         </section>
 
         <section class="max-w-[1400px] mx-auto py-10 px-2 max-lg:py-8 max-md:py-7 max-sm:py-6">
-            <div class="flex flex-col md:flex-row items-center justify-center gap-10">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-4">
                 <div class="relative w-72 h-72 md:w-80 md:h-80 flex-1 flex justify-center">
                     <img src="/img/admission-process/admission-1.webp" alt="Team Meeting" class="w-full h-full object-cover rounded-md" />
 
@@ -566,28 +566,35 @@
                                         ✓
                                     </button>
                                     <span class="text-sm mt-2 max-sm:text-xs max-sm:mt-1">Step 1</span>
-                                    <span class="text-base text-gray-600 mt-1 max-sm:text-sm">Signup</span>
+                                    <span class="hidden md:block text-base text-gray-600 mt-1 max-sm:text-sm text-center">Register Yourself</span>
                                 </div>
                                 <div class="flex flex-col items-center relative w-[25%]">
                                     <button class="step w-10 h-10 flex items-center justify-center rounded-full bg-gray-300 text-black relative z-10" onclick="changeStep(1)">
                                         ✓
                                     </button>
                                     <span class="text-sm mt-2 max-sm:text-xs max-sm:mt-1">Step 2</span>
-                                    <span class="text-base text-gray-600 mt-1 max-sm:text-sm">Apply for CUCET</span>
+                                    <span class="hidden md:block text-base text-gray-600 mt-1 max-sm:text-sm text-center">Verify E-mail</span>
                                 </div>
                                 <div class="flex flex-col items-center relative w-[25%]">
                                     <button class="step w-10 h-10 flex items-center justify-center rounded-full bg-gray-300 text-black relative z-10" onclick="changeStep(2)">
                                         ✓
                                     </button>
                                     <span class="text-sm mt-2 max-sm:text-xs max-sm:mt-1">Step 3</span>
-                                    <span class="text-base text-gray-600 mt-1 max-sm:text-sm">Admission</span>
+                                    <span class="hidden md:block text-base text-gray-600 mt-1 max-sm:text-sm text-center">Fill Application <br> Form Online</span>
                                 </div>
                                 <div class="flex flex-col items-center relative w-[25%]">
                                     <button class="step w-10 h-10 flex items-center justify-center rounded-full bg-gray-300 text-black relative z-10" onclick="changeStep(3)">
                                         ✓
                                     </button>
                                     <span class="text-sm mt-2 max-sm:text-xs max-sm:mt-1">Step 4</span>
-                                    <span class="text-base text-gray-600 mt-1 max-sm:text-sm">Confirmation</span>
+                                    <span class="hidden md:block text-base text-gray-600 mt-1 max-sm:text-sm text-center">Upload Required <br> Documents</span>
+                                </div>
+                                <div class="flex flex-col items-center relative w-[25%]">
+                                    <button class="step w-10 h-10 flex items-center justify-center rounded-full bg-gray-300 text-black relative z-10" onclick="changeStep(3)">
+                                        ✓
+                                    </button>
+                                    <span class="text-sm mt-2 max-sm:text-xs max-sm:mt-1">Step 5</span>
+                                    <span class="hidden md:block text-base text-gray-600 mt-1 max-sm:text-sm text-center">Pay Application Fee</span>
                                 </div>
                             </div>
                         </div>
@@ -1399,24 +1406,29 @@
         <script>
             const steps = [
                 {
-                    title: "Step 1 - Signup",
+                    title: "Step 1 - Register Yourself",
                     content:
-                        "To complete the registration process for CUCET, you are required to provide some essential details, including your full name, a valid email ID, mobile number, state of residence, gender, and a secure password. Your email ID will function as your unique username for accessing the portal, ensuring a seamless login experience. Additionally, you will have the opportunity to set your own password during the registration process, allowing you to create a secure and personalized account for future access.",
+                        "Begin your journey at GNIOT by registering online. Provide your full name, valid email ID, mobile number, state of residence, and gender. Your email ID will be your login credential for accessing the admission portal. Set a secure password to create your personalized account for future access.",
                 },
                 {
-                    title: "Step 2 - Apply for CUCET",
+                    title: "Step 2 - Verify E-mail",
                     content:
-                        "To apply for CUCET, complete the registration by providing the required details and selecting your preferred exam date. Ensure all information is accurate, as it will be used for verification. Once registered, appear for the test to determine your eligibility for scholarships.",
+                        "After registration, check your email for a verification link from GNIOT. Click on the link to verify your email and activate your admission portal account. This step is crucial to proceed with your application.",
                 },
                 {
-                    title: "Step 3 - Admission",
+                    title: "Step 3 - Fill Application Form Online",
                     content:
-                        "Once you successfully clear the test and meet the eligibility criteria, you can move forward with the admission process by submitting the required documents. This step is crucial, as it validates your eligibility and ensures a smooth transition into the next phase of enrollment. Make sure to review the list of necessary documents beforehand to avoid any last-minute confusion or missing paperwork.",
+                        "Log in to your GNIOT admission portal and complete the online application form. Enter accurate academic details, preferred course, and personal information. Double-check all details before submitting to ensure a hassle-free admission process.",
                 },
                 {
-                    title: "Step 4 - Confirmation",
+                    title: "Step 4 - Upload Required Documents",
                     content:
-                        "After the successful verification of your documents, you will receive an official confirmation of your admission. This confirmation serves as proof that you have met all the necessary requirements and are eligible to proceed with the next steps in the enrollment process.",
+                        "Upload scanned copies of necessary documents, including your academic transcripts, ID proof, passport-sized photograph, and any other required certificates. Make sure all documents are clear and legible to avoid delays in verification.",
+                },
+                {
+                    title: "Step 5 - Pay Application Fee",
+                    content:
+                        "Proceed to pay the application fee through the secure online payment gateway provided by GNIOT. Keep a copy of the payment receipt for future reference. Once the payment is confirmed, your application will be processed for further evaluation.",
                 },
             ];
 
@@ -1474,7 +1486,7 @@
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
             const imagePaths = [
-            "/img/awards-and-recognitions/awards-and-recognitions-11.webp",
+            "/img/awards-and-recognitions/awards-and-recognitions-12.webp",
             "/img/awards-and-recognitions/awards-and-recognitions-1.webp",
             "/img/awards-and-recognitions/awards-and-recognitions-2.webp",
             "/img/awards-and-recognitions/awards-and-recognitions-3.webp",
