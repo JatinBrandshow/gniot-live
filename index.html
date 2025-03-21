@@ -51,7 +51,7 @@
             </div>
         </header>
 
-        <section class="relative h-screen w-full max-lg:h-[100vh] max-md:h-[60vh] max-sm:h-[100vh]">
+        <section class="relative h-screen w-full max-lg:h-[100vh] max-md:h-[70vh] max-sm:h-[100vh]">
             <div class="absolute inset-0 bg-black bg-blend-multiply bg-opacity-40 z-10"></div>
             <video class="absolute inset-0 w-full h-full object-cover" autoplay loop muted>
                 <source src="/video/VID-20250311-WA0063.mp4" type="video/mp4" />
@@ -73,12 +73,16 @@
                         Collaboration fosters efficiency by integrating diverse expertise, streamlining workflows, and driving innovation through teamwork. It strengthens communication, enhances creativity, and accelerates decision-making,
                         ensuring sustainable growth and success in every field.
                     </p>
-                    <a id="button" href="#" class="inline-block mt-6 bg-white text-black px-6 py-3 rounded-lg shadow-md hover:bg-gray-200 transition max-md:py-2 max-sm:py-1.5 max-lg:px-5 max-md:px-4 max-sm:px-3 max-lg:mt-5 max-md:mt-4 max-sm:mt-3 opacity-0">
+                    <a
+                        id="button"
+                        href="#"
+                        class="inline-block mt-6 bg-white text-black px-6 py-3 rounded-lg shadow-md hover:bg-gray-200 transition max-md:py-2 max-sm:py-1.5 max-lg:px-5 max-md:px-4 max-sm:px-3 max-lg:mt-5 max-md:mt-4 max-sm:mt-3 opacity-0"
+                    >
                         KNOW MORE →
                     </a>
                 </div>
             </div>
-        
+
             <!-- Stats Section -->
             <div id="bottom-section" class="absolute bottom-0 w-full bg-indigo-950 bg-opacity-95 z-20">
                 <div class="max-w-7xl mx-auto grid grid-cols-5 max-sm:grid-cols-2 max-sm:px-2 max-sm:gap-3 py-10 max-md:py-8 text-white text-center">
@@ -105,7 +109,6 @@
                 </div>
             </div>
         </section>
-        
 
         <section class="relative bg-fixed h-[78vh] bg-cover bg-center max-lg:h-fit max-md:h-fit max-sm:h-fit" style="background-image: url('/img/about/transforming-education.webp');">
             <div class="max-w-7xl mx-auto flex items-center px-5 py-6 h-full max-sm:px-3 sm:py-10">
@@ -130,38 +133,7 @@
                             Apply Today For <br />
                             <span class="text-black">GNIOT Group Programs</span>
                         </h2>
-                        <form action="#" method="POST" class="space-y-4 max-md:space-y-3 max-sm:space-y-2">
-                            <div class="grid grid-cols-2 gap-2 max-sm:grid-cols-1">
-                                <input type="text" name="name" placeholder="Student Name" class="w-full p-3 border rounded max-sm:p-1.5 max-md:p-2" required />
-                                <input type="email" name="email" placeholder="Student Email ID" class="w-full p-3 border rounded max-sm:p-1.5 max-md:p-2" required />
-                            </div>
-                            <input type="tel" name="mobile" placeholder="Student Mobile No" class="w-full p-3 border rounded max-sm:p-1.5 max-md:p-2" required />
-                            <div class="grid grid-cols-2 gap-2 max-sm:grid-cols-1">
-                                <input type="date" name="dob" class="w-full p-3 border rounded max-sm:p-1.5 max-md:p-2" required />
-                                <input type="text" name="city" placeholder="Student City" class="w-full p-3 border rounded max-sm:p-1.5 max-md:p-2" required />
-                            </div>
-                            <div class="grid grid-cols-2 gap-2 max-sm:grid-cols-1">
-                                <select name="discipline" class="w-full p-3 border rounded max-sm:p-1.5 max-md:p-2" required>
-                                    <option value="" disabled selected>Select Discipline</option>
-                                    <option value="Engineering">Engineering</option>
-                                    <option value="Management">Management</option>
-                                </select>
-                                <select name="program" class="w-full p-3 border rounded max-sm:p-1.5 max-md:p-2" required>
-                                    <option value="" disabled selected>Select Program</option>
-                                    <option value="B.Tech">B.Tech</option>
-                                    <option value="MBA">MBA</option>
-                                    <option value="MCA">MCA</option>
-                                    <option value="BBA">BBA</option>
-                                </select>
-                            </div>
-                            <button type="submit" class="w-full bg-red-600 text-white p-3 rounded hover:bg-red-700 transition max-sm:p-1.5 max-md:p-2">
-                                APPLY NOW
-                            </button>
-                            <p class="text-center text-gray-600 text-sm mt-2 max-sm:mt-1">
-                                Already Registered?
-                                <a href="#" class="text-red-600 font-semibold">Login</a>
-                            </p>
-                        </form>
+                        <div class="npf_wgts" data-height="500px" data-w="1f272e43c65e754d5ccc36bbcc3b1c05"></div>
                     </div>
                 </div>
             </div>
@@ -317,25 +289,21 @@
                 </div>
             </div>
         </section> -->
+
         <!-- Gallery Container 1 -->
         <section class="w-full overflow-hidden py-10 max-md:py-7 max-sm:py-5">
             <div id="galleryContainer1"></div>
-    
+
             <!-- Modal -->
             <div id="modal" class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 hidden">
                 <div class="relative max-w-4xl w-full rounded-lg">
-                    <img id="modalImage" src="" alt="Selected" class="object-contain w-full h-[80vh] rounded-lg">
-                    <button id="closeModal"
-                        class="absolute top-8 right-4 text-black text-6xl font-bold hover:text-gray-700 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 rounded">
+                    <img id="modalImage" src="" alt="Selected" class="object-contain w-full h-[80vh] rounded-lg" />
+                    <button id="closeModal" class="absolute top-8 right-4 text-black text-6xl font-bold hover:text-gray-700 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 rounded">
                         &times;
                     </button>
                 </div>
             </div>
         </section>
-
-        
-    
-        
 
         <section class="max-w-[1600px] mx-auto px-2 overflow-hidden mt-6">
             <div class="bg-white py-10 px-16 max-lg:py-7 max-lg:px-8 max-md:py-5 max-md:px-6 max-sm:px-0 max-sm:py-5">
@@ -354,11 +322,477 @@
             <div id="galleryContainer2"></div>
         </section>
 
+        <!-- placement -->
+
+        <section class="pt-10">
+            <div class="placement-component relative bg-primary h-auto w-full pt-[5rem] pb-12 mt-[10rem]">
+                <div class="max-w-6xl mx-auto px-4 absolute top-[-10rem] left-0 right-0">
+                    <div class="card-slider relative pt-12">
+                        <div class="slider-container overflow-hidden">
+                            <div id="slider" class="flex transition-transform duration-500 ease-in-out"></div>
+                        </div>
+
+                        <button id="prevBtn" class="absolute left-1 lg:-left-2 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg z-10">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                            </svg>
+                        </button>
+                        <button id="nextBtn" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg z-10">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="max-w-7xl mx-auto mt-12 py-6">
+                    <div class="marquee">
+                        <div class="marquee-content"></div>
+                    </div>
+                </div>
+
+                <div class="max-w-4xl mx-auto px-4 mt-2">
+                    <div class="grid grid-cols-5 gap-6 text-center text-white max-md:grid-cols-5 max-sm:grid-cols-2">
+                        <div class="p-4 max-lg:p-3 max-md:p-2.5 max-sm:p-2">
+                            <h2 class="text-4xl font-bold max-lg:text-3xl max-md:text-2xl max-sm:text-xl">
+                                1200+
+                            </h2>
+                            <p class="text-base mt-2 max-md:text-sm max-sm:text-xs">
+                                Placement
+                            </p>
+                            <p class="text-base max-md:text-sm max-sm:text-xs">Offers</p>
+                        </div>
+                        <div class="p-4 max-lg:p-3 max-md:p-2.5 max-sm:p-2">
+                            <h2 class="text-4xl font-bold max-lg:text-3xl max-md:text-2xl max-sm:text-xl">
+                                500+
+                            </h2>
+                            <p class="text-base mt-2 max-md:text-sm max-sm:text-xs">
+                                Company Visited
+                            </p>
+                            <p class="text-base max-md:text-sm max-sm:text-xs">
+                                for Recruitment
+                            </p>
+                        </div>
+                        <div class="p-4 max-lg:p-3 max-md:p-2.5 max-sm:p-2">
+                            <h2 class="text-4xl font-bold max-lg:text-3xl max-md:text-2xl max-sm:text-xl">28<span class="text-lg">LPA</span></h2>
+                            <p class="text-base mt-2 max-md:text-sm max-sm:text-xs">
+                                Highest National
+                            </p>
+                            <p class="text-base max-md:text-sm max-sm:text-xs">
+                                Package Offered
+                            </p>
+                        </div>
+                        <div class="p-4 max-lg:p-3 max-md:p-2.5 max-sm:p-2">
+                            <h2 class="text-4xl font-bold max-lg:text-3xl max-md:text-2xl max-sm:text-xl">70<span class="text-lg">LPA</span></h2>
+                            <p class="text-base mt-2 max-md:text-sm max-sm:text-xs">
+                                Highest International
+                            </p>
+                            <p class="text-base max-md:text-sm max-sm:text-xs">
+                                Package Offered
+                            </p>
+                        </div>
+
+                        <div class="p-4 max-lg:p-3 max-md:p-2.5 max-sm:p-2">
+                            <h2 class="text-4xl font-bold max-lg:text-3xl max-md:text-2xl max-sm:text-xl">5<span class="text-lg">LPA</span></h2>
+                            <p class="text-base mt-2 max-md:text-sm max-sm:text-xs">
+                                Average
+                            </p>
+                            <p class="text-base max-md:text-sm max-sm:text-xs">
+                                Package Offered
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="max-w-5xl mx-auto px-4 mt-2">
+                    <div class="flex flex-wrap justify-center text-center text-white">
+                        <div class="w-1/2 md:w-1/5 p-4 border-r border-white/20 last:border-r-0 max-lg:p-3 max-md:p-2.5 max-sm:p-2">
+                            <h2 class="text-3xl font-bold max-md:text-2xl max-sm:text-xl">20<span class="text-sm">LPA</span></h2>
+                            <p class="mt-1 text-sm max-sm:text-xs">Package Offered by</p>
+                            <p class="text-sm max-sm:text-xs">90+ Companies</p>
+                        </div>
+                        <div class="w-1/2 md:w-1/5 p-4 border-r border-white/20 last:border-r-0 max-lg:p-3 max-md:p-2.5 max-sm:p-2">
+                            <h2 class="text-3xl font-bold max-md:text-2xl max-sm:text-xl">15<span class="text-sm">LPA</span></h2>
+                            <p class="mt-1 text-sm max-sm:text-xs">Package Offered by</p>
+                            <p class="text-sm max-sm:text-xs">60+ Companies</p>
+                        </div>
+                        <div class="w-1/2 md:w-1/5 p-4 border-r border-white/20 last:border-r-0 max-lg:p-3 max-md:p-2.5 max-sm:p-2">
+                            <h2 class="text-3xl font-bold max-md:text-2xl max-sm:text-xl">10<span class="text-sm">LPA</span></h2>
+                            <p class="mt-1 text-sm max-sm:text-xs">Package Offered by</p>
+                            <p class="text-sm max-sm:text-xs">200+ Companies</p>
+                        </div>
+                        <div class="w-1/2 md:w-1/5 p-4 border-r border-white/20 last:border-r-0 max-lg:p-3 max-md:p-2.5 max-sm:p-2">
+                            <h2 class="text-3xl font-bold max-md:text-2xl max-sm:text-xl">7<span class="text-sm">LPA</span></h2>
+                            <p class="mt-1 text-sm max-sm:text-xs">Package Offered by</p>
+                            <p class="text-sm max-sm:text-xs">127 Companies</p>
+                        </div>
+                        <div class="w-1/2 md:w-1/5 p-4 max-lg:p-3 max-md:p-2.5 max-sm:p-2">
+                            <h2 class="text-3xl font-bold max-md:text-2xl max-sm:text-xl">5<span class="text-sm">LPA</span></h2>
+                            <p class="mt-1 text-sm max-sm:text-xs">Package Offered by</p>
+                            <p class="text-sm max-sm:text-xs">500+ Companies</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+        <section class="py-10">
+            <h1 class="text-6xl text-center mb-4 text-blue-400 max-sm:text-2xl items-center justify-center max-lg:text-3xl max-md:text-2xl"><span class="font-bold">#Impeccable</span>Placements</h1>
+            <div class="flex items-center justify-center bg-blue-100">
+                <div class="w-full h-auto bg-[url('img/imp-placements/baner-placement.png')] flex flex-col items-center justify-center px-4 py-20">
+                    <div class="grid grid-cols-7 gap-x-10 gap-y-4 w-full max-w-6xl h-full bg-[url('img/about/bg-1.jpg')] bg-center max-sm:gap-y-2 max-sm:gap-x-3 max-md:gap-x-5 max-md:grid-cols-4 max-sm:grid-cols-2">
+                        <div class="flex flex-col items-center md:mt-auto mt-0 rounded-lg h-[80%]">
+                            <img src="img/imp-placements/imp-placements-1.png" alt="Person" class="w-full h-[90%] object-cover rounded-md" />
+                            <p class="font-bold -mb-1 text-center text-white">
+                                Vidhi Gambhir
+                            </p>
+                            <p class="text-sm text-white text-center">Simplify</p>
+                        </div>
+                        <div class="flex flex-col items-center rounded-lg h-[80%]">
+                            <img src="img/imp-placements/imp-placements-2.png" alt="Person" class="w-full h-[90%] object-cover rounded-md" />
+                            <p class="font-bold -mb-1 text-center text-white">Kaushik</p>
+                            <p class="text-sm text-white text-center">UltraTech</p>
+                        </div>
+
+                        <div class="flex flex-col items-center md:mt-auto mt-0 rounded-lg h-[80%]">
+                            <img src="img/imp-placements/imp-placements-3.png" alt="Person" class="w-full h-[90%] object-cover rounded-md" />
+                            <p class="font-bold -mb-1 text-center text-white">Rakesh Kumar</p>
+                            <p class="text-sm text-white text-center">DemandBase</p>
+                        </div>
+
+                        <div class="flex flex-col items-center rounded-lg h-[80%]">
+                            <img src="img/imp-placements/imp-placements-4.png" alt="Person" class="w-full h-[90%] object-cover rounded-md" />
+                            <p class="font-bold -mb-1 text-center text-white">
+                                Raghav Tiwari
+                            </p>
+                            <p class="text-sm text-white text-center">KPMG</p>
+                        </div>
+
+                        <div class="flex flex-col items-center md:mt-auto mt-0 rounded-lg h-[80%]">
+                            <img src="img/imp-placements/imp-placements-5.png" alt="Person" class="w-full h-[90%] object-cover rounded-md" />
+                            <p class="font-bold -mb-1 text-center text-white">Shalu Priya</p>
+                            <p class="text-sm text-white text-center">Accenture</p>
+                        </div>
+
+                        <div class="flex flex-col items-center rounded-lg h-[80%]">
+                            <img src="img/imp-placements/imp-placements-6.png" alt="Person" class="w-full h-[90%] object-cover rounded-md" />
+                            <p class="font-bold -mb-1 text-center text-white">
+                                Jayant Agrawal
+                            </p>
+                            <p class="text-sm text-white text-center">TCS</p>
+                        </div>
+
+                        <div class="flex flex-col items-center md:mt-auto mt-0 rounded-lg h-[80%]">
+                            <img src="img/imp-placements/imp-placements-7.png" alt="Person" class="w-full h-[90%] object-cover rounded-md" />
+                            <p class="font-bold -mb-1 text-center text-white">
+                                Avinash Singh
+                            </p>
+                            <p class="text-sm text-white text-center">Infra Market</p>
+                        </div>
+
+                        <div class="flex flex-col items-center md:mt-auto mt-0 rounded-lg h-[80%]">
+                            <img src="img/imp-placements/imp-placements-8.png" alt="Person" class="w-full h-[90%] object-cover rounded-md" />
+                            <p class="font-bold -mb-1 text-center text-white">
+                                Aditya Tripathi
+                            </p>
+                            <p class="text-sm text-white text-center">Comviva</p>
+                        </div>
+
+                        <div class="flex flex-col items-center rounded-lg h-[80%]">
+                            <img src="img/imp-placements/imp-placements-9.png" alt="Person" class="w-full h-[90%] object-cover rounded-md" />
+                            <p class="font-bold -mb-1 text-center text-white">
+                                Shruti Agrawal
+                            </p>
+                            <p class="text-sm text-white text-center">IDFC First Bank</p>
+                        </div>
+
+                        <div class="flex flex-col items-center md:mt-auto mt-0 rounded-lg h-[80%]">
+                            <img src="img/imp-placements/imp-placements-10.png" alt="Person" class="w-full h-[90%] object-cover rounded-md" />
+                            <p class="font-bold -mb-1 text-center text-white">Satyam singh</p>
+                            <p class="text-sm text-white text-center">Barclays</p>
+                        </div>
+
+                        <div class="flex flex-col items-center rounded-lg h-[80%]">
+                            <img src="img/imp-placements/imp-placements-11.png" alt="Person" class="w-full h-[90%] object-cover rounded-md" />
+                            <p class="font-bold -mb-1 text-center text-white">
+                                Shubham Tiwari
+                            </p>
+                            <p class="text-sm text-white text-center">
+                                Aditya Birla Fashion & Retail
+                            </p>
+                        </div>
+
+                        <div class="flex flex-col items-center md:mt-auto mt-0 rounded-lg h-[80%]">
+                            <img src="img/imp-placements/imp-placements-12.png" alt="Person" class="w-full h-[90%] object-cover rounded-md" />
+                            <p class="font-bold -mb-1 text-center text-white">Asba Naz</p>
+                            <p class="text-sm text-white text-center">UKG</p>
+                        </div>
+
+                        <div class="flex flex-col items-center rounded-lg h-[80%]">
+                            <img src="img/imp-placements/imp-placements-13.png" alt="Person" class="w-full h-[90%] object-cover rounded-md" />
+                            <p class="font-bold -mb-1 text-center text-white">Anshu Mittal</p>
+                            <p class="text-sm text-white text-center">
+                                National Australia Bank
+                            </p>
+                        </div>
+
+                        <div class="flex flex-col items-center md:mt-auto mt-0 rounded-lg h-[80%]">
+                            <img src="img/imp-placements/imp-placements-14.png" alt="Person" class="w-full h-[90%] object-cover rounded-md" />
+                            <p class="font-bold -mb-1 text-center text-white">
+                                Diksha Srivastava
+                            </p>
+                            <p class="text-sm text-white text-center">Phillip Capital</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- proud alumni -->
+
+        <section class="max-w-[1400px] mx-auto py-10 px-2 max-lg:py-8 max-md:py-7 max-sm:py-6">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-4">
+                <div class="relative w-72 h-72 md:w-80 md:h-80 flex-1 flex justify-center">
+                    <img src="/img/admission-process/admission-1.webp" alt="Team Meeting" class="w-full h-full object-cover rounded-md" />
+
+                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white w-32 h-32 md:w-36 md:h-36 rounded-md flex flex-col justify-center items-center shadow-lg">
+                        <h2 class="text-teal-500 text-3xl font-bold max-md:text-2xl max-sm:text-xl">
+                            15+
+                        </h2>
+                        <p class="text-gray-700 text-sm font-semibold text-center">
+                            Years<br />
+                            Experience
+                        </p>
+                    </div>
+                </div>
+
+                <div class="text-center md:text-left flex-1">
+                    <h2 class="text-2xl font-semibold mb-6 max-md:text-xl max-sm:text-lg max-lg:mb-4 max-md:mb-3 max-sm:mb-2">
+                        How to Apply?
+                    </h2>
+
+                    <div class="relative flex flex-col items-center w-full max-w-xl mt-3">
+                        <div class="relative flex items-center w-full">
+                            <div class="absolute top-5 left-0 right-0 h-0.5 bg-gray-300 z-0 mx-7"></div>
+
+                            <div class="relative z-10 flex justify-between w-full gap-1.5">
+                                <div class="flex flex-col items-center relative w-[25%]">
+                                    <button class="step w-10 h-10 flex items-center justify-center rounded-full bg-blue-900 text-white relative z-10 active" onclick="changeStep(0)">
+                                        ✓
+                                    </button>
+                                    <span class="text-sm mt-2 max-sm:text-xs max-sm:mt-1">Step 1</span>
+                                    <span class="hidden md:block text-base text-gray-600 mt-1 max-sm:text-sm text-center">Register Yourself</span>
+                                </div>
+                                <div class="flex flex-col items-center relative w-[25%]">
+                                    <button class="step w-10 h-10 flex items-center justify-center rounded-full bg-gray-300 text-black relative z-10" onclick="changeStep(1)">
+                                        ✓
+                                    </button>
+                                    <span class="text-sm mt-2 max-sm:text-xs max-sm:mt-1">Step 2</span>
+                                    <span class="hidden md:block text-base text-gray-600 mt-1 max-sm:text-sm text-center">Verify E-mail</span>
+                                </div>
+                                <div class="flex flex-col items-center relative w-[25%]">
+                                    <button class="step w-10 h-10 flex items-center justify-center rounded-full bg-gray-300 text-black relative z-10" onclick="changeStep(2)">
+                                        ✓
+                                    </button>
+                                    <span class="text-sm mt-2 max-sm:text-xs max-sm:mt-1">Step 3</span>
+                                    <span class="hidden md:block text-base text-gray-600 mt-1 max-sm:text-sm text-center">
+                                        Fill Application <br />
+                                        Form Online
+                                    </span>
+                                </div>
+                                <div class="flex flex-col items-center relative w-[25%]">
+                                    <button class="step w-10 h-10 flex items-center justify-center rounded-full bg-gray-300 text-black relative z-10" onclick="changeStep(3)">
+                                        ✓
+                                    </button>
+                                    <span class="text-sm mt-2 max-sm:text-xs max-sm:mt-1">Step 4</span>
+                                    <span class="hidden md:block text-base text-gray-600 mt-1 max-sm:text-sm text-center">
+                                        Upload Required <br />
+                                        Documents
+                                    </span>
+                                </div>
+                                <div class="flex flex-col items-center relative w-[25%]">
+                                    <button class="step w-10 h-10 flex items-center justify-center rounded-full bg-gray-300 text-black relative z-10" onclick="changeStep(3)">
+                                        ✓
+                                    </button>
+                                    <span class="text-sm mt-2 max-sm:text-xs max-sm:mt-1">Step 5</span>
+                                    <span class="hidden md:block text-base text-gray-600 mt-1 max-sm:text-sm text-center">Pay Application Fee</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-12 text-left max-lg:mt-8 max-md:mt-6 max-sm:mt-4">
+                        <h3 class="text-xl font-semibold max-md:text-lg max-sm:text-base" id="step-title">
+                            Step 1 - Signup
+                        </h3>
+                        <p class="text-base mt-2 text-gray-700 content max-sm:text-sm" id="step-content">
+                            To complete the registration process for CUCET, you are required to provide some essential details, including your full name, a valid email ID, mobile number, state of residence, gender, and a secure password.
+                            Your email ID will function as your unique username for accessing the portal, ensuring a seamless login experience. Additionally, you will have the opportunity to set your own password during the registration
+                            process, allowing you to create a secure and personalized account for future access.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-7xl mx-auto px-2 py-10">
+            <div class="flex flex-col gap-4">
+                <div class="hidden lg:grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="h-48 md:h-64 overflow-hidden rounded-lg">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/-IDqlS5fLfU" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="h-48 md:h-64 overflow-hidden rounded-lg">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/OQpIVuUnHT0" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="lg:hidden">
+                    <div class="swiper firstSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <iframe class="w-full h-48 md:h-64" src="https://www.youtube.com/embed/-IDqlS5fLfU" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="swiper-slide">
+                                <iframe class="w-full h-48 md:h-64" src="https://www.youtube.com/embed/OQpIVuUnHT0" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="swiper-slide">
+                                <iframe class="w-full h-48 md:h-64" src="https://www.youtube.com/embed/_Q24UDn0MOM" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:hidden flex items-center justify-center p-4 rounded-lg bg-white shadow-md">
+                    <p class="text-center text-gray-800 font-medium text-lg">
+                        "Explore our video gallery showcasing vibrant moments of
+                        <span class="font-bold">college life, events, and student activities</span>."
+                    </p>
+                </div>
+
+                <div class="hidden lg:grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="h-48 md:h-64 overflow-hidden rounded-lg">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/_Q24UDn0MOM" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="flex items-center justify-center p-4 rounded-lg">
+                        <p class="text-center text-gray-800 font-medium text-lg">
+                            "Explore our video gallery showcasing vibrant moments of
+                            <span class="font-bold">college life, events, and student activities</span>."
+                        </p>
+                    </div>
+                    <div class="h-48 md:h-64 overflow-hidden rounded-lg">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/r4ir1RUvXIA" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="lg:hidden">
+                    <div class="swiper secondSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <iframe class="w-full h-48 md:h-64" src="https://www.youtube.com/embed/r4ir1RUvXIA" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="swiper-slide">
+                                <iframe class="w-full h-48 md:h-64" src="https://www.youtube.com/embed/TRFZaBChPnw" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="swiper-slide">
+                                <iframe class="w-full h-48 md:h-64" src="https://www.youtube.com/embed/3ciUNVaJHSc" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hidden lg:grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="h-48 md:h-64 overflow-hidden rounded-lg">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/TRFZaBChPnw" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="h-48 md:h-64 overflow-hidden rounded-lg">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/3ciUNVaJHSc" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#fff9f1]">
+            <div class="relative flex flex-col items-center py-6 px-8">
+                <div class="absolute top-0 left-0 w-full h-1/2 bg-[#d3e23b]"></div>
+                <h1 class="relative text-5xl font-extrabold text-black z-10 max-lg:text-4xl max-md:text-3xl max-sm:text-2xl">
+                    Training
+                    <span class="text-gray-700 font-semibold">& Certification</span>
+                </h1>
+                <div class="relative w-36 h-[3px] bg-lime-400 mt-2 z-10"></div>
+            </div>
+            <div class="max-w-7xl mx-auto px-4 py-8 flex flex-col-reverse md:flex-row gap-16">
+                <div class="w-full md:w-2/5 lg:w-1/5">
+                    <div class="space-y-4">
+                        <div class="bg-gray-200 flex items-center p-4 shadow-md mx-auto">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1d/Indian_Institute_of_Technology_Bombay_Logo.svg/300px-Indian_Institute_of_Technology_Bombay_Logo.svg.png" alt="IIT Mumbai" class="mr-4 w-16 h-16" />
+                            <p class="font-bold text-lg text-blue-800 text-nowrap">
+                                IIT MUMBAI <br />
+                                <span class="text-sm text-black font-normal">E-Yantra Project</span>
+                            </p>
+                        </div>
+                        <div class="bg-gray-200 flex items-center p-4 shadow-md">
+                            <img src="https://nano.iitd.ac.in/images/logo-second.png" alt="IIT Delhi" class="mr-4 w-18 h-16" />
+                            <p class="font-bold text-lg text-blue-800 text-nowrap">
+                                IIT DELHI <br />
+                                <span class="text-sm text-black font-normal">Virtual Lab Project</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div id="logo-grid" class="grid grid-cols-2 gap-0 mt-6"></div>
+                </div>
+
+                <div class="w-full md:w-3/5 lg:w-4/5">
+                    <div class="relative flex flex-wrap gap-0">
+                        <div class="relative w-full md:w-1/2">
+                            <img src="https://st1.bollywoodlife.com/wp-content/uploads/2019/09/hip-hip-hurray.png" alt="Training Image 1" class="w-full h-auto" />
+                            <div class="absolute inset-0 bg-lime-500 opacity-50"></div>
+                        </div>
+                        <div class="relative w-full md:w-1/2">
+                            <img src="https://media.sciencephoto.com/image/f0066902/800wm" alt="Training Image 2" class="w-full h-auto" />
+                            <div class="absolute inset-0 bg-lime-500 opacity-50"></div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4 mt-6 text-lg max-md:text-base max-sm:text-sm max-md:gap-2.5 max-sm:gap-2">
+                        <ul class="space-y-2 max-sm:space-y-1.5 list-disc list-inside">
+                            <li>Design Thinking and Entrepreneurship</li>
+                            <li>Power BI & Data Visualization</li>
+                            <li>Industry/Market Relevant Certificate (IMBX)</li>
+                            <li>Digital and Social Media Marketing</li>
+                            <li>Foreign language (French/German)</li>
+                            <li>Blockchain Technology</li>
+                            <li>Financial Modelling & Valuation</li>
+                            <li>Tata Strive Google Scholarship Program</li>
+                            <li>ICT Academy: Infosys Foundation</li>
+                            <li>RPCL- Advance Excel & C language</li>
+                        </ul>
+                        <ul class="space-y-2 max-sm:space-y-1.5 list-disc list-inside">
+                            <li>Marketing Analytics</li>
+                            <li>HR Analytics</li>
+                            <li>Six Sigma</li>
+                            <li>HR Compliance</li>
+                            <li>Goods and Services Tax</li>
+                            <li>Business Analytics</li>
+                            <li>Elective Based Certifications</li>
+                            <li>ASP.Net</li>
+                            <li>Tableau</li>
+                            <li>IoT using Raspberry PI</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <style>
+            .swiper-slide iframe {
+                border-radius: 10px;
+            }
+        </style>
+
         <section class="bg-[url('img/bacground-paper.webp')]">
             <div class="max-w-[1400px] mx-auto px-4 text-white flex flex-col lg:flex-row justify-between items-start gap-0 lg:gap-8 py-10 lg:py-16">
                 <div class="flex-1 w-full lg:w-6/12 lg:sticky lg:top-1/4 p-4 lg:p-10 text-center lg:text-left">
                     <h2 class="text-[#c69c6d] text-4xl lg:text-6xl font-bold mb-6 lg:mb-8">
-                        Hear from our successful graduates
+                        Proud Alumni
                     </h2>
                     <div class="space-y-4 lg:space-y-6 text-lg lg:text-xl text-black font-semibold">
                         <p>
@@ -549,466 +983,17 @@
 
                             alumniData.forEach((alumni, index) => {
                                 document.write(`
-                                    <li class="card bg-[#f9a77d] p-4 h-[350px] w-[320px] rounded-3xl shadow-lg flex flex-col items-center text-center sticky top-1">
-                                        <img src="${alumni.image}" alt="${alumni.name}" class="w-36 h-32 object-cover object-center rounded-full">
-                                        <h3 class="text-black text-xl mt-4 font-semibold">${alumni.name}</h3>
-                                        <p class="text-black mt-2 font-medium">${alumni.company}</p>
-                                        <p class="text-black text-sm mt-1">${alumni.location}</p>
-                                        ${alumni.company_logo ? `<img src="${alumni.company_logo}" alt="${alumni.company} Logo" class="w-16 h-16 mt-3 object-contain">` : ""}
-                                    </li>
-                                `);
+                            <li class="card bg-[#f9a77d] p-4 h-[350px] w-[320px] rounded-3xl shadow-lg flex flex-col items-center text-center sticky top-1">
+                                <img src="${alumni.image}" alt="${alumni.name}" class="w-36 h-32 object-cover object-center rounded-full">
+                                <h3 class="text-black text-xl mt-4 font-semibold">${alumni.name}</h3>
+                                <p class="text-black mt-2 font-medium">${alumni.company}</p>
+                                <p class="text-black text-sm mt-1">${alumni.location}</p>
+                                ${alumni.company_logo ? `<img src="${alumni.company_logo}" alt="${alumni.company} Logo" class="w-16 h-16 mt-3 object-contain">` : ""}
+                            </li>
+                        `);
                             });
                         </script>
                     </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="max-w-[1400px] mx-auto py-10 px-2 max-lg:py-8 max-md:py-7 max-sm:py-6">
-            <div class="flex flex-col md:flex-row items-center justify-center gap-4">
-                <div class="relative w-72 h-72 md:w-80 md:h-80 flex-1 flex justify-center">
-                    <img src="/img/admission-process/admission-1.webp" alt="Team Meeting" class="w-full h-full object-cover rounded-md" />
-
-                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white w-32 h-32 md:w-36 md:h-36 rounded-md flex flex-col justify-center items-center shadow-lg">
-                        <h2 class="text-teal-500 text-3xl font-bold max-md:text-2xl max-sm:text-xl">
-                            15+
-                        </h2>
-                        <p class="text-gray-700 text-sm font-semibold text-center">
-                            Years<br />
-                            Experience
-                        </p>
-                    </div>
-                </div>
-
-                <div class="text-center md:text-left flex-1">
-                    <h2 class="text-2xl font-semibold mb-6 max-md:text-xl max-sm:text-lg max-lg:mb-4 max-md:mb-3 max-sm:mb-2">
-                        How to Apply?
-                    </h2>
-
-                    <div class="relative flex flex-col items-center w-full max-w-xl mt-3">
-                        <div class="relative flex items-center w-full">
-                            <div class="absolute top-5 left-0 right-0 h-0.5 bg-gray-300 z-0 mx-7"></div>
-
-                            <div class="relative z-10 flex justify-between w-full gap-1.5">
-                                <div class="flex flex-col items-center relative w-[25%]">
-                                    <button class="step w-10 h-10 flex items-center justify-center rounded-full bg-blue-900 text-white relative z-10 active" onclick="changeStep(0)">
-                                        ✓
-                                    </button>
-                                    <span class="text-sm mt-2 max-sm:text-xs max-sm:mt-1">Step 1</span>
-                                    <span class="hidden md:block text-base text-gray-600 mt-1 max-sm:text-sm text-center">Register Yourself</span>
-                                </div>
-                                <div class="flex flex-col items-center relative w-[25%]">
-                                    <button class="step w-10 h-10 flex items-center justify-center rounded-full bg-gray-300 text-black relative z-10" onclick="changeStep(1)">
-                                        ✓
-                                    </button>
-                                    <span class="text-sm mt-2 max-sm:text-xs max-sm:mt-1">Step 2</span>
-                                    <span class="hidden md:block text-base text-gray-600 mt-1 max-sm:text-sm text-center">Verify E-mail</span>
-                                </div>
-                                <div class="flex flex-col items-center relative w-[25%]">
-                                    <button class="step w-10 h-10 flex items-center justify-center rounded-full bg-gray-300 text-black relative z-10" onclick="changeStep(2)">
-                                        ✓
-                                    </button>
-                                    <span class="text-sm mt-2 max-sm:text-xs max-sm:mt-1">Step 3</span>
-                                    <span class="hidden md:block text-base text-gray-600 mt-1 max-sm:text-sm text-center">Fill Application <br> Form Online</span>
-                                </div>
-                                <div class="flex flex-col items-center relative w-[25%]">
-                                    <button class="step w-10 h-10 flex items-center justify-center rounded-full bg-gray-300 text-black relative z-10" onclick="changeStep(3)">
-                                        ✓
-                                    </button>
-                                    <span class="text-sm mt-2 max-sm:text-xs max-sm:mt-1">Step 4</span>
-                                    <span class="hidden md:block text-base text-gray-600 mt-1 max-sm:text-sm text-center">Upload Required <br> Documents</span>
-                                </div>
-                                <div class="flex flex-col items-center relative w-[25%]">
-                                    <button class="step w-10 h-10 flex items-center justify-center rounded-full bg-gray-300 text-black relative z-10" onclick="changeStep(3)">
-                                        ✓
-                                    </button>
-                                    <span class="text-sm mt-2 max-sm:text-xs max-sm:mt-1">Step 5</span>
-                                    <span class="hidden md:block text-base text-gray-600 mt-1 max-sm:text-sm text-center">Pay Application Fee</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mt-12 text-left max-lg:mt-8 max-md:mt-6 max-sm:mt-4">
-                        <h3 class="text-xl font-semibold max-md:text-lg max-sm:text-base" id="step-title">
-                            Step 1 - Signup
-                        </h3>
-                        <p class="text-base mt-2 text-gray-700 content max-sm:text-sm" id="step-content">
-                            To complete the registration process for CUCET, you are required to provide some essential details, including your full name, a valid email ID, mobile number, state of residence, gender, and a secure password.
-                            Your email ID will function as your unique username for accessing the portal, ensuring a seamless login experience. Additionally, you will have the opportunity to set your own password during the registration
-                            process, allowing you to create a secure and personalized account for future access.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="py-10">
-            <h1 class="text-6xl text-center mb-4 text-blue-400 max-sm:text-2xl items-center justify-center max-lg:text-3xl max-md:text-2xl"><span class="font-bold">#Impeccable</span>Placements</h1>
-            <div class="flex items-center justify-center bg-blue-100">
-                <div class="w-full h-auto bg-[url('img/imp-placements/baner-placement.png')] flex flex-col items-center justify-center px-4 py-20">
-                    <div class="grid grid-cols-7 gap-x-10 gap-y-4 w-full max-w-6xl h-full bg-[url('img/about/bg-1.jpg')] bg-center max-sm:gap-y-2 max-sm:gap-x-3 max-md:gap-x-5 max-md:grid-cols-4 max-sm:grid-cols-2">
-                        <div class="flex flex-col items-center md:mt-auto mt-0 rounded-lg h-[80%]">
-                            <img src="img/imp-placements/imp-placements-1.png" alt="Person" class="w-full h-[90%] object-cover rounded-md" />
-                            <p class="font-bold -mb-1 text-center text-white">
-                                Vidhi Gambhir
-                            </p>
-                            <p class="text-sm text-white text-center">Simplify</p>
-                        </div>
-                        <div class="flex flex-col items-center rounded-lg h-[80%]">
-                            <img src="img/imp-placements/imp-placements-2.png" alt="Person" class="w-full h-[90%] object-cover rounded-md" />
-                            <p class="font-bold -mb-1 text-center text-white">Kaushik</p>
-                            <p class="text-sm text-white text-center">UltraTech</p>
-                        </div>
-
-                        <div class="flex flex-col items-center md:mt-auto mt-0 rounded-lg h-[80%]">
-                            <img src="img/imp-placements/imp-placements-3.png" alt="Person" class="w-full h-[90%] object-cover rounded-md" />
-                            <p class="font-bold -mb-1 text-center text-white">Rakesh Kumar</p>
-                            <p class="text-sm text-white text-center">DemandBase</p>
-                        </div>
-
-                        <div class="flex flex-col items-center rounded-lg h-[80%]">
-                            <img src="img/imp-placements/imp-placements-4.png" alt="Person" class="w-full h-[90%] object-cover rounded-md" />
-                            <p class="font-bold -mb-1 text-center text-white">
-                                Raghav Tiwari
-                            </p>
-                            <p class="text-sm text-white text-center">KPMG</p>
-                        </div>
-
-                        <div class="flex flex-col items-center md:mt-auto mt-0 rounded-lg h-[80%]">
-                            <img src="img/imp-placements/imp-placements-5.png" alt="Person" class="w-full h-[90%] object-cover rounded-md" />
-                            <p class="font-bold -mb-1 text-center text-white">Shalu Priya</p>
-                            <p class="text-sm text-white text-center">Accenture</p>
-                        </div>
-
-                        <div class="flex flex-col items-center rounded-lg h-[80%]">
-                            <img src="img/imp-placements/imp-placements-6.png" alt="Person" class="w-full h-[90%] object-cover rounded-md" />
-                            <p class="font-bold -mb-1 text-center text-white">
-                                Jayant Agrawal
-                            </p>
-                            <p class="text-sm text-white text-center">TCS</p>
-                        </div>
-
-                        <div class="flex flex-col items-center md:mt-auto mt-0 rounded-lg h-[80%]">
-                            <img src="img/imp-placements/imp-placements-7.png" alt="Person" class="w-full h-[90%] object-cover rounded-md" />
-                            <p class="font-bold -mb-1 text-center text-white">
-                                Avinash Singh
-                            </p>
-                            <p class="text-sm text-white text-center">Infra Market</p>
-                        </div>
-
-                        <div class="flex flex-col items-center md:mt-auto mt-0 rounded-lg h-[80%]">
-                            <img src="img/imp-placements/imp-placements-8.png" alt="Person" class="w-full h-[90%] object-cover rounded-md" />
-                            <p class="font-bold -mb-1 text-center text-white">
-                                Aditya Tripathi
-                            </p>
-                            <p class="text-sm text-white text-center">Comviva</p>
-                        </div>
-
-                        <div class="flex flex-col items-center rounded-lg h-[80%]">
-                            <img src="img/imp-placements/imp-placements-9.png" alt="Person" class="w-full h-[90%] object-cover rounded-md" />
-                            <p class="font-bold -mb-1 text-center text-white">
-                                Shruti Agrawal
-                            </p>
-                            <p class="text-sm text-white text-center">IDFC First Bank</p>
-                        </div>
-
-                        <div class="flex flex-col items-center md:mt-auto mt-0 rounded-lg h-[80%]">
-                            <img src="img/imp-placements/imp-placements-10.png" alt="Person" class="w-full h-[90%] object-cover rounded-md" />
-                            <p class="font-bold -mb-1 text-center text-white">Satyam singh</p>
-                            <p class="text-sm text-white text-center">Barclays</p>
-                        </div>
-
-                        <div class="flex flex-col items-center rounded-lg h-[80%]">
-                            <img src="img/imp-placements/imp-placements-11.png" alt="Person" class="w-full h-[90%] object-cover rounded-md" />
-                            <p class="font-bold -mb-1 text-center text-white">
-                                Shubham Tiwari
-                            </p>
-                            <p class="text-sm text-white text-center">
-                                Aditya Birla Fashion & Retail
-                            </p>
-                        </div>
-
-                        <div class="flex flex-col items-center md:mt-auto mt-0 rounded-lg h-[80%]">
-                            <img src="img/imp-placements/imp-placements-12.png" alt="Person" class="w-full h-[90%] object-cover rounded-md" />
-                            <p class="font-bold -mb-1 text-center text-white">Asba Naz</p>
-                            <p class="text-sm text-white text-center">UKG</p>
-                        </div>
-
-                        <div class="flex flex-col items-center rounded-lg h-[80%]">
-                            <img src="img/imp-placements/imp-placements-13.png" alt="Person" class="w-full h-[90%] object-cover rounded-md" />
-                            <p class="font-bold -mb-1 text-center text-white">Anshu Mittal</p>
-                            <p class="text-sm text-white text-center">
-                                National Australia Bank
-                            </p>
-                        </div>
-
-                        <div class="flex flex-col items-center md:mt-auto mt-0 rounded-lg h-[80%]">
-                            <img src="img/imp-placements/imp-placements-14.png" alt="Person" class="w-full h-[90%] object-cover rounded-md" />
-                            <p class="font-bold -mb-1 text-center text-white">
-                                Diksha Srivastava
-                            </p>
-                            <p class="text-sm text-white text-center">Phillip Capital</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="max-w-7xl mx-auto px-2 py-10">
-            <div class="flex flex-col gap-4">
-                <div class="hidden lg:grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div class="h-48 md:h-64 overflow-hidden rounded-lg">
-                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/-IDqlS5fLfU" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="h-48 md:h-64 overflow-hidden rounded-lg">
-                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/OQpIVuUnHT0" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
-
-                <div class="lg:hidden">
-                    <div class="swiper firstSwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <iframe class="w-full h-48 md:h-64" src="https://www.youtube.com/embed/-IDqlS5fLfU" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                            <div class="swiper-slide">
-                                <iframe class="w-full h-48 md:h-64" src="https://www.youtube.com/embed/OQpIVuUnHT0" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                            <div class="swiper-slide">
-                                <iframe class="w-full h-48 md:h-64" src="https://www.youtube.com/embed/_Q24UDn0MOM" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="lg:hidden flex items-center justify-center p-4 rounded-lg bg-white shadow-md">
-                    <p class="text-center text-gray-800 font-medium text-lg">
-                        "Explore our video gallery showcasing vibrant moments of
-                        <span class="font-bold">college life, events, and student activities</span>."
-                    </p>
-                </div>
-
-                <div class="hidden lg:grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div class="h-48 md:h-64 overflow-hidden rounded-lg">
-                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/_Q24UDn0MOM" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="flex items-center justify-center p-4 rounded-lg">
-                        <p class="text-center text-gray-800 font-medium text-lg">
-                            "Explore our video gallery showcasing vibrant moments of
-                            <span class="font-bold">college life, events, and student activities</span>."
-                        </p>
-                    </div>
-                    <div class="h-48 md:h-64 overflow-hidden rounded-lg">
-                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/r4ir1RUvXIA" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
-
-                <div class="lg:hidden">
-                    <div class="swiper secondSwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <iframe class="w-full h-48 md:h-64" src="https://www.youtube.com/embed/r4ir1RUvXIA" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                            <div class="swiper-slide">
-                                <iframe class="w-full h-48 md:h-64" src="https://www.youtube.com/embed/TRFZaBChPnw" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                            <div class="swiper-slide">
-                                <iframe class="w-full h-48 md:h-64" src="https://www.youtube.com/embed/3ciUNVaJHSc" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="hidden lg:grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div class="h-48 md:h-64 overflow-hidden rounded-lg">
-                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/TRFZaBChPnw" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="h-48 md:h-64 overflow-hidden rounded-lg">
-                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/3ciUNVaJHSc" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="bg-[#fff9f1]">
-            <div class="relative flex flex-col items-center py-6 px-8">
-                <div class="absolute top-0 left-0 w-full h-1/2 bg-[#d3e23b]"></div>
-                <h1 class="relative text-5xl font-extrabold text-black z-10 max-lg:text-4xl max-md:text-3xl max-sm:text-2xl">
-                    Training
-                    <span class="text-gray-700 font-semibold">& Certification</span>
-                </h1>
-                <div class="relative w-36 h-[3px] bg-lime-400 mt-2 z-10"></div>
-            </div>
-            <div class="max-w-7xl mx-auto px-4 py-8 flex flex-col-reverse md:flex-row gap-16">
-                <div class="w-full md:w-2/5 lg:w-1/5">
-                    <div class="space-y-4">
-                        <div class="bg-gray-200 flex items-center p-4 shadow-md mx-auto">
-                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1d/Indian_Institute_of_Technology_Bombay_Logo.svg/300px-Indian_Institute_of_Technology_Bombay_Logo.svg.png" alt="IIT Mumbai" class="mr-4 w-16 h-16" />
-                            <p class="font-bold text-lg text-blue-800 text-nowrap">
-                                IIT MUMBAI <br />
-                                <span class="text-sm text-black font-normal">E-Yantra Project</span>
-                            </p>
-                        </div>
-                        <div class="bg-gray-200 flex items-center p-4 shadow-md">
-                            <img src="https://nano.iitd.ac.in/images/logo-second.png" alt="IIT Delhi" class="mr-4 w-18 h-16" />
-                            <p class="font-bold text-lg text-blue-800 text-nowrap">
-                                IIT DELHI <br />
-                                <span class="text-sm text-black font-normal">Virtual Lab Project</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div id="logo-grid" class="grid grid-cols-2 gap-0 mt-6"></div>
-                </div>
-
-                <div class="w-full md:w-3/5 lg:w-4/5">
-                    <div class="relative flex flex-wrap gap-0">
-                        <div class="relative w-full md:w-1/2">
-                            <img src="https://st1.bollywoodlife.com/wp-content/uploads/2019/09/hip-hip-hurray.png" alt="Training Image 1" class="w-full h-auto" />
-                            <div class="absolute inset-0 bg-lime-500 opacity-50"></div>
-                        </div>
-                        <div class="relative w-full md:w-1/2">
-                            <img src="https://media.sciencephoto.com/image/f0066902/800wm" alt="Training Image 2" class="w-full h-auto" />
-                            <div class="absolute inset-0 bg-lime-500 opacity-50"></div>
-                        </div>
-                    </div>
-
-                    <div class="grid grid-cols-2 gap-4 mt-6 text-lg max-md:text-base max-sm:text-sm max-md:gap-2.5 max-sm:gap-2">
-                        <ul class="space-y-2 max-sm:space-y-1.5 list-disc list-inside">
-                            <li>Design Thinking and Entrepreneurship</li>
-                            <li>Power BI & Data Visualization</li>
-                            <li>Industry/Market Relevant Certificate (IMBX)</li>
-                            <li>Digital and Social Media Marketing</li>
-                            <li>Foreign language (French/German)</li>
-                            <li>Blockchain Technology</li>
-                            <li>Financial Modelling & Valuation</li>
-                            <li>Tata Strive Google Scholarship Program</li>
-                            <li>ICT Academy: Infosys Foundation</li>
-                            <li>RPCL- Advance Excel & C language</li>
-                        </ul>
-                        <ul class="space-y-2 max-sm:space-y-1.5 list-disc list-inside">
-                            <li>Marketing Analytics</li>
-                            <li>HR Analytics</li>
-                            <li>Six Sigma</li>
-                            <li>HR Compliance</li>
-                            <li>Goods and Services Tax</li>
-                            <li>Business Analytics</li>
-                            <li>Elective Based Certifications</li>
-                            <li>ASP.Net</li>
-                            <li>Tableau</li>
-                            <li>IoT using Raspberry PI</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <style>
-            .swiper-slide iframe {
-                border-radius: 10px;
-            }
-        </style>
-
-        
-
-        <section class="pt-10">
-            <div class="placement-component relative bg-primary h-auto w-full pt-[5rem] pb-12 mt-[10rem]">
-                <div class="max-w-6xl mx-auto px-4 absolute top-[-10rem] left-0 right-0">
-                    <div class="card-slider relative pt-12">
-                        <div class="slider-container overflow-hidden">
-                            <div id="slider" class="flex transition-transform duration-500 ease-in-out"></div>
-                        </div>
-
-                        <button id="prevBtn" class="absolute left-1 lg:-left-2 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg z-10">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                            </svg>
-                        </button>
-                        <button id="nextBtn" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg z-10">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="max-w-7xl mx-auto mt-12 py-6">
-                    <div class="marquee">
-                        <div class="marquee-content"></div>
-                    </div>
-                </div>
-
-                <div class="max-w-4xl mx-auto px-4 mt-2">
-                    <div class="grid grid-cols-4 gap-6 text-center text-white max-md:grid-cols-4 max-sm:grid-cols-2">
-                        <div class="p-4 max-lg:p-3 max-md:p-2.5 max-sm:p-2">
-                            <h2 class="text-4xl font-bold max-lg:text-3xl max-md:text-2xl max-sm:text-xl">
-                                9000+
-                            </h2>
-                            <p class="text-base mt-2 max-md:text-sm max-sm:text-xs">
-                                Placement
-                            </p>
-                            <p class="text-base max-md:text-sm max-sm:text-xs">Offers</p>
-                        </div>
-                        <div class="p-4 max-lg:p-3 max-md:p-2.5 max-sm:p-2">
-                            <h2 class="text-4xl font-bold max-lg:text-3xl max-md:text-2xl max-sm:text-xl">
-                                900+
-                            </h2>
-                            <p class="text-base mt-2 max-md:text-sm max-sm:text-xs">
-                                Company Visited
-                            </p>
-                            <p class="text-base max-md:text-sm max-sm:text-xs">
-                                for Recruitment
-                            </p>
-                        </div>
-                        <div class="p-4 max-lg:p-3 max-md:p-2.5 max-sm:p-2">
-                            <h2 class="text-4xl font-bold max-lg:text-3xl max-md:text-2xl max-sm:text-xl">54.75<span class="text-lg">LPA</span></h2>
-                            <p class="text-base mt-2 max-md:text-sm max-sm:text-xs">
-                                Highest National
-                            </p>
-                            <p class="text-base max-md:text-sm max-sm:text-xs">
-                                Package Offered
-                            </p>
-                        </div>
-                        <div class="p-4 max-lg:p-3 max-md:p-2.5 max-sm:p-2">
-                            <h2 class="text-4xl font-bold max-lg:text-3xl max-md:text-2xl max-sm:text-xl">1.7<span class="text-lg">CR</span></h2>
-                            <p class="text-base mt-2 max-md:text-sm max-sm:text-xs">
-                                Highest International
-                            </p>
-                            <p class="text-base max-md:text-sm max-sm:text-xs">
-                                Package Offered
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="max-w-5xl mx-auto px-4 mt-2">
-                    <div class="flex flex-wrap justify-center text-center text-white">
-                        <div class="w-1/2 md:w-1/5 p-4 border-r border-white/20 last:border-r-0 max-lg:p-3 max-md:p-2.5 max-sm:p-2">
-                            <h2 class="text-3xl font-bold max-md:text-2xl max-sm:text-xl">20<span class="text-sm">LPA</span></h2>
-                            <p class="mt-1 text-sm max-sm:text-xs">Package Offered by</p>
-                            <p class="text-sm max-sm:text-xs">90+ Companies</p>
-                        </div>
-                        <div class="w-1/2 md:w-1/5 p-4 border-r border-white/20 last:border-r-0 max-lg:p-3 max-md:p-2.5 max-sm:p-2">
-                            <h2 class="text-3xl font-bold max-md:text-2xl max-sm:text-xl">15<span class="text-sm">LPA</span></h2>
-                            <p class="mt-1 text-sm max-sm:text-xs">Package Offered by</p>
-                            <p class="text-sm max-sm:text-xs">60+ Companies</p>
-                        </div>
-                        <div class="w-1/2 md:w-1/5 p-4 border-r border-white/20 last:border-r-0 max-lg:p-3 max-md:p-2.5 max-sm:p-2">
-                            <h2 class="text-3xl font-bold max-md:text-2xl max-sm:text-xl">10<span class="text-sm">LPA</span></h2>
-                            <p class="mt-1 text-sm max-sm:text-xs">Package Offered by</p>
-                            <p class="text-sm max-sm:text-xs">200+ Companies</p>
-                        </div>
-                        <div class="w-1/2 md:w-1/5 p-4 border-r border-white/20 last:border-r-0 max-lg:p-3 max-md:p-2.5 max-sm:p-2">
-                            <h2 class="text-3xl font-bold max-md:text-2xl max-sm:text-xl">7<span class="text-sm">LPA</span></h2>
-                            <p class="mt-1 text-sm max-sm:text-xs">Package Offered by</p>
-                            <p class="text-sm max-sm:text-xs">127 Companies</p>
-                        </div>
-                        <div class="w-1/2 md:w-1/5 p-4 max-lg:p-3 max-md:p-2.5 max-sm:p-2">
-                            <h2 class="text-3xl font-bold max-md:text-2xl max-sm:text-xl">5<span class="text-sm">LPA</span></h2>
-                            <p class="mt-1 text-sm max-sm:text-xs">Package Offered by</p>
-                            <p class="text-sm max-sm:text-xs">500+ Companies</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -1024,7 +1009,7 @@
                 <div id="image-container" class="hidden lg:grid grid-cols-4 gap-6 p-6"></div>
 
                 <!-- Swiper Slider for Tablet & Mobile (Images) -->
-                <div class="block lg:hidden"> 
+                <div class="block lg:hidden">
                     <div class="swiper imageSwiper w-full max-w-[90vw] mx-auto">
                         <div class="swiper-wrapper" id="swiper-image-container"></div>
                         <div class="swiper-pagination"></div>
@@ -1033,8 +1018,6 @@
 
                 <!-- Grid Layout for Tablet and Above -->
                 <div id="awards-container" class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 p-2.5 max-lg:gap-5 max-md:gap-4"></div>
-                
-                
             </div>
         </section>
 
@@ -1109,41 +1092,17 @@
 
         <script>
             document.addEventListener("DOMContentLoaded", function () {
-                gsap.fromTo(
-                    "#header",
-                    { y: -100, opacity: 0 },
-                    { y: 0, opacity: 1, duration: 1, ease: "power2.out" }
-                );
+                gsap.fromTo("#header", { y: -100, opacity: 0 }, { y: 0, opacity: 1, duration: 1, ease: "power2.out" });
 
-                gsap.fromTo(
-                    "#heading",
-                    { x: -200, opacity: 0 },
-                    { x: 0, opacity: 1, duration: 1, delay: 1, ease: "power2.out" }
-                );
+                gsap.fromTo("#heading", { x: -200, opacity: 0 }, { x: 0, opacity: 1, duration: 1, delay: 1, ease: "power2.out" });
 
-                gsap.fromTo(
-                    "#subheading",
-                    { x: -200, opacity: 0 },
-                    { x: 0, opacity: 1, duration: 1, delay: 1.3, ease: "power2.out" }
-                );
+                gsap.fromTo("#subheading", { x: -200, opacity: 0 }, { x: 0, opacity: 1, duration: 1, delay: 1.3, ease: "power2.out" });
 
-                gsap.fromTo(
-                    "#paragraph",
-                    { x: -200, opacity: 0 },
-                    { x: 0, opacity: 1, duration: 1, delay: 1.6, ease: "power2.out" }
-                );
+                gsap.fromTo("#paragraph", { x: -200, opacity: 0 }, { x: 0, opacity: 1, duration: 1, delay: 1.6, ease: "power2.out" });
 
-                gsap.fromTo(
-                    "#button",
-                    { x: -200, opacity: 0 },
-                    { x: 0, opacity: 1, duration: 1, delay: 1.9, ease: "power2.out" }
-                );
+                gsap.fromTo("#button", { x: -200, opacity: 0 }, { x: 0, opacity: 1, duration: 1, delay: 1.9, ease: "power2.out" });
 
-                gsap.fromTo(
-                    "#bottom-section",
-                    { y: 200, opacity: 0 },
-                    { y: 0, opacity: 1, duration: 1, delay: 1, ease: "power2.out" }
-                );
+                gsap.fromTo("#bottom-section", { y: 200, opacity: 0 }, { y: 0, opacity: 1, duration: 1, delay: 1, ease: "power2.out" });
             });
         </script>
 
@@ -1517,101 +1476,169 @@
         </script>
 
         <!-- Awards and Recognitions Starts -->
-
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
+        <script>
             const imagePaths = [
-            "/img/awards-and-recognitions/awards-and-recognitions-12.webp",
-            "/img/awards-and-recognitions/awards-and-recognitions-1.webp",
-            "/img/awards-and-recognitions/awards-and-recognitions-2.webp",
-            "/img/awards-and-recognitions/awards-and-recognitions-3.webp",
-            "/img/awards-and-recognitions/awards-and-recognitions-4.webp",
-            "/img/awards-and-recognitions/awards-and-recognitions-5.webp",
-            "/img/awards-and-recognitions/awards-and-recognitions-6.webp",
-            "/img/awards-and-recognitions/awards-and-recognitions-7.webp",
-            "/img/awards-and-recognitions/awards-and-recognitions-8.webp",
-            "/img/awards-and-recognitions/awards-and-recognitions-9.webp",
-            "/img/awards-and-recognitions/awards-and-recognitions-10.webp",
-            "/img/awards-and-recognitions/awards-and-recognitions-11.webp",
-        ];
+                "/img/awards-and-recognitions/awards-and-recognitions-12.webp",
+                "/img/awards-and-recognitions/awards-and-recognitions-1.webp",
+                "/img/awards-and-recognitions/awards-and-recognitions-2.webp",
+                "/img/awards-and-recognitions/awards-and-recognitions-3.webp",
+                "/img/awards-and-recognitions/awards-and-recognitions-4.webp",
+                "/img/awards-and-recognitions/awards-and-recognitions-5.webp",
+                "/img/awards-and-recognitions/awards-and-recognitions-6.webp",
+                "/img/awards-and-recognitions/awards-and-recognitions-7.webp",
+                "/img/awards-and-recognitions/awards-and-recognitions-8.webp",
+                "/img/awards-and-recognitions/awards-and-recognitions-9.webp",
+                "/img/awards-and-recognitions/awards-and-recognitions-10.webp",
+                "/img/awards-and-recognitions/awards-and-recognitions-11.webp",
+            ];
 
+            const imageContainer = document.getElementById("image-container");
+            const swiperImageContainer = document.getElementById("swiper-image-container");
 
-        const imageContainer = document.getElementById("image-container");
-        const swiperImageContainer = document.getElementById("swiper-image-container");
+            // **Desktop View: Grid Layout (only for large screens)**
+            if (window.innerWidth >= 1024) {
+                imagePaths.forEach((image) => {
+                    const imageDiv = document.createElement("div");
+                    imageDiv.className = "rounded-lg overflow-hidden shadow-lg";
+                    imageDiv.innerHTML = `<img src="${image}" class="w-full h-full object-cover">`;
+                    imageContainer.appendChild(imageDiv);
+                });
+            } else {
+                // **Tablet & Mobile View: Swiper Slider**
+                let imageRows = [];
+                for (let i = 0; i < imagePaths.length; i += 4) {
+                    imageRows.push(imagePaths.slice(i, i + 4)); // 3 rows total
+                }
 
-        // **Desktop View: Grid Layout (only for large screens)**
-        if (window.innerWidth >= 1024) {
-            imagePaths.forEach((image) => {
-                const imageDiv = document.createElement("div");
-                imageDiv.className = "rounded-lg overflow-hidden shadow-lg";
-                imageDiv.innerHTML = `<img src="${image}" class="w-full h-full object-cover">`;
-                imageContainer.appendChild(imageDiv);
-            });
-        } else {
-            // **Tablet & Mobile View: Swiper Slider**
-            let imageRows = [];
-            for (let i = 0; i < imagePaths.length; i += 4) {
-                imageRows.push(imagePaths.slice(i, i + 4)); // 3 rows total
-            }
+                imageRows.forEach((row) => {
+                    let slide = document.createElement("div");
 
-            imageRows.forEach((row) => {
-                let slide = document.createElement("div");
-            
-                // Apply 'grid-cols-2' if screen width is >= 425px, else 'grid-cols-1'
-                let gridClass = window.innerWidth >= 425 ? "grid-cols-2" : "grid-cols-1";
-                
-                slide.className = `swiper-slide grid ${gridClass} gap-4 p-4`;
-            
-                slide.innerHTML = row.map((image) => `
+                    // Apply 'grid-cols-2' if screen width is >= 425px, else 'grid-cols-1'
+                    let gridClass = window.innerWidth >= 425 ? "grid-cols-2" : "grid-cols-1";
+
+                    slide.className = `swiper-slide grid ${gridClass} gap-4 p-4`;
+
+                    slide.innerHTML = row
+                        .map(
+                            (image) => `
                     <div class="rounded-lg overflow-hidden shadow-lg">
                         <img src="${image}" class="w-full h-full object-cover">
                     </div>
-                `).join("");
-            
-                swiperImageContainer.appendChild(slide);
-            });
+                `
+                        )
+                        .join("");
 
-            // **Initialize Swiper for Mobile & Tablet**
-            var swiperImages = new Swiper(".imageSwiper", {
-                slidesPerView: 1,
-                spaceBetween: 15,
-                loop: true,
-                autoplay: {
-                    delay: 3000,
-                    disableOnInteraction: false,
+                    swiperImageContainer.appendChild(slide);
+                });
+
+                // **Initialize Swiper for Mobile & Tablet**
+                var swiperImages = new Swiper(".imageSwiper", {
+                    slidesPerView: 1,
+                    spaceBetween: 15,
+                    loop: true,
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    },
+
+                    breakpoints: {
+                        768: {
+                            // Tablet View (>=768px)
+                            slidesPerView: 1,
+                            spaceBetween: 20,
+                        },
+                    },
+                });
+            }
+            const awards = [
+                {
+                    title: "Top B Schools Ranking",
+                    description: "Ranked GIMS 23rd among top B Schools in North Zone by BUSINESS WORLD.",
+                    leftImage: "/img/left-gold.webp",
+                    rightImage: "/img/right-gold.webp",
                 },
-                
-                breakpoints: {
-                    768: { // Tablet View (>=768px)
-                        slidesPerView: 1,
-                        spaceBetween: 20,
-                    }
-                }
-            });
-        }
-        const awards = [
-            { title: "Top B Schools Ranking", description: "Ranked GIMS 23rd among top B Schools in North Zone by BUSINESS WORLD.", leftImage: "/img/left-gold.webp", rightImage: "/img/right-gold.webp" },
-            { title: "Best Private B Schools", description: "Ranked GIMS 20th among top private B Schools in Delhi/NCR by THE WEEK.", leftImage: "/img/left-gold.webp", rightImage: "/img/right-gold.webp" },
-            { title: "Top Colleges in Delhi/NCR", description: "Ranked 9th among top colleges in Delhi /NCR by THE WEEK.", leftImage: "/img/left-gold.webp", rightImage: "/img/right-gold.webp" },
-            { title: "Best Engineering College", description: "Ranked AAA the best engineering college by CAREERS 360.", leftImage: "/img/left-gold.webp", rightImage: "/img/right-gold.webp" },
-            { title: "Leadership Award", description: "B-School leadership Award.", leftImage: "/img/left-gold.webp", rightImage: "/img/right-gold.webp" },
-            { title: "Top Private Institute", description: "Top Private Institute in North India by JAGRAN JOSH.", leftImage: "/img/left-gold.webp", rightImage: "/img/right-gold.webp" },
-            { title: "CSR Excellence", description: "CSR Award for Top Institute of India.", leftImage: "/img/left-gold.webp", rightImage: "/img/right-gold.webp" },
-            { title: "B-School Survey Ranking", description: "A+ category & Ranked 36th in the B-School Survey.", leftImage: "/img/left-gold.webp", rightImage: "/img/right-gold.webp" },
-            { title: "Emerging B Schools", description: "GIMS in top Emerging B Schools by Times OF India.", leftImage: "/img/left-gold.webp", rightImage: "/img/right-gold.webp" },
-            { title: "Institution’s Innovation Council", description: "3.5-star rating in Institution’s Innovation Council.", leftImage: "/img/left-gold.webp", rightImage: "/img/right-gold.webp" },
-            { title: "GIPS College Ranking", description: "GIPS - Ranked 14th among top colleges in North India by GHRDC.", leftImage: "/img/left-gold.webp", rightImage: "/img/right-gold.webp" },
-            { title: "Top Management Colleges", description: "GIMS - Ranked AA+ among top management colleges in Delhi/NCR by Career360.", leftImage: "/img/left-gold.webp", rightImage: "/img/right-gold.webp" },
-            { title: "National Management Ranking", description: "GIMS - Ranked 95th among top management colleges all over India by B-Schools (P).", leftImage: "/img/left-gold.webp", rightImage: "/img/right-gold.webp" }
-        ];
+                {
+                    title: "Best Private B Schools",
+                    description: "Ranked GIMS 20th among top private B Schools in Delhi/NCR by THE WEEK.",
+                    leftImage: "/img/left-gold.webp",
+                    rightImage: "/img/right-gold.webp",
+                },
+                {
+                    title: "Top Colleges in Delhi/NCR",
+                    description: "Ranked 9th among top colleges in Delhi /NCR by THE WEEK.",
+                    leftImage: "/img/left-gold.webp",
+                    rightImage: "/img/right-gold.webp",
+                },
+                {
+                    title: "Best Engineering College",
+                    description: "Ranked AAA the best engineering college by CAREERS 360.",
+                    leftImage: "/img/left-gold.webp",
+                    rightImage: "/img/right-gold.webp",
+                },
+                {
+                    title: "Leadership Award",
+                    description: "B-School leadership Award.",
+                    leftImage: "/img/left-gold.webp",
+                    rightImage: "/img/right-gold.webp",
+                },
+                {
+                    title: "Top Private Institute",
+                    description: "Top Private Institute in North India by JAGRAN JOSH.",
+                    leftImage: "/img/left-gold.webp",
+                    rightImage: "/img/right-gold.webp",
+                },
+                {
+                    title: "CSR Excellence",
+                    description: "CSR Award for Top Institute of India.",
+                    leftImage: "/img/left-gold.webp",
+                    rightImage: "/img/right-gold.webp",
+                },
+                {
+                    title: "B-School Survey Ranking",
+                    description: "A+ category & Ranked 36th in the B-School Survey.",
+                    leftImage: "/img/left-gold.webp",
+                    rightImage: "/img/right-gold.webp",
+                },
+                {
+                    title: "Emerging B Schools",
+                    description: "GIMS in top Emerging B Schools by Times OF India.",
+                    leftImage: "/img/left-gold.webp",
+                    rightImage: "/img/right-gold.webp",
+                },
+                {
+                    title: "Institution’s Innovation Council",
+                    description: "3.5-star rating in Institution’s Innovation Council.",
+                    leftImage: "/img/left-gold.webp",
+                    rightImage: "/img/right-gold.webp",
+                },
+                {
+                    title: "GIPS College Ranking",
+                    description: "GIPS - Ranked 14th among top colleges in North India by GHRDC.",
+                    leftImage: "/img/left-gold.webp",
+                    rightImage: "/img/right-gold.webp",
+                },
+                {
+                    title: "Top Management Colleges",
+                    description: "GIMS - Ranked AA+ among top management colleges in Delhi/NCR by Career360.",
+                    leftImage: "/img/left-gold.webp",
+                    rightImage: "/img/right-gold.webp",
+                },
+                {
+                    title: "National Management Ranking",
+                    description: "GIMS - Ranked 95th among top management colleges all over India by B-Schools (P).",
+                    leftImage: "/img/left-gold.webp",
+                    rightImage: "/img/right-gold.webp",
+                },
+            ];
 
-        const awardsContainer = document.getElementById("awards-container");
+            const awardsContainer = document.getElementById("awards-container");
 
-        awards.forEach((award) => {
-            const awardDiv = document.createElement("div");
-            awardDiv.className = "p-2 rounded-lg h-24 flex justify-center items-center text-center transition-all duration-300 group";
-        
-            awardDiv.innerHTML = `
+            awards.forEach((award) => {
+                const awardDiv = document.createElement("div");
+                awardDiv.className = "p-2 rounded-lg h-24 flex justify-center items-center text-center transition-all duration-300 group";
+
+                awardDiv.innerHTML = `
                 <div class="flex items-center gap-1">
                     <img src="${award.leftImage}" alt="Left Image" class="w-18 h-24 max-sm:w-10 max-sm:h-20 group-hover:hidden">
                     <h4 class="font-semibold text-base text-white group-hover:hidden">${award.title}</h4>
@@ -1621,13 +1648,10 @@
                     ${award.description}
                 </p>
             `;
-        
-            awardsContainer.appendChild(awardDiv);
-        });
 
-        
-    </script>
-
+                awardsContainer.appendChild(awardDiv);
+            });
+        </script>
         <!-- Awards and Recognitions Ends -->
 
         <script>
@@ -1697,7 +1721,7 @@
                         packageUnit: "CRORE",
                         packageLabel: "Salary Package",
                         image: "/img/placements/sanjay.webp",
-                        companyLogo: "/img/affiliation/affiliation-40.webp",
+                        companyLogo: "/img/recruiters/lam.webp",
                     },
                     {
                         name: "Anup",
@@ -1719,7 +1743,7 @@
                         packageUnit: "LPA",
                         packageLabel: "Salary Package",
                         image: "/img/placements/tipu-sakia.webp",
-                        companyLogo: "/img/affiliation/affiliation-40.webp",
+                        companyLogo: "/img/recruiters/property-pistol.webp",
                     },
                     {
                         name: "Shadab",
@@ -1730,7 +1754,7 @@
                         packageUnit: "LPA",
                         packageLabel: "Salary Package",
                         image: "/img/placements/shadab-ali.webp",
-                        companyLogo: "/img/affiliation/affiliation-40.webp",
+                        companyLogo: "/img/recruiters/mckinsey.webp",
                     },
                     {
                         name: "Md.",
@@ -1741,7 +1765,7 @@
                         packageUnit: "LPA",
                         packageLabel: "Salary Package",
                         image: "/img/placements/md-irfan.webp",
-                        companyLogo: "/img/affiliation/affiliation-40.webp",
+                        companyLogo: "/img/recruiters/cambrilearn.webp",
                     },
                     {
                         name: "Aatif",
@@ -1752,7 +1776,7 @@
                         packageUnit: "LPA",
                         packageLabel: "Salary Package",
                         image: "/img/placements/atif.webp",
-                        companyLogo: "/img/affiliation/affiliation-40.webp",
+                        companyLogo: "/img/recruiters/moovert.webp",
                     },
                     {
                         name: "Rukhsar",
@@ -1763,7 +1787,7 @@
                         packageUnit: "LPA",
                         packageLabel: "Salary Package",
                         image: "/img/placements/rukhsar-begum.webp",
-                        companyLogo: "/img/affiliation/affiliation-40.webp",
+                        companyLogo: "/img/recruiters/ujjiven.webp",
                     },
                     {
                         name: "Sumit",
@@ -1774,7 +1798,7 @@
                         packageUnit: "LPA",
                         packageLabel: "Salary Package",
                         image: "/img/placements/sumit-parashar.webp",
-                        companyLogo: "/img/affiliation/affiliation-40.webp",
+                        companyLogo: "/img/recruiters/infosys.webp",
                     },
                 ];
 
@@ -2052,39 +2076,35 @@
 
         <!-- Gallery Container 1 Script Start  -->
         <script>
-            const memories = [
-                { url: 'img/memories/memories-3.webp' },
-                { url: 'img/memories/memories-1.webp' },
-                { url: 'img/memories/memories-2.webp' },
-                { url: 'img/memories/memories-5.webp' },
-                { url: 'img/memories/memories-4.webp' },
-            ];
-    
-            const galleryContainer1 = document.getElementById('galleryContainer1');
-            const modal = document.getElementById('modal');
-            const modalImage = document.getElementById('modalImage');
-            const closeModal = document.getElementById('closeModal');
-    
+            const memories = [{ url: "img/memories/memories-3.webp" }, { url: "img/memories/memories-1.webp" }, { url: "img/memories/memories-2.webp" }, { url: "img/memories/memories-5.webp" }, { url: "img/memories/memories-4.webp" }];
+
+            const galleryContainer1 = document.getElementById("galleryContainer1");
+            const modal = document.getElementById("modal");
+            const modalImage = document.getElementById("modalImage");
+            const closeModal = document.getElementById("closeModal");
+
             function openModal(url) {
                 modalImage.src = url;
-                modal.classList.remove('hidden');
+                modal.classList.remove("hidden");
             }
-    
-            closeModal.addEventListener('click', () => {
-                modal.classList.add('hidden');
+
+            closeModal.addEventListener("click", () => {
+                modal.classList.add("hidden");
             });
-    
-            modal.addEventListener('click', () => {
-                modal.classList.add('hidden');
+
+            modal.addEventListener("click", () => {
+                modal.classList.add("hidden");
             });
-    
+
             function generateGallery() {
                 if (window.innerWidth <= 850) {
                     // Swiper for mobile & tablet
                     galleryContainer1.innerHTML = `
                         <div class="swiper mySwiper">
                             <div class="swiper-wrapper">
-                                ${memories.map((item, index) => `
+                                ${memories
+                                    .map(
+                                        (item, index) => `
                                     <div class="swiper-slide">
                                         <div class="relative group cursor-pointer transition-all duration-300 w-full">
                                             <img src="${item.url}" alt="Gallery image ${index + 1}" 
@@ -2097,11 +2117,13 @@
                                             </div>
                                         </div>
                                     </div>
-                                `).join('')}
+                                `
+                                    )
+                                    .join("")}
                             </div>
                         </div>
                     `;
-    
+
                     // Initialize Swiper
                     setTimeout(() => {
                         new Swiper(".mySwiper", {
@@ -2111,14 +2133,15 @@
                                 delay: 3000,
                                 disableOnInteraction: false,
                             },
-                            
                         });
                     }, 100);
                 } else {
                     // Desktop expandable gallery
                     galleryContainer1.innerHTML = `
                         <div class="flex w-full desktop-gallery">
-                            ${memories.map((item, index) => `
+                            ${memories
+                                .map(
+                                    (item, index) => `
                                 <div class="relative group cursor-pointer transition-all duration-300 image-container" style="width: 20%;">
                                     <img src="${item.url}" alt="Gallery image ${index + 1}" 
                                         class="object-cover w-full h-[400px] brightness-75 group-hover:brightness-90 transition-all">
@@ -2129,13 +2152,15 @@
                                         </button>
                                     </div>
                                 </div>
-                            `).join('')}
+                            `
+                                )
+                                .join("")}
                         </div>
                     `;
                 }
             }
-    
-            window.addEventListener('resize', generateGallery);
+
+            window.addEventListener("resize", generateGallery);
             generateGallery();
         </script>
         <!-- Gallery Container 1 Script End -->
@@ -2143,22 +2168,24 @@
         <!-- Gallery Container 2 Script Start -->
         <script>
             const slides = [
-                { imageUrl: "/img/gallery/gallery-01.webp", name: "Ashneer Grover" },
+                { imageUrl: "/img/gallery/ashneer.webp", name: "" },
                 { imageUrl: "/img/gallery/gallery-2.webp", name: "" },
                 { imageUrl: "/img/gallery/gallery-3.webp", name: "" },
                 { imageUrl: "/img/gallery/gallery-04.webp", name: "" },
                 { imageUrl: "/img/gallery/gallery-6.webp", name: "" },
                 { imageUrl: "/img/gallery/gallery-4.webp", name: "" },
             ];
-    
+
             let activeIndex = 0; // Default expanded item (Ashneer Grover)
-    
+
             function generateGallery2() {
                 if (window.innerWidth <= 768) {
-                    document.getElementById('galleryContainer2').innerHTML = `
+                    document.getElementById("galleryContainer2").innerHTML = `
                         <div class="swiper mySwiper">
                             <div class="swiper-wrapper">
-                                ${slides.map(slide => `
+                                ${slides
+                                    .map(
+                                        (slide) => `
                                     <div class="swiper-slide">
                                         <div class="relative group bg-white rounded-3xl shadow-md overflow-hidden cursor-pointer transition-all duration-300 ease-in-out">
                                             <div class="absolute bottom-0 left-0 w-full text-white m-6 opacity-0 group-hover:opacity-100 transition-opacity">
@@ -2170,11 +2197,13 @@
                                             <div class='absolute inset-0 bg-gradient-to-t from-black to-transparent bg-blend-multiply bg-opacity-80'></div>
                                         </div>
                                     </div>
-                                `).join('')}
+                                `
+                                    )
+                                    .join("")}
                             </div>
                         </div>
                     `;
-    
+
                     setTimeout(() => {
                         new Swiper(".mySwiper", {
                             slidesPerView: 1,
@@ -2187,12 +2216,14 @@
                         });
                     }, 100);
                 } else {
-                    document.getElementById('galleryContainer2').innerHTML = `
+                    document.getElementById("galleryContainer2").innerHTML = `
                         <div class="flex space-x-2">
-                            ${slides.map((slide, index) => `
-                                <div class="relative group transition-all duration-300 ease-in-out cursor-pointer rounded-3xl shadow-md bg-white overflow-hidden ${index === activeIndex ? 'w-[69%]' : 'w-[6%]'}" 
+                            ${slides
+                                .map(
+                                    (slide, index) => `
+                                <div class="relative group transition-all duration-300 ease-in-out cursor-pointer rounded-3xl shadow-md bg-white overflow-hidden ${index === activeIndex ? "w-[69%]" : "w-[6%]"}" 
                                      onclick="handleClick(${index})" id="slide-${index}">
-                                    <div class="absolute bottom-0 left-0 w-full text-white m-6 transition-opacity duration-300 ease-in-out ${index === activeIndex ? 'opacity-100' : 'opacity-0'}" id="text-${index}">
+                                    <div class="absolute bottom-0 left-0 w-full text-white m-6 transition-opacity duration-300 ease-in-out ${index === activeIndex ? "opacity-100" : "opacity-0"}" id="text-${index}">
                                         <h2 class="text-3xl text-white relative z-10 max-md:text-2xl max-sm:text-xl">${slide.name}</h2>
                                     </div>
                                     <img src="${slide.imageUrl}""
@@ -2200,43 +2231,58 @@
                                     <div class="absolute inset-0 rounded-3xl border border-gray-400 opacity-0 hover:opacity-100 hover:animate-border"></div>
                                     <div class='absolute inset-0 bg-gradient-to-t from-black/80 to-transparent bg-blend-multiply bg-opacity-80'></div>
                                 </div>
-                            `).join('')}
+                            `
+                                )
+                                .join("")}
                         </div>
                     `;
                 }
             }
-    
+
             function handleClick(index) {
                 if (activeIndex === index) return; // Do nothing if clicking the already active one
-            
+
                 activeIndex = index;
-                
-                document.querySelectorAll('.group').forEach((el, idx) => {
+
+                document.querySelectorAll(".group").forEach((el, idx) => {
                     const textEl = document.getElementById(`text-${idx}`);
                     const slideEl = document.getElementById(`slide-${idx}`);
-            
+
                     if (idx === index) {
-                        slideEl.classList.add('w-[69%]');
-                        slideEl.classList.remove('w-[6%]');
-                        textEl.classList.add('opacity-100');
+                        slideEl.classList.add("w-[69%]");
+                        slideEl.classList.remove("w-[6%]");
+                        textEl.classList.add("opacity-100");
                     } else {
-                        slideEl.classList.remove('w-[69%]');
-                        slideEl.classList.add('w-[6%]');
-                        textEl.classList.remove('opacity-100');
+                        slideEl.classList.remove("w-[69%]");
+                        slideEl.classList.add("w-[6%]");
+                        textEl.classList.remove("opacity-100");
                     }
-            
+
                     // Hide text if Ashneer Grover's slide is not expanded
                     if (slides[idx].name === "Ashneer Grover" && idx !== activeIndex) {
-                        textEl.classList.add('hidden');
+                        textEl.classList.add("hidden");
                     } else {
-                        textEl.classList.remove('hidden');
+                        textEl.classList.remove("hidden");
                     }
                 });
             }
-    
-            window.addEventListener('resize', generateGallery2);
+
+            window.addEventListener("resize", generateGallery2);
             generateGallery2();
         </script>
         <!-- Gallery Container 2 Script End-->
+
+        <!-- NPF Script Starts -->
+        <script type="text/javascript">
+            var npf_d = "https://apply.gniotgroup.edu.in";
+            var npf_c = "19";
+            var npf_m = "1";
+            var s = document.createElement("script");
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://track.nopaperforms.com/js/track.js";
+            document.body.appendChild(s);
+        </script>
+        <!-- NPF Scripts End -->
     </body>
 </html>
